@@ -28,7 +28,6 @@ def is_sum_subset(arr: list[int], required_sum: int) -> bool:
 
     return subset[arr_len][required_sum]
 
-
 if __name__ == "__main__":
     import doctest
 
