@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-
 def double_linear_search(array: list[int], search_item: int) -> int:
     """
     Iterate through the array from both sides to find the index of search_item.
@@ -31,7 +30,6 @@ def double_linear_search(array: list[int], search_item: int) -> int:
             end_ind -= 1
     # returns -1 if search_item is not found in array
     return -1
-
 
 if __name__ == "__main__":
     print(double_linear_search(list(range(100)), 40))
