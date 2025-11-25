@@ -3,7 +3,6 @@ from __future__ import annotations
 from collections import Counter
 from random import random
 
-
 class MarkovChainGraphUndirectedUnweighted:
     """
     Undirected Unweighted Graph for running Markov Chain Algorithm
@@ -36,7 +35,6 @@ class MarkovChainGraphUndirectedUnweighted:
             if current_probability > random_value:
                 return dest
         return ""
-
 
 def get_transitions(
     start: str, transitions: list[tuple[str, str, float]], steps: int
@@ -76,7 +74,6 @@ def get_transitions(
         visited[node] += 1
 
     return visited
-
 
 if __name__ == "__main__":
     import doctest
