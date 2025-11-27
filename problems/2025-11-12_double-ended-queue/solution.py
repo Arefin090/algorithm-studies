@@ -8,7 +8,6 @@ from collections.abc import Iterable
 from dataclasses import dataclass
 from typing import Any
 
-
 class Deque:
     """
     Deque data structure.
@@ -453,7 +452,6 @@ class Deque:
             aux = aux.next_node
 
         return f"[{', '.join(repr(val) for val in values_list)}]"
-
 
 if __name__ == "__main__":
     import doctest
