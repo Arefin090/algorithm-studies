@@ -10,7 +10,6 @@ from typing import TypeVar
 
 T = TypeVar("T")
 
-
 class GraphAdjacencyList[T]:
     """
     Adjacency List type Graph Data Structure that accounts for directed and undirected
