@@ -4,7 +4,6 @@ splits an array in half and sorts and combines them.
 
 """https://en.wikipedia.org/wiki/Merge_sort """
 
-
 def merge(arr: list[int]) -> list[int]:
     """Return a sorted array.
     >>> merge([10,9,8,7,6,5,4,3,2,1])
@@ -56,7 +55,6 @@ def merge(arr: list[int]) -> list[int]:
             right_index += 1
             index += 1
     return arr
-
 
 if __name__ == "__main__":
     import doctest
