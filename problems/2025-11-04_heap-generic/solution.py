@@ -1,6 +1,5 @@
 from collections.abc import Callable
 
-
 class Heap:
     """
     A generic Heap class, can be used as min or max by passing the key function
@@ -127,7 +126,6 @@ class Heap:
             self.delete_item(top_item_tuple[0])
         return top_item_tuple
 
-
 def test_heap() -> None:
     """
     >>> h = Heap()  # Max-heap
@@ -166,7 +164,6 @@ def test_heap() -> None:
     >>> h.get_top()
     [9, -40]
     """
-
 
 if __name__ == "__main__":
     import doctest
