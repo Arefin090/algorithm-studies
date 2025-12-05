@@ -10,7 +10,6 @@ pieces separately or not cutting it at all if the price of it is the maximum obt
 
 """
 
-
 def naive_cut_rod_recursive(n: int, prices: list):
     """
     Solves the rod-cutting problem via naively without using the benefit of dynamic
@@ -52,7 +51,6 @@ def naive_cut_rod_recursive(n: int, prices: list):
 
     return max_revue
 
-
 def top_down_cut_rod(n: int, prices: list):
     """
     Constructs a top-down dynamic programming solution for the rod-cutting
@@ -89,7 +87,6 @@ def top_down_cut_rod(n: int, prices: list):
     _enforce_args(n, prices)
     max_rev = [float("-inf") for _ in range(n + 1)]
     return _top_down_cut_rod_recursive(n, prices, max_rev)
-
 
 def _top_down_cut_rod_recursive(n: int, prices: list, max_rev: list):
     """
@@ -128,7 +125,6 @@ def _top_down_cut_rod_recursive(n: int, prices: list, max_rev: list):
         max_rev[n] = max_revenue
 
     return max_rev[n]
-
 
 def bottom_up_cut_rod(n: int, prices: list):
     """
@@ -173,7 +169,6 @@ def bottom_up_cut_rod(n: int, prices: list):
 
     return max_rev[n]
 
-
 def _enforce_args(n: int, prices: list):
     """
     Basic checks on the arguments to the rod-cutting algorithms
@@ -196,7 +191,6 @@ def _enforce_args(n: int, prices: list):
         )
         raise ValueError(msg)
 
-
 def main():
     prices = [6, 10, 12, 15, 20, 23]
     n = len(prices)
@@ -212,7 +206,6 @@ def main():
     assert expected_max_revenue == max_rev_top_down
     assert max_rev_top_down == max_rev_bottom_up
     assert max_rev_bottom_up == max_rev_naive
-
 
 if __name__ == "__main__":
     main()
