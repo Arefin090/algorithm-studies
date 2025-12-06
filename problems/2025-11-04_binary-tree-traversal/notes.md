@@ -14,6 +14,8 @@
 
 ## Personal Notes
 
+- Real-world application in search engines
+
 - Comparison with similar algorithms
 
 - Alternative: iterative vs recursive approach
