@@ -1,7 +1,6 @@
 import math
 import sys
 
-
 def minimum_squares_to_represent_a_number(number: int) -> int:
     """
     Count the number of minimum squares to represent a number
@@ -41,7 +40,6 @@ def minimum_squares_to_represent_a_number(number: int) -> int:
             answer = min(answer, current_answer)
         answers[i] = answer
     return answers[number]
-
 
 if __name__ == "__main__":
     import doctest
