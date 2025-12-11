@@ -6,7 +6,6 @@ Implement the class of prefix sum with useful functions based on it.
 
 """
 
-
 class PrefixSum:
     def __init__(self, array: list[int]) -> None:
         len_array = len(array)
@@ -88,7 +87,6 @@ class PrefixSum:
             sums.add(sum_item)
 
         return False
-
 
 if __name__ == "__main__":
     import doctest
