@@ -12,7 +12,6 @@ from typing import TypeVar
 KT = TypeVar("KT")
 VT = TypeVar("VT")
 
-
 class Node[KT, VT]:
     def __init__(self, key: KT | str = "root", value: VT | None = None):
         self.key = key
@@ -47,7 +46,6 @@ class Node[KT, VT]:
         """
 
         return len(self.forward)
-
 
 class SkipList[KT, VT]:
     def __init__(self, p: float = 0.5, max_level: int = 16):
@@ -245,7 +243,6 @@ class SkipList[KT, VT]:
 
         return None
 
-
 def test_insert():
     skip_list = SkipList()
     skip_list.insert("Key1", 3)
@@ -264,7 +261,6 @@ def test_insert():
     assert all_values["Key2"] == 12
     assert all_values["Key3"] == 41
     assert all_values["Key4"] == -19
-
 
 def test_insert_overrides_existing_value():
     skip_list = SkipList()
@@ -293,11 +289,9 @@ def test_insert_overrides_existing_value():
     assert all_values["Key5"] == 5
     assert all_values["Key10"] == 10
 
-
 def test_searching_empty_list_returns_none():
     skip_list = SkipList()
     assert skip_list.find("Some key") is None
-
 
 def test_search():
     skip_list = SkipList()
@@ -314,13 +308,11 @@ def test_search():
     assert skip_list.find("Some Key") == 10
     assert skip_list.find("V") == 13
 
-
 def test_deleting_item_from_empty_list_do_nothing():
     skip_list = SkipList()
     skip_list.delete("Some key")
 
     assert len(skip_list.head.forward) == 0
-
 
 def test_deleted_items_are_not_founded_by_find_method():
     skip_list = SkipList()
@@ -335,7 +327,6 @@ def test_deleted_items_are_not_founded_by_find_method():
 
     assert skip_list.find("V") is None
     assert skip_list.find("Key2") is None
-
 
 def test_delete_removes_only_given_key():
     skip_list = SkipList()
@@ -369,7 +360,6 @@ def test_delete_removes_only_given_key():
     assert skip_list.find("Key1") is None
     assert skip_list.find("Key2") is None
 
-
 def test_delete_doesnt_leave_dead_nodes():
     skip_list = SkipList()
 
@@ -387,7 +377,6 @@ def test_delete_doesnt_leave_dead_nodes():
 
     assert len(set(traverse_keys(skip_list.head))) == 4
 
-
 def test_iter_always_yields_sorted_values():
     def is_sorted(lst):
         return all(next_item >= item for item, next_item in pairwise(lst))
@@ -403,7 +392,6 @@ def test_iter_always_yields_sorted_values():
     skip_list.insert(-12, -12)
     skip_list.insert(77, 77)
     assert is_sorted(list(skip_list))
-
 
 def pytests():
     for _ in range(100):
@@ -422,7 +410,6 @@ def pytests():
 
         test_iter_always_yields_sorted_values()
 
-
 def main():
     """
     >>> pytests()
@@ -439,7 +426,6 @@ def main():
     skip_list.delete(4)
 
     print(skip_list)
-
 
 if __name__ == "__main__":
     import doctest
