@@ -14,6 +14,8 @@
 
 ## Personal Notes
 
+- Edge case: empty input handling
+
 - Comparison with similar algorithms
 
 - Optimization: early termination condition
