@@ -1,8 +1,8 @@
 #   Init  
 
-**Source**: [https://github.com/TheAlgorithms/Python/blob/master/dynamic_programming/__init__.py](https://github.com/TheAlgorithms/Python/blob/master/dynamic_programming/__init__.py)
+**Source**: [https://github.com/TheAlgorithms/Python/blob/master/data_structures/hashing/__init__.py](https://github.com/TheAlgorithms/Python/blob/master/data_structures/hashing/__init__.py)
 **Language**: Python
-**Path**: `dynamic_programming/__init__.py`
+**Path**: `data_structures/hashing/__init__.py`
 
 ## Description
 
@@ -10,8 +10,8 @@ No description available.
 
 ## Tags
 
-`Dynamic Programming`
+`Data Structures`, `Hashing`
 
 ---
 
-*Automatically fetched on 2025-12-13 04:06:10*
+*Automatically fetched on 2025-12-13 16:04:35*
