@@ -15,7 +15,6 @@ Example:
 
 from __future__ import annotations
 
-
 def longest_subsequence(array: list[int]) -> list[int]:  # This function is recursive
     """
     Some examples
@@ -59,7 +58,6 @@ def longest_subsequence(array: list[int]) -> list[int]:  # This function is recu
         return temp_array
     else:
         return longest_subseq
-
 
 if __name__ == "__main__":
     import doctest
