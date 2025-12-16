@@ -1,6 +1,5 @@
 from typing import Any
 
-
 def bubble_sort_iterative(collection: list[Any]) -> list[Any]:
     """Pure implementation of bubble sort algorithm in Python
 
@@ -53,7 +52,6 @@ def bubble_sort_iterative(collection: list[Any]) -> list[Any]:
             break  # Stop iteration if the collection is sorted.
     return collection
 
-
 def bubble_sort_recursive(collection: list[Any]) -> list[Any]:
     """It is similar iterative bubble sort but recursive.
 
@@ -104,7 +102,6 @@ def bubble_sort_recursive(collection: list[Any]) -> list[Any]:
             swapped = True
 
     return collection if not swapped else bubble_sort_recursive(collection)
-
 
 if __name__ == "__main__":
     import doctest
