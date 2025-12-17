@@ -2,7 +2,6 @@
 A pure Python implementation of the heap sort algorithm.
 """
 
-
 def heapify(unsorted: list[int], index: int, heap_size: int) -> None:
     """
     :param unsorted: unsorted list containing integers numbers
@@ -30,7 +29,6 @@ def heapify(unsorted: list[int], index: int, heap_size: int) -> None:
         unsorted[largest], unsorted[index] = (unsorted[index], unsorted[largest])
         heapify(unsorted, largest, heap_size)
 
-
 def heap_sort(unsorted: list[int]) -> list[int]:
     """
     A pure Python implementation of the heap sort algorithm
@@ -55,7 +53,6 @@ def heap_sort(unsorted: list[int]) -> list[int]:
         unsorted[0], unsorted[i] = unsorted[i], unsorted[0]
         heapify(unsorted, 0, i)
     return unsorted
-
 
 if __name__ == "__main__":
     import doctest
