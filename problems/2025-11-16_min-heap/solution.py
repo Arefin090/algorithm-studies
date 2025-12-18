@@ -1,7 +1,6 @@
 # Min heap data structure
 # with decrease key functionality - in O(log(n)) time
 
-
 class Node:
     def __init__(self, name, val):
         self.name = name
@@ -12,7 +11,6 @@ class Node:
 
     def __lt__(self, other):
         return self.val < other.val
-
 
 class MinHeap:
     """
@@ -130,7 +128,6 @@ class MinHeap:
         node.val = new_value
         self.heap_dict[node.name] = new_value
         self.sift_up(self.idx_of_element[node])
-
 
 # USAGE
 
