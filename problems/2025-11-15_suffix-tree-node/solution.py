@@ -8,7 +8,6 @@
 
 from __future__ import annotations
 
-
 class SuffixTreeNode:
     def __init__(
         self,
