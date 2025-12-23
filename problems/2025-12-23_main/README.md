@@ -1,19 +1,17 @@
 # Main
 
-**Source**: [https://github.com/TheAlgorithms/C/blob/master/data_structures/list/main.c](https://github.com/TheAlgorithms/C/blob/master/data_structures/list/main.c)
+**Source**: [https://github.com/TheAlgorithms/C/blob/master/data_structures/stack/main.c](https://github.com/TheAlgorithms/C/blob/master/data_structures/stack/main.c)
 **Language**: C
-**Path**: `data_structures/list/main.c`
+**Path**: `data_structures/stack/main.c`
 
 ## Description
 
-include <assert.h>
-include <stdio.h>
-include <stdlib.h>
+No description available.
 
 ## Tags
 
-`Data Structures`, `List`
+`Data Structures`, `Stack`
 
 ---
 
-*Automatically fetched on 2025-12-23 00:13:23*
+*Automatically fetched on 2025-12-23 08:08:44*
