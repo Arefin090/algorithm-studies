@@ -9,7 +9,6 @@ from __future__ import annotations
 from collections.abc import Iterator
 from dataclasses import dataclass
 
-
 @dataclass
 class Node:
     """
@@ -52,7 +51,6 @@ class Node:
             self.right.mirror()
         return self
 
-
 def make_tree_seven() -> Node:
     r"""
     Return a binary tree with 7 nodes that looks like this:
@@ -78,7 +76,6 @@ def make_tree_seven() -> Node:
     tree.right.left = Node(6)
     tree.right.right = Node(7)
     return tree
-
 
 def make_tree_nine() -> Node:
     r"""
@@ -109,7 +106,6 @@ def make_tree_nine() -> Node:
     tree.left.left.right = Node(8)
     tree.left.right.right = Node(9)
     return tree
-
 
 def main() -> None:
     r"""
@@ -151,7 +147,6 @@ def main() -> None:
         # (0,)
         # (7, 3, 6, 1, 5, 2, 4)
         # (6, 3, 1, 9, 5, 2, 8, 4, 7)
-
 
 if __name__ == "__main__":
     import doctest
