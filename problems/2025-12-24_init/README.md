@@ -1,8 +1,8 @@
 #   Init  
 
-**Source**: [https://github.com/TheAlgorithms/Python/blob/master/data_structures/kd_tree/tests/__init__.py](https://github.com/TheAlgorithms/Python/blob/master/data_structures/kd_tree/tests/__init__.py)
+**Source**: [https://github.com/TheAlgorithms/Python/blob/master/data_structures/heap/__init__.py](https://github.com/TheAlgorithms/Python/blob/master/data_structures/heap/__init__.py)
 **Language**: Python
-**Path**: `data_structures/kd_tree/tests/__init__.py`
+**Path**: `data_structures/heap/__init__.py`
 
 ## Description
 
@@ -10,8 +10,8 @@ No description available.
 
 ## Tags
 
-`Data Structures`, `Kd Tree`, `Tests`
+`Data Structures`, `Heap`
 
 ---
 
-*Automatically fetched on 2025-12-24 10:09:32*
+*Automatically fetched on 2025-12-24 20:08:11*
