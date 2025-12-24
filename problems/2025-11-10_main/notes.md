@@ -14,6 +14,8 @@
 
 ## Personal Notes
 
+- Alternative: iterative vs recursive approach
+
 - Optimization: early termination condition
 
 - Real-world application in search engines
