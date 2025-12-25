@@ -5,7 +5,6 @@ module to operations with prime numbers
 
 import math
 
-
 def is_prime(number: int) -> bool:
     """Checks to see if a number is a prime in O(sqrt(n)).
 
@@ -45,7 +44,6 @@ def is_prime(number: int) -> bool:
 
     odd_numbers = range(3, int(math.sqrt(number) + 1), 2)
     return not any(not number % i for i in odd_numbers)
-
 
 def next_prime(value, factor=1, **kwargs):
     value = factor * value
