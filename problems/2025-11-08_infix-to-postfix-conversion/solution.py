@@ -24,7 +24,6 @@ ASSOCIATIVITIES: dict[str, Literal["LR", "RL"]] = {
     "^": "RL",
 }
 
-
 def precedence(char: str) -> int:
     """
     Return integer value representing an operator's precedence, or
@@ -33,14 +32,12 @@ def precedence(char: str) -> int:
     """
     return PRECEDENCES.get(char, -1)
 
-
 def associativity(char: str) -> Literal["LR", "RL"]:
     """
     Return the associativity of the operator `char`.
     https://en.wikipedia.org/wiki/Operator_associativity
     """
     return ASSOCIATIVITIES[char]
-
 
 def infix_to_postfix(expression_str: str) -> str:
     """
@@ -100,7 +97,6 @@ def infix_to_postfix(expression_str: str) -> str:
     while not stack.is_empty():
         postfix.append(stack.pop())
     return " ".join(postfix)
-
 
 if __name__ == "__main__":
     from doctest import testmod
