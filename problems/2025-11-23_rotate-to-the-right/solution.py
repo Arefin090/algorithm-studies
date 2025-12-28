@@ -2,12 +2,10 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
-
 @dataclass
 class Node:
     data: int
     next_node: Node | None = None
-
 
 def print_linked_list(head: Node | None) -> None:
     """
@@ -35,7 +33,6 @@ def print_linked_list(head: Node | None) -> None:
         print(head.data, end="->")
         head = head.next_node
     print(head.data)
-
 
 def insert_node(head: Node | None, data: int) -> Node:
     """
@@ -65,7 +62,6 @@ def insert_node(head: Node | None, data: int) -> Node:
 
     temp_node.next_node = new_node
     return head
-
 
 def rotate_to_the_right(head: Node, places: int) -> Node:
     """
@@ -134,7 +130,6 @@ def rotate_to_the_right(head: Node, places: int) -> Node:
 
     assert new_head
     return new_head
-
 
 if __name__ == "__main__":
     import doctest
