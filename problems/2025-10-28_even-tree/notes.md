@@ -14,6 +14,8 @@
 
 ## Personal Notes
 
+- Real-world application in search engines
+
 - Edge case: empty input handling
 
 - Implementation variant in different languages
