@@ -5,7 +5,6 @@ from time import time
 
 # the default weight is 1 if not assigned but all the implementation is weighted
 
-
 class DirectedGraph:
     def __init__(self):
         self.graph = {}
@@ -259,7 +258,6 @@ class DirectedGraph:
         self.bfs(s)
         end = time()
         return end - begin
-
 
 class Graph:
     def __init__(self):
