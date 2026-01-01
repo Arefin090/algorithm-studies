@@ -17,7 +17,6 @@ from __future__ import annotations
 
 from collections.abc import Iterable
 
-
 class Point:
     """
     Defines a 2-d point for use by all convex-hull algorithms.
@@ -84,7 +83,6 @@ class Point:
     def __hash__(self):
         return hash(self.x)
 
-
 def _construct_points(
     list_of_tuples: list[Point] | list[list[float]] | Iterable[list[float]],
 ) -> list[Point]:
@@ -131,7 +129,6 @@ def _construct_points(
                     )
     return points
 
-
 def _validate_input(points: list[Point] | list[list[float]]) -> list[Point]:
     """
     validates an input instance before a convex-hull algorithms uses it
@@ -146,7 +143,6 @@ def _validate_input(points: list[Point] | list[list[float]]) -> list[Point]:
     -------
     points: array_like, an iterable of all well-defined Points constructed passed in.
 
-
     Exception
     ---------
     ValueError: if points is empty or None, or if a wrong data structure like a scalar
@@ -154,7 +150,6 @@ def _validate_input(points: list[Point] | list[list[float]]) -> list[Point]:
 
     TypeError: if an iterable but non-indexable object (eg. dictionary) is passed.
                 The exception to this a set which we'll convert to a list before using
-
 
     Examples
     -------
@@ -183,7 +178,6 @@ def _validate_input(points: list[Point] | list[list[float]]) -> list[Point]:
         raise ValueError(msg)
 
     return _construct_points(points)
-
 
 def _det(a: Point, b: Point, c: Point) -> float:
     """
@@ -218,7 +212,6 @@ def _det(a: Point, b: Point, c: Point) -> float:
 
     det = (a.x * b.y + b.x * c.y + c.x * a.y) - (a.y * b.x + b.y * c.x + c.y * a.x)
     return det
-
 
 def convex_hull_bf(points: list[Point]) -> list[Point]:
     """
@@ -291,7 +284,6 @@ def convex_hull_bf(points: list[Point]) -> list[Point]:
 
     return sorted(convex_set)
 
-
 def convex_hull_recursive(points: list[Point]) -> list[Point]:
     """
     Constructs the convex hull of a set of 2D points using a divide-and-conquer strategy
@@ -361,7 +353,6 @@ def convex_hull_recursive(points: list[Point]) -> list[Point]:
 
     return sorted(convex_set)
 
-
 def _construct_hull(
     points: list[Point], left: Point, right: Point, convex_set: set[Point]
 ) -> None:
@@ -404,7 +395,6 @@ def _construct_hull(
             _construct_hull(candidate_points, left, extreme_point, convex_set)
             convex_set.add(extreme_point)
             _construct_hull(candidate_points, extreme_point, right, convex_set)
-
 
 def convex_hull_melkman(points: list[Point]) -> list[Point]:
     """
@@ -476,7 +466,6 @@ def convex_hull_melkman(points: list[Point]) -> list[Point]:
     # `convex_hull` is contains the convex hull in circular order
     return sorted(convex_hull[1:] if len(convex_hull) > 3 else convex_hull)
 
-
 def main():
     points = [
         (0, 3),
@@ -501,7 +490,6 @@ def main():
     assert results_bf == results_melkman
 
     print(results_bf)
-
 
 if __name__ == "__main__":
     main()
