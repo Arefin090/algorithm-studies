@@ -7,7 +7,6 @@ https://en.wikipedia.org/wiki/Radix_sort
 
 from __future__ import annotations
 
-
 def msd_radix_sort(list_of_ints: list[int]) -> list[int]:
     """
     Implementation of the MSD radix sort algorithm. Only works
@@ -35,7 +34,6 @@ def msd_radix_sort(list_of_ints: list[int]) -> list[int]:
 
     most_bits = max(len(bin(x)[2:]) for x in list_of_ints)
     return _msd_radix_sort(list_of_ints, most_bits)
-
 
 def _msd_radix_sort(list_of_ints: list[int], bit_position: int) -> list[int]:
     """
@@ -74,7 +72,6 @@ def _msd_radix_sort(list_of_ints: list[int], bit_position: int) -> list[int]:
 
     return res
 
-
 def msd_radix_sort_inplace(list_of_ints: list[int]):
     """
     Inplace implementation of the MSD radix sort algorithm.
@@ -107,7 +104,6 @@ def msd_radix_sort_inplace(list_of_ints: list[int]):
 
     most_bits = max(len(bin(x)[2:]) for x in list_of_ints)
     _msd_radix_sort_inplace(list_of_ints, most_bits, 0, length)
-
 
 def _msd_radix_sort_inplace(
     list_of_ints: list[int], bit_position: int, begin_index: int, end_index: int
@@ -153,7 +149,6 @@ def _msd_radix_sort_inplace(
 
     _msd_radix_sort_inplace(list_of_ints, bit_position, begin_index, i)
     _msd_radix_sort_inplace(list_of_ints, bit_position, i, end_index)
-
 
 if __name__ == "__main__":
     import doctest
