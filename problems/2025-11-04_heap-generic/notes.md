@@ -14,6 +14,8 @@
 
 ## Personal Notes
 
+- Comparison with similar algorithms
+
 - Alternative: iterative vs recursive approach
 
 - Edge case: empty input handling
