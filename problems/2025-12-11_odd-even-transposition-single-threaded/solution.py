@@ -7,7 +7,6 @@ Normally the swaps in each set happen simultaneously, without that the algorithm
 is no better than bubble sort.
 """
 
-
 def odd_even_transposition(arr: list) -> list:
     """
     >>> odd_even_transposition([5, 4, 3, 2, 1])
@@ -26,7 +25,6 @@ def odd_even_transposition(arr: list) -> list:
                 arr[i], arr[i + 1] = arr[i + 1], arr[i]
 
     return arr
-
 
 if __name__ == "__main__":
     arr = list(range(10, 0, -1))
