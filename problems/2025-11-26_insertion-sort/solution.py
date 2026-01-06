@@ -16,13 +16,10 @@ python3 insertion_sort.py
 from collections.abc import MutableSequence
 from typing import Any, Protocol, TypeVar
 
-
 class Comparable(Protocol):
     def __lt__(self, other: Any, /) -> bool: ...
 
-
 T = TypeVar("T", bound=Comparable)
-
 
 def insertion_sort[T: Comparable](collection: MutableSequence[T]) -> MutableSequence[T]:
     """A pure Python implementation of the insertion sort algorithm
@@ -57,7 +54,6 @@ def insertion_sort[T: Comparable](collection: MutableSequence[T]) -> MutableSequ
             insert_index -= 1
         collection[insert_index] = insert_value
     return collection
-
 
 if __name__ == "__main__":
     from doctest import testmod
