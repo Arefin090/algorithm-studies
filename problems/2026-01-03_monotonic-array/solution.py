@@ -24,7 +24,6 @@ def is_monotonic(nums: list[int]) -> bool:
         nums[i] >= nums[i + 1] for i in range(len(nums) - 1)
     )
 
-
 # Test the function with your examples
 if __name__ == "__main__":
     # Test the function with your examples
