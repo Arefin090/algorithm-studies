@@ -6,7 +6,6 @@ from __future__ import annotations
 
 from queue import Queue
 
-
 class Graph:
     def __init__(self) -> None:
         self.vertices: dict[int, list[int]] = {}
@@ -69,7 +68,6 @@ class Graph:
                     queue.put(adjacent_vertex)
                     visited.add(adjacent_vertex)
         return visited
-
 
 if __name__ == "__main__":
     from doctest import testmod
