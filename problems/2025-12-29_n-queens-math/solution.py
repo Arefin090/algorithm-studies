@@ -78,7 +78,6 @@ for another one or vice versa.
 
 from __future__ import annotations
 
-
 def depth_first_search(
     possible_board: list[int],
     diagonal_right_collisions: list[int],
@@ -137,7 +136,6 @@ def depth_first_search(
             n,
         )
 
-
 def n_queens_solution(n: int) -> None:
     boards: list[list[str]] = []
     depth_first_search([], [], [], boards, n)
@@ -149,7 +147,6 @@ def n_queens_solution(n: int) -> None:
         print("")
 
     print(len(boards), "solutions were found.")
-
 
 if __name__ == "__main__":
     import doctest
