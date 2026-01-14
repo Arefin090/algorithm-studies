@@ -10,7 +10,6 @@ def stooge_sort(arr: list[int]) -> list[int]:
     stooge(arr, 0, len(arr) - 1)
     return arr
 
-
 def stooge(arr: list[int], i: int, h: int) -> None:
     if i >= h:
         return
@@ -31,7 +30,6 @@ def stooge(arr: list[int], i: int, h: int) -> None:
 
         # Recursively sort first 2/3 elements
         stooge(arr, i, (h - t))
-
 
 if __name__ == "__main__":
     user_input = input("Enter numbers separated by a comma:\n").strip()
