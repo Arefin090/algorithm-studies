@@ -1,6 +1,5 @@
 INF = float("inf")
 
-
 class Dinic:
     def __init__(self, n):
         self.lvl = [0] * n
@@ -59,7 +58,6 @@ class Dinic:
                     break
 
         return flow
-
 
 # Example to use
 
