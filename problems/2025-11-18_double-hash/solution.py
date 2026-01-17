@@ -15,7 +15,6 @@ Reference: https://en.wikipedia.org/wiki/Double_hashing
 from .hash_table import HashTable
 from .number_theory.prime_numbers import is_prime, next_prime
 
-
 class DoubleHash(HashTable):
     """
     Hash Table example with open addressing and Double Hash
@@ -78,7 +77,6 @@ class DoubleHash(HashTable):
                 i += 1
 
         return new_key
-
 
 if __name__ == "__main__":
     import doctest
