@@ -8,7 +8,6 @@ For manual testing run:
 python3 circle_sort.py
 """
 
-
 def circle_sort(collection: list) -> list:
     """A pure Python implementation of circle sort algorithm
 
@@ -78,7 +77,6 @@ def circle_sort(collection: list) -> list:
         is_not_sorted = circle_sort_util(collection, 0, len(collection) - 1)
 
     return collection
-
 
 if __name__ == "__main__":
     user_input = input("Enter numbers separated by a comma:\n").strip()
