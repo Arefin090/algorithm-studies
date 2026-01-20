@@ -1,7 +1,6 @@
 import sys
 from collections import defaultdict
 
-
 class Heap:
     def __init__(self):
         self.node_position = []
@@ -71,7 +70,6 @@ class Heap:
         self.top_to_bottom(heap, 0, len(heap), positions)
         return temp
 
-
 def prisms_algorithm(adjacency_list):
     """
     >>> adjacency_list = {0: [[1, 1], [3, 3]],
@@ -122,7 +120,6 @@ def prisms_algorithm(adjacency_list):
                     )
                     nbr_tv[neighbor] = vertex
     return tree_edges
-
 
 if __name__ == "__main__":  # pragma: no cover
     # < --------- Prims Algorithm --------- >
