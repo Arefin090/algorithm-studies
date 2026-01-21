@@ -7,7 +7,6 @@ from typing import TypeVar
 
 T = TypeVar("T")
 
-
 class Node[T]:
     def __init__(self, data: T):
         self.data = data
@@ -15,7 +14,6 @@ class Node[T]:
 
     def __str__(self) -> str:
         return f"{self.data}"
-
 
 class LinkedStack[T]:
     """
@@ -157,7 +155,6 @@ class LinkedStack[T]:
         True
         """
         self.top = None
-
 
 if __name__ == "__main__":
     from doctest import testmod
