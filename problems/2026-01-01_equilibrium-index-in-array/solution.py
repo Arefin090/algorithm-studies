@@ -12,13 +12,11 @@ The equilibrium index of an array is an index such that the sum of
 elements at lower indexes is equal to the sum of elements at higher indexes.
 
 
-
 Example Input:
 arr = [-7, 1, 5, 2, -4, 3, 0]
 Output: 3
 
 """
-
 
 def equilibrium_index(arr: list[int]) -> int:
     """
@@ -50,7 +48,6 @@ def equilibrium_index(arr: list[int]) -> int:
         left_sum += value
 
     return -1
-
 
 if __name__ == "__main__":
     import doctest
