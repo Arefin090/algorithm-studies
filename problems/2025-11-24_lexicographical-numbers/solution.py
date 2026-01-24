@@ -1,6 +1,5 @@
 from collections.abc import Iterator
 
-
 def lexical_order(max_number: int) -> Iterator[int]:
     """
     Generate numbers in lexical order from 1 to max_number.
@@ -29,7 +28,6 @@ def lexical_order(max_number: int) -> Iterator[int]:
             stack.append(num + 1)
 
         stack.append(num * 10)
-
 
 if __name__ == "__main__":
     from doctest import testmod
