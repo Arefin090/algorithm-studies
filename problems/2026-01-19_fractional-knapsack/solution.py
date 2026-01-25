@@ -1,7 +1,6 @@
 from bisect import bisect
 from itertools import accumulate
 
-
 def frac_knapsack(vl, wt, w, n):
     """
     >>> frac_knapsack([60, 100, 120], [10, 20, 30], 50, 3)
@@ -43,7 +42,6 @@ def frac_knapsack(vl, wt, w, n):
         if k != n
         else sum(vl[:k])
     )
-
 
 if __name__ == "__main__":
     import doctest
