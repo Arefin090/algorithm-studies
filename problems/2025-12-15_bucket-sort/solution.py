@@ -30,7 +30,6 @@ Source: https://en.wikipedia.org/wiki/Bucket_sort
 
 from __future__ import annotations
 
-
 def bucket_sort(my_list: list, bucket_count: int = 10) -> list:
     """
     >>> data = [-1, 2, -5, 0]
@@ -88,7 +87,6 @@ def bucket_sort(my_list: list, bucket_count: int = 10) -> list:
         buckets[index].append(val)
 
     return [val for bucket in buckets for val in sorted(bucket)]
-
 
 if __name__ == "__main__":
     from doctest import testmod
