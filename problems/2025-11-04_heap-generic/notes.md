@@ -14,6 +14,8 @@
 
 ## Personal Notes
 
+- Implementation variant in different languages
+
 - Comparison with similar algorithms
 
 - Alternative: iterative vs recursive approach
