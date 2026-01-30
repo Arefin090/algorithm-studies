@@ -3,7 +3,6 @@ Problem Description:
 Given a binary tree, return its mirror.
 """
 
-
 def binary_tree_mirror_dict(binary_tree_mirror_dictionary: dict, root: int):
     if not root or root not in binary_tree_mirror_dictionary:
         return
@@ -11,7 +10,6 @@ def binary_tree_mirror_dict(binary_tree_mirror_dictionary: dict, root: int):
     binary_tree_mirror_dictionary[root] = [right_child, left_child]
     binary_tree_mirror_dict(binary_tree_mirror_dictionary, left_child)
     binary_tree_mirror_dict(binary_tree_mirror_dictionary, right_child)
-
 
 def binary_tree_mirror(binary_tree: dict, root: int = 1) -> dict:
     """
@@ -36,7 +34,6 @@ def binary_tree_mirror(binary_tree: dict, root: int = 1) -> dict:
     binary_tree_mirror_dictionary = dict(binary_tree)
     binary_tree_mirror_dict(binary_tree_mirror_dictionary, root)
     return binary_tree_mirror_dictionary
-
 
 if __name__ == "__main__":
     binary_tree = {1: [2, 3], 2: [4, 5], 3: [6, 7], 7: [8, 9]}
