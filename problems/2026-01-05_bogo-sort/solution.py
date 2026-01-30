@@ -15,7 +15,6 @@ python bogo_sort.py
 
 import random
 
-
 def bogo_sort(collection):
     """Pure implementation of the bogosort algorithm in Python
     :param collection: some mutable ordered collection with heterogeneous
@@ -39,7 +38,6 @@ def bogo_sort(collection):
     while not is_sorted(collection):
         random.shuffle(collection)
     return collection
-
 
 if __name__ == "__main__":
     user_input = input("Enter numbers separated by a comma:\n").strip()
