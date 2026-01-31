@@ -11,7 +11,6 @@ a=daBcd and b="ABC"
 daBcd -> capitalize a and c(dABCd) -> remove d (ABC)
 """
 
-
 def abbr(a: str, b: str) -> bool:
     """
     >>> abbr("daBcd", "ABC")
@@ -31,7 +30,6 @@ def abbr(a: str, b: str) -> bool:
                 if a[i].islower():
                     dp[i + 1][j] = True
     return dp[n][m]
-
 
 if __name__ == "__main__":
     import doctest
