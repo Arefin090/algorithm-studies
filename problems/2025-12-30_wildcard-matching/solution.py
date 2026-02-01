@@ -15,7 +15,6 @@ The implementation was tested on the
 leetcode: https://leetcode.com/problems/wildcard-matching/
 """
 
-
 def is_match(string: str, pattern: str) -> bool:
     """
     >>> is_match("", "")
@@ -59,7 +58,6 @@ def is_match(string: str, pattern: str) -> bool:
             elif pattern[j - 1] == "*":
                 dp[i][j] = dp[i - 1][j] or dp[i][j - 1]
     return dp[len(string)][len(pattern)]
-
 
 if __name__ == "__main__":
     import doctest
