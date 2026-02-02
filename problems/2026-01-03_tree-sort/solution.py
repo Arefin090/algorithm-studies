@@ -9,7 +9,6 @@ from __future__ import annotations
 from collections.abc import Iterator
 from dataclasses import dataclass
 
-
 @dataclass
 class Node:
     val: int
@@ -38,7 +37,6 @@ class Node:
             else:
                 self.right.insert(val)
 
-
 def tree_sort(arr: list[int]) -> tuple[int, ...]:
     """
     >>> tree_sort([])
@@ -63,7 +61,6 @@ def tree_sort(arr: list[int]) -> tuple[int, ...]:
     for item in arr[1:]:
         root.insert(item)
     return tuple(root)
-
 
 if __name__ == "__main__":
     import doctest
