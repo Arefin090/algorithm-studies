@@ -14,6 +14,8 @@
 
 ## Personal Notes
 
+- Performance: best/average/worst case analysis
+
 - Optimization: early termination condition
 
 - Real-world application in search engines
