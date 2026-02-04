@@ -16,7 +16,6 @@ Basically we Create the 2 function:
         Returns the number of possible binary trees for n nodes.
 """
 
-
 def binomial_coefficient(n: int, k: int) -> int:
     """
     Since Here we Find the Binomial Coefficient:
@@ -38,7 +37,6 @@ def binomial_coefficient(n: int, k: int) -> int:
         result //= i + 1
     return result
 
-
 def catalan_number(node_count: int) -> int:
     """
     We can find Catalan number many ways but here we use Binomial Coefficient because it
@@ -54,7 +52,6 @@ def catalan_number(node_count: int) -> int:
     132
     """
     return binomial_coefficient(2 * node_count, node_count) // (node_count + 1)
-
 
 def factorial(n: int) -> int:
     """
@@ -77,7 +74,6 @@ def factorial(n: int) -> int:
         result *= i
     return result
 
-
 def binary_tree_count(node_count: int) -> int:
     """
     Return the number of possible of binary trees.
@@ -90,7 +86,6 @@ def binary_tree_count(node_count: int) -> int:
     95040
     """
     return catalan_number(node_count) * factorial(node_count)
-
 
 if __name__ == "__main__":
     node_count = int(input("Enter the number of nodes: ").strip() or 0)
