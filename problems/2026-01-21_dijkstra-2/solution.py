@@ -7,7 +7,6 @@ def print_dist(dist, v):
             print(i, "\t", "INF", end="\t")
         print()
 
-
 def min_dist(mdist, vset, v):
     min_val = float("inf")
     min_ind = -1
@@ -16,7 +15,6 @@ def min_dist(mdist, vset, v):
             min_ind = i
             min_val = mdist[i]
     return min_ind
-
 
 def dijkstra(graph, v, src):
     mdist = [float("inf") for _ in range(v)]
@@ -36,7 +34,6 @@ def dijkstra(graph, v, src):
                 mdist[i] = mdist[u] + graph[u][i]
 
     print_dist(mdist, i)
-
 
 if __name__ == "__main__":
     V = int(input("Enter number of vertices: ").strip())
