@@ -16,6 +16,8 @@
 
 - Comparison with similar algorithms
 
+- Comparison with similar algorithms
+
 - Implementation variant in different languages
 
 - Edge case: empty input handling
