@@ -6,7 +6,6 @@ https://en.wikipedia.org/wiki/Introsort
 
 import math
 
-
 def insertion_sort(array: list, start: int = 0, end: int = 0) -> list:
     """
     >>> array = [4, 2, 6, 8, 1, 7, 8, 22, 14, 56, 27, 79, 23, 45, 14, 12]
@@ -35,7 +34,6 @@ def insertion_sort(array: list, start: int = 0, end: int = 0) -> list:
         array[temp_index] = temp_index_value
     return array
 
-
 def heapify(array: list, index: int, heap_size: int) -> None:  # Max Heap
     """
     >>> array = [4, 2, 6, 8, 1, 7, 8, 22, 14, 56, 27, 79, 23, 45, 14, 12]
@@ -54,7 +52,6 @@ def heapify(array: list, index: int, heap_size: int) -> None:  # Max Heap
     if largest != index:
         array[index], array[largest] = array[largest], array[index]
         heapify(array, largest, heap_size)
-
 
 def heap_sort(array: list) -> list:
     """
@@ -77,7 +74,6 @@ def heap_sort(array: list) -> list:
         heapify(array, 0, i)
 
     return array
-
 
 def median_of_3(
     array: list, first_index: int, middle_index: int, last_index: int
@@ -103,7 +99,6 @@ def median_of_3(
         return array[middle_index]
     else:
         return array[last_index]
-
 
 def partition(array: list, low: int, high: int, pivot: int) -> int:
     """
@@ -133,7 +128,6 @@ def partition(array: list, low: int, high: int, pivot: int) -> int:
         array[i], array[j] = array[j], array[i]
         i += 1
 
-
 def sort(array: list) -> list:
     """
     :param collection: some mutable ordered collection with heterogeneous
@@ -162,7 +156,6 @@ def sort(array: list) -> list:
     size_threshold = 16
     return intro_sort(array, 0, len(array), size_threshold, max_depth)
 
-
 def intro_sort(
     array: list, start: int, end: int, size_threshold: int, max_depth: int
 ) -> list:
@@ -181,7 +174,6 @@ def intro_sort(
         intro_sort(array, p, end, size_threshold, max_depth)
         end = p
     return insertion_sort(array, start, end)
-
 
 if __name__ == "__main__":
     import doctest
