@@ -14,6 +14,8 @@
 
 ## Personal Notes
 
+- Implementation variant in different languages
+
 - Edge case: empty input handling
 
 - Implementation variant in different languages
