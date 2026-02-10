@@ -2,10 +2,8 @@ from __future__ import annotations
 
 from typing import Any
 
-
 class ContainsLoopError(Exception):
     pass
-
 
 class Node:
     def __init__(self, data: Any) -> None:
@@ -41,7 +39,6 @@ class Node:
             return False
         except ContainsLoopError:
             return True
-
 
 if __name__ == "__main__":
     root_node = Node(1)
