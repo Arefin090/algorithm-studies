@@ -1,8 +1,8 @@
 #   Init  
 
-**Source**: [https://github.com/TheAlgorithms/Python/blob/master/data_structures/suffix_tree/tests/__init__.py](https://github.com/TheAlgorithms/Python/blob/master/data_structures/suffix_tree/tests/__init__.py)
+**Source**: [https://github.com/TheAlgorithms/Python/blob/master/data_structures/binary_tree/__init__.py](https://github.com/TheAlgorithms/Python/blob/master/data_structures/binary_tree/__init__.py)
 **Language**: Python
-**Path**: `data_structures/suffix_tree/tests/__init__.py`
+**Path**: `data_structures/binary_tree/__init__.py`
 
 ## Description
 
@@ -10,8 +10,8 @@ No description available.
 
 ## Tags
 
-`Data Structures`, `Suffix Tree`, `Tests`
+`Data Structures`, `Binary Tree`
 
 ---
 
-*Automatically fetched on 2026-02-12 14:25:16*
+*Automatically fetched on 2026-02-12 22:08:39*
