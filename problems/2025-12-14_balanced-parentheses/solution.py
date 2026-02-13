@@ -1,6 +1,5 @@
 from .stack import Stack
 
-
 def balanced_parentheses(parentheses: str) -> bool:
     """Use a stack to check if a string of parentheses is balanced.
     >>> balanced_parentheses("([]{})")
@@ -24,7 +23,6 @@ def balanced_parentheses(parentheses: str) -> bool:
         ):
             return False
     return stack.is_empty()
-
 
 if __name__ == "__main__":
     from doctest import testmod
