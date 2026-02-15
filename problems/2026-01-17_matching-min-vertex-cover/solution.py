@@ -7,7 +7,6 @@ URL: https://mathworld.wolfram.com/MinimumVertexCover.html
 URL: https://www.princeton.edu/~aaa/Public/Teaching/ORF523/ORF523_Lec6.pdf
 """
 
-
 def matching_min_vertex_cover(graph: dict) -> set:
     """
     APX Algorithm for min Vertex Cover using Matching Approach
@@ -35,7 +34,6 @@ def matching_min_vertex_cover(graph: dict) -> set:
                 edges.discard(edge)
     return chosen_vertices
 
-
 def get_edges(graph: dict) -> set:
     """
     Return a set of couples that represents all of the edges.
@@ -51,7 +49,6 @@ def get_edges(graph: dict) -> set:
         for to_node in to_nodes:
             edges.add((from_node, to_node))
     return edges
-
 
 if __name__ == "__main__":
     import doctest
