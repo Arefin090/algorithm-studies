@@ -40,7 +40,6 @@ no_solution: Matrix = [
     [0, 0, 5, 2, 0, 6, 3, 0, 0],
 ]
 
-
 def is_safe(grid: Matrix, row: int, column: int, n: int) -> bool:
     """
     This function checks the grid to see if each row,
@@ -59,7 +58,6 @@ def is_safe(grid: Matrix, row: int, column: int, n: int) -> bool:
 
     return True
 
-
 def find_empty_location(grid: Matrix) -> tuple[int, int] | None:
     """
     This function finds an empty location so that we can assign a number
@@ -70,7 +68,6 @@ def find_empty_location(grid: Matrix) -> tuple[int, int] | None:
             if grid[i][j] == 0:
                 return i, j
     return None
-
 
 def sudoku(grid: Matrix) -> Matrix | None:
     """
@@ -108,7 +105,6 @@ def sudoku(grid: Matrix) -> Matrix | None:
 
     return None
 
-
 def print_solution(grid: Matrix) -> None:
     """
     A function to print the solution in the form
@@ -118,7 +114,6 @@ def print_solution(grid: Matrix) -> None:
         for cell in row:
             print(cell, end=" ")
         print()
-
 
 if __name__ == "__main__":
     # make a copy of grid so that you can compare with the unmodified grid
