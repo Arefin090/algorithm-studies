@@ -1,6 +1,5 @@
 # Tribonacci sequence using Dynamic Programming
 
-
 def tribonacci(num: int) -> list[int]:
     """
     Given a number, return first n Tribonacci Numbers.
@@ -16,7 +15,6 @@ def tribonacci(num: int) -> list[int]:
         dp[i] = dp[i - 1] + dp[i - 2] + dp[i - 3]
 
     return dp
-
 
 if __name__ == "__main__":
     import doctest
