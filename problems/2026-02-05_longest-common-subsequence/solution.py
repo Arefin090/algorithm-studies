@@ -5,7 +5,6 @@ order, but not necessarily continuous.
 Example:"abc", "abg" are subsequences of "abcdefgh".
 """
 
-
 def longest_common_subsequence(x: str, y: str):
     """
     Finds the longest common subsequence between two strings. Also returns the
@@ -80,7 +79,6 @@ def longest_common_subsequence(x: str, y: str):
             j -= 1
 
     return dp[m][n], seq
-
 
 if __name__ == "__main__":
     a = "AGGTAB"
