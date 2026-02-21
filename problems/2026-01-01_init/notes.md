@@ -16,6 +16,8 @@
 
 - Alternative: iterative vs recursive approach
 
+- Alternative: iterative vs recursive approach
+
 - Optimization: early termination condition
 
 - Comparison with similar algorithms
