@@ -9,7 +9,6 @@ More info:
     https://medium.com/trick-the-interviwer/regular-expression-matching-9972eb74c03
 """
 
-
 def recursive_match(text: str, pattern: str) -> bool:
     r"""
     Recursive matching algorithm.
@@ -47,7 +46,6 @@ def recursive_match(text: str, pattern: str) -> bool:
         )
 
     return False
-
 
 def dp_match(text: str, pattern: str) -> bool:
     r"""
@@ -91,7 +89,6 @@ def dp_match(text: str, pattern: str) -> bool:
                 dp[i][j] = False
 
     return dp[m][n]
-
 
 if __name__ == "__main__":
     import doctest
