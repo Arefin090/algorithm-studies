@@ -3,7 +3,6 @@ from __future__ import annotations
 from collections.abc import Iterator
 from dataclasses import dataclass
 
-
 @dataclass
 class Node:
     data: int
@@ -26,7 +25,6 @@ class Node:
         if self.left and self.right:
             return self.left.is_full() and self.right.is_full()
         return False
-
 
 @dataclass
 class BinaryTree:
@@ -102,7 +100,6 @@ class BinaryTree:
         False
         """
         return self.root.is_full()
-
 
 if __name__ == "__main__":
     import doctest
