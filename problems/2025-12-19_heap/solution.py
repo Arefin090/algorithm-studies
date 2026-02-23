@@ -4,7 +4,6 @@ from abc import abstractmethod
 from collections.abc import Iterable
 from typing import Protocol, TypeVar
 
-
 class Comparable(Protocol):
     @abstractmethod
     def __lt__(self: T, other: T) -> bool:
@@ -18,9 +17,7 @@ class Comparable(Protocol):
     def __eq__(self: T, other: object) -> bool:
         pass
 
-
 T = TypeVar("T", bound=Comparable)
-
 
 class Heap[T: Comparable]:
     """A Max Heap Implementation
@@ -236,7 +233,6 @@ class Heap[T: Comparable]:
             self.heap_size -= 1
             self.max_heapify(0)
         self.heap_size = size
-
 
 if __name__ == "__main__":
     import doctest
