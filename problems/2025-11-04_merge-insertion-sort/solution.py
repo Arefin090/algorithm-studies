@@ -13,7 +13,6 @@ python3 merge_insertion_sort.py
 
 from __future__ import annotations
 
-
 def binary_search_insertion(sorted_list, item):
     """
     >>> binary_search_insertion([1, 2, 7, 9, 10], 4)
@@ -34,7 +33,6 @@ def binary_search_insertion(sorted_list, item):
     sorted_list.insert(left, item)
     return sorted_list
 
-
 def merge(left, right):
     """
     >>> merge([[1, 6], [9, 10]], [[2, 3], [4, 5], [7, 8]])
@@ -48,7 +46,6 @@ def merge(left, right):
             result.append(right.pop(0))
     return result + left + right
 
-
 def sortlist_2d(list_2d):
     """
     >>> sortlist_2d([[9, 10], [1, 6], [7, 8], [2, 3], [4, 5]])
@@ -59,7 +56,6 @@ def sortlist_2d(list_2d):
         return list_2d
     middle = length // 2
     return merge(sortlist_2d(list_2d[:middle]), sortlist_2d(list_2d[middle:]))
-
 
 def merge_insertion_sort(collection: list[int]) -> list[int]:
     """Pure implementation of merge-insertion sort algorithm in Python
@@ -192,7 +188,6 @@ def merge_insertion_sort(collection: list[int]) -> list[int]:
             result = result[: i + 1] + binary_search_insertion(result[i + 1 :], pivot)
 
     return result
-
 
 if __name__ == "__main__":
     user_input = input("Enter numbers separated by a comma:\n").strip()
