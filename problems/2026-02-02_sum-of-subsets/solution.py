@@ -7,7 +7,6 @@ Summation of the chosen numbers must be equal to given number M and one number
 can be used only once.
 """
 
-
 def generate_sum_of_subsets_solutions(nums: list[int], max_sum: int) -> list[list[int]]:
     """
     The main function. For list of numbers 'nums' find the subsets with sum
@@ -27,7 +26,6 @@ def generate_sum_of_subsets_solutions(nums: list[int], max_sum: int) -> list[lis
     remaining_nums_sum = sum(nums)
     create_state_space_tree(nums, max_sum, num_index, path, result, remaining_nums_sum)
     return result
-
 
 def create_state_space_tree(
     nums: list[int],
@@ -73,7 +71,6 @@ def create_state_space_tree(
             result,
             remaining_nums_sum - nums[index],
         )
-
 
 if __name__ == "__main__":
     import doctest
