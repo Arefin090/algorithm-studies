@@ -14,6 +14,8 @@
 
 ## Personal Notes
 
+- Edge case: empty input handling
+
 - Optimization: early termination condition
 
 - Performance: best/average/worst case analysis
