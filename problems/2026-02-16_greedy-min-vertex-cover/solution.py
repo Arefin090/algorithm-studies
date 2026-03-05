@@ -8,7 +8,6 @@ URL: https://cs.stackexchange.com/questions/129017/greedy-algorithm-for-vertex-c
 
 import heapq
 
-
 def greedy_min_vertex_cover(graph: dict) -> set[int]:
     """
     Greedy APX Algorithm for min Vertex Cover
@@ -53,7 +52,6 @@ def greedy_min_vertex_cover(graph: dict) -> set[int]:
         # re-order the queue
         heapq.heapify(queue)
     return chosen_vertices
-
 
 if __name__ == "__main__":
     import doctest
