@@ -1,6 +1,5 @@
 from typing import Any
 
-
 def double_sort(collection: list[Any]) -> list[Any]:
     """This sorting algorithm sorts an array using the principle of bubble sort,
     but does it both from left to right and right to left.
@@ -35,7 +34,6 @@ def double_sort(collection: list[Any]) -> list[Any]:
                     collection[no_of_elements - 1 - j],
                 )
     return collection
-
 
 if __name__ == "__main__":
     # allow the user to input the elements of the list on one line
