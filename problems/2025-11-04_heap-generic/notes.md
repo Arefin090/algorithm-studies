@@ -14,6 +14,8 @@
 
 ## Personal Notes
 
+- Comparison with similar algorithms
+
 - Implementation variant in different languages
 
 - Comparison with similar algorithms
