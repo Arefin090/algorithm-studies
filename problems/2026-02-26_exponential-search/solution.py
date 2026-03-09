@@ -15,7 +15,6 @@ python3 exponential_search.py
 
 from __future__ import annotations
 
-
 def binary_search_by_recursion(
     sorted_collection: list[int], item: int, left: int = 0, right: int = -1
 ) -> int:
@@ -56,7 +55,6 @@ def binary_search_by_recursion(
     else:
         return binary_search_by_recursion(sorted_collection, item, midpoint + 1, right)
 
-
 def exponential_search(sorted_collection: list[int], item: int) -> int:
     """
     Pure implementation of an exponential search algorithm in Python.
@@ -95,7 +93,6 @@ def exponential_search(sorted_collection: list[int], item: int) -> int:
     left = bound // 2
     right = min(bound, len(sorted_collection) - 1)
     return binary_search_by_recursion(sorted_collection, item, left, right)
-
 
 if __name__ == "__main__":
     import doctest
