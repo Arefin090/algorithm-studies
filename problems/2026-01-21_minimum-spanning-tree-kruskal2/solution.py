@@ -4,14 +4,12 @@ from typing import TypeVar
 
 T = TypeVar("T")
 
-
 class DisjointSetTreeNode[T]:
     # Disjoint Set Node to store the parent and rank
     def __init__(self, data: T) -> None:
         self.data = data
         self.parent = self
         self.rank = 0
-
 
 class DisjointSetTree[T]:
     # Disjoint Set DataStructure
@@ -44,7 +42,6 @@ class DisjointSetTree[T]:
     def union(self, data1: T, data2: T) -> None:
         # merge 2 disjoint sets
         self.link(self.find_set(data1), self.find_set(data2))
-
 
 class GraphUndirectedWeighted[T]:
     def __init__(self) -> None:
