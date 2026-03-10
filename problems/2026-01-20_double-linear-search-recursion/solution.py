@@ -28,7 +28,6 @@ def search(list_data: list, key: int, left: int = 0, right: int = 0) -> int:
     else:
         return search(list_data, key, left + 1, right - 1)
 
-
 if __name__ == "__main__":
     import doctest
 
