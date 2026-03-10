@@ -16,6 +16,8 @@
 
 - Edge case: empty input handling
 
+- Edge case: empty input handling
+
 - Real-world application in search engines
 
 - Alternative: iterative vs recursive approach
