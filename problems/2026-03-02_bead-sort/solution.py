@@ -3,7 +3,6 @@ Bead sort only works for sequences of non-negative integers.
 https://en.wikipedia.org/wiki/Bead_sort
 """
 
-
 def bead_sort(sequence: list) -> list:
     """
     >>> bead_sort([6, 11, 12, 4, 1, 5])
@@ -36,7 +35,6 @@ def bead_sort(sequence: list) -> list:
                 sequence[i] -= rod_upper - rod_lower
                 sequence[i + 1] += rod_upper - rod_lower
     return sequence
-
 
 if __name__ == "__main__":
     assert bead_sort([5, 4, 3, 2, 1]) == [1, 2, 3, 4, 5]
