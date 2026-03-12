@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-
 class Graph:
     def __init__(self, vertices: int) -> None:
         """
@@ -18,7 +17,7 @@ class Graph:
     def print_solution(self, distances_from_source: list[int]) -> None:
         """
         >>> Graph(0).print_solution([])  # doctest: +NORMALIZE_WHITESPACE
-        Vertex 	 Distance from Source
+        Vertex      Distance from Source
         """
         print("Vertex \t Distance from Source")
         for vertex in range(self.vertices):
@@ -53,10 +52,10 @@ class Graph:
 
         >>> Graph(4).dijkstra(1)  # doctest: +NORMALIZE_WHITESPACE
         Vertex  Distance from Source
-        0 		 10000000
-        1 		 0
-        2 		 10000000
-        3 		 10000000
+        0          10000000
+        1          0
+        2          10000000
+        3          10000000
         """
 
         distances = [int(1e7)] * self.vertices  # distances from the source
@@ -80,7 +79,6 @@ class Graph:
                     distances[v] = distances[u] + self.graph[u][v]
 
         self.print_solution(distances)
-
 
 if __name__ == "__main__":
     graph = Graph(9)
