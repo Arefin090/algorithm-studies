@@ -12,7 +12,6 @@ from __future__ import annotations
 
 solution = []
 
-
 def is_safe(board: list[list[int]], row: int, column: int) -> bool:
     """
     This function returns a boolean value True if it is safe to place a queen there
@@ -51,7 +50,6 @@ def is_safe(board: list[list[int]], row: int, column: int) -> bool:
         )
     )
 
-
 def solve(board: list[list[int]], row: int) -> bool:
     """
     This function creates a state space tree and calls the safe function until it
@@ -80,7 +78,6 @@ def solve(board: list[list[int]], row: int) -> bool:
             board[row][i] = 0
     return False
 
-
 def printboard(board: list[list[int]]) -> None:
     """
     Prints the boards that have a successful combination.
@@ -92,7 +89,6 @@ def printboard(board: list[list[int]]) -> None:
             else:
                 print(".", end=" ")  # Empty cell
         print()
-
 
 # Number of queens (e.g., n=8 for an 8x8 board)
 n = 8
