@@ -14,7 +14,6 @@ from collections.abc import Iterator
 from dataclasses import dataclass
 from typing import Any, Self
 
-
 @dataclass
 class Node:
     """
@@ -23,7 +22,6 @@ class Node:
 
     data: Any
     next_node: Self | None = None
-
 
 @dataclass
 class LinkedList:
@@ -123,7 +121,6 @@ class LinkedList:
                 return True
 
         return False
-
 
 if __name__ == "__main__":
     import doctest
