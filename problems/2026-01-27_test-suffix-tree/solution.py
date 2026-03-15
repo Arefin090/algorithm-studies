@@ -10,7 +10,6 @@ import unittest
 
 from data_structures.suffix_tree.suffix_tree import SuffixTree
 
-
 class TestSuffixTree(unittest.TestCase):
     def setUp(self) -> None:
         """Set up the initial conditions for each test."""
@@ -53,7 +52,6 @@ class TestSuffixTree(unittest.TestCase):
                 assert self.suffix_tree.search(substring), (
                     f"Substring '{substring}' should be found."
                 )
-
 
 if __name__ == "__main__":
     unittest.main()
