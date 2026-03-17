@@ -56,7 +56,6 @@ class FlowNetwork:
     def set_maximum_flow_algorithm(self, algorithm):
         self.maximum_flow_algorithm = algorithm(self)
 
-
 class FlowNetworkAlgorithmExecutor:
     def __init__(self, flow_network):
         self.flow_network = flow_network
@@ -77,7 +76,6 @@ class FlowNetworkAlgorithmExecutor:
     def _algorithm(self):
         pass
 
-
 class MaximumFlowAlgorithmExecutor(FlowNetworkAlgorithmExecutor):
     def __init__(self, flow_network):
         super().__init__(flow_network)
@@ -89,7 +87,6 @@ class MaximumFlowAlgorithmExecutor(FlowNetworkAlgorithmExecutor):
             raise Exception("You should execute algorithm before using its result!")
 
         return self.maximum_flow
-
 
 class PushRelabelExecutor(MaximumFlowAlgorithmExecutor):
     def __init__(self, flow_network):
@@ -168,7 +165,6 @@ class PushRelabelExecutor(MaximumFlowAlgorithmExecutor):
 
         if min_height is not None:
             self.heights[vertex_index] = min_height + 1
-
 
 if __name__ == "__main__":
     entrances = [0]
