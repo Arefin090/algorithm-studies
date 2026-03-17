@@ -107,7 +107,6 @@ class MaxFenwickTree:
                 right -= 1
         return result
 
-
 if __name__ == "__main__":
     import doctest
 
