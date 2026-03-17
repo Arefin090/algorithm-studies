@@ -54,7 +54,6 @@ def match_word_pattern(pattern: str, input_string: str) -> bool:
     str_map: dict[str, str] = {}
     return backtrack(0, 0)
 
-
 if __name__ == "__main__":
     import doctest
 
