@@ -14,7 +14,6 @@ Enter an Infix Equation = a + b ^c
          a+b^c (Infix) ->  +a^bc (Prefix)
 """
 
-
 def infix_2_postfix(infix: str) -> str:
     """
     >>> infix_2_postfix("a+b^c")  # doctest: +NORMALIZE_WHITESPACE
@@ -123,7 +122,6 @@ def infix_2_postfix(infix: str) -> str:
 
     return "".join(post_fix)  # return Postfix as str
 
-
 def infix_2_prefix(infix: str) -> str:
     """
     >>> infix_2_prefix("a+b^c")  # doctest: +NORMALIZE_WHITESPACE
@@ -180,7 +178,6 @@ def infix_2_prefix(infix: str) -> str:
 
     # call infix_2_postfix on Infix, return reverse of Postfix
     return (infix_2_postfix("".join(reversed_infix)))[::-1]
-
 
 if __name__ == "__main__":
     from doctest import testmod
