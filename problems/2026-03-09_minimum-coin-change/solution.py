@@ -40,7 +40,6 @@ Following is minimal   change for 456 :
 100 100 100 100 5 5 5 5 5 5 5 5 5 5 5 1
 """
 
-
 def find_minimum_change(denominations: list[int], value: str) -> list[int]:
     """
     Find the minimum change from the given denominations and value
@@ -68,7 +67,6 @@ def find_minimum_change(denominations: list[int], value: str) -> list[int]:
             answer.append(denomination)  # Append the "answers" array
 
     return answer
-
 
 # Driver Code
 if __name__ == "__main__":
