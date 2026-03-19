@@ -22,7 +22,6 @@ Approach:
         2. Don't include the element in our set of chosen elements.
 """
 
-
 def combination_sum_iv(array: list[int], target: int) -> int:
     """
     Function checks the all possible combinations, and returns the count
@@ -40,7 +39,6 @@ def combination_sum_iv(array: list[int], target: int) -> int:
         return sum(count_of_possible_combinations(target - item) for item in array)
 
     return count_of_possible_combinations(target)
-
 
 def combination_sum_iv_dp_array(array: list[int], target: int) -> int:
     """
@@ -71,7 +69,6 @@ def combination_sum_iv_dp_array(array: list[int], target: int) -> int:
     dp_array = [-1] * (target + 1)
     return count_of_possible_combinations_with_dp_array(target, dp_array)
 
-
 def combination_sum_iv_bottom_up(n: int, array: list[int], target: int) -> int:
     """
     Function checks the all possible combinations with using bottom up approach,
@@ -91,7 +88,6 @@ def combination_sum_iv_bottom_up(n: int, array: list[int], target: int) -> int:
                 dp_array[i] += dp_array[i - array[j]]
 
     return dp_array[target]
-
 
 if __name__ == "__main__":
     import doctest
