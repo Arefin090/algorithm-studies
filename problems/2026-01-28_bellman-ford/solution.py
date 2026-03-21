@@ -1,11 +1,9 @@
 from __future__ import annotations
 
-
 def print_distance(distance: list[float], src):
     print(f"Vertex\tShortest Distance from vertex {src}")
     for i, d in enumerate(distance):
         print(f"{i}\t\t{d}")
-
 
 def check_negative_cycle(
     graph: list[dict[str, int]], distance: list[float], edge_count: int
@@ -15,7 +13,6 @@ def check_negative_cycle(
         if distance[u] != float("inf") and distance[u] + w < distance[v]:
             return True
     return False
-
 
 def bellman_ford(
     graph: list[dict[str, int]], vertex_count: int, edge_count: int, src: int
@@ -48,7 +45,6 @@ def bellman_ford(
         raise Exception("Negative cycle found")
 
     return distance
-
 
 if __name__ == "__main__":
     import doctest
