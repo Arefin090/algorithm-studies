@@ -2,7 +2,6 @@ from __future__ import annotations
 
 import math
 
-
 def default_matrix_multiplication(a: list, b: list) -> list:
     """
     Multiplication only for 2x2 matrices
@@ -15,20 +14,17 @@ def default_matrix_multiplication(a: list, b: list) -> list:
     ]
     return new_matrix
 
-
 def matrix_addition(matrix_a: list, matrix_b: list):
     return [
         [matrix_a[row][col] + matrix_b[row][col] for col in range(len(matrix_a[row]))]
         for row in range(len(matrix_a))
     ]
 
-
 def matrix_subtraction(matrix_a: list, matrix_b: list):
     return [
         [matrix_a[row][col] - matrix_b[row][col] for col in range(len(matrix_a[row]))]
         for row in range(len(matrix_a))
     ]
-
 
 def split_matrix(a: list) -> tuple[list, list, list, list]:
     """
@@ -62,14 +58,11 @@ def split_matrix(a: list) -> tuple[list, list, list, list]:
 
     return top_left, top_right, bot_left, bot_right
 
-
 def matrix_dimensions(matrix: list) -> tuple[int, int]:
     return len(matrix), len(matrix[0])
 
-
 def print_matrix(matrix: list) -> None:
     print("\n".join(str(line) for line in matrix))
-
 
 def actual_strassen(matrix_a: list, matrix_b: list) -> list:
     """
@@ -102,7 +95,6 @@ def actual_strassen(matrix_a: list, matrix_b: list) -> list:
     for i in range(len(bot_right)):
         new_matrix.append(bot_left[i] + bot_right[i])
     return new_matrix
-
 
 def strassen(matrix1: list, matrix2: list) -> list:
     """
@@ -153,7 +145,6 @@ def strassen(matrix1: list, matrix2: list) -> list:
         else:
             final_matrix.pop()
     return final_matrix
-
 
 if __name__ == "__main__":
     matrix1 = [
