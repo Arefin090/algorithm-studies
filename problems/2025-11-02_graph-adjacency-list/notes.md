@@ -14,6 +14,8 @@
 
 ## Personal Notes
 
+- Real-world application in search engines
+
 - Implementation variant in different languages
 
 - Alternative: iterative vs recursive approach
