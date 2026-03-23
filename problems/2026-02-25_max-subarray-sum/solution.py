@@ -12,7 +12,6 @@ Reference: https://en.wikipedia.org/wiki/Maximum_subarray_problem
 
 from collections.abc import Sequence
 
-
 def max_subarray_sum(
     arr: Sequence[float], allow_empty_subarrays: bool = False
 ) -> float:
@@ -50,7 +49,6 @@ def max_subarray_sum(
         max_sum = max(max_sum, curr_sum)
 
     return max_sum
-
 
 if __name__ == "__main__":
     from doctest import testmod
