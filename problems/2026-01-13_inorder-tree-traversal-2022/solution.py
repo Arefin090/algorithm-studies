@@ -4,7 +4,6 @@ Author: Gurneet Singh
 https://www.geeksforgeeks.org/tree-traversals-inorder-preorder-and-postorder/
 """
 
-
 class BinaryTreeNode:
     """Defining the structure of BinaryTreeNode"""
 
@@ -12,7 +11,6 @@ class BinaryTreeNode:
         self.data = data
         self.left_child: BinaryTreeNode | None = None
         self.right_child: BinaryTreeNode | None = None
-
 
 def insert(node: BinaryTreeNode | None, new_value: int) -> BinaryTreeNode | None:
     """
@@ -42,7 +40,6 @@ def insert(node: BinaryTreeNode | None, new_value: int) -> BinaryTreeNode | None
         node.right_child = insert(node.right_child, new_value)
     return node
 
-
 def inorder(node: None | BinaryTreeNode) -> list[int]:  # if node is None,return
     """
     >>> inorder(make_tree())
@@ -56,7 +53,6 @@ def inorder(node: None | BinaryTreeNode) -> list[int]:  # if node is None,return
         inorder_array = []
     return inorder_array
 
-
 def make_tree() -> BinaryTreeNode | None:
     root = insert(None, 15)
     insert(root, 10)
@@ -67,13 +63,11 @@ def make_tree() -> BinaryTreeNode | None:
     insert(root, 60)
     return root
 
-
 def main() -> None:
     # main function
     root = make_tree()
     print("Printing values of binary search tree in Inorder Traversal.")
     inorder(root)
-
 
 if __name__ == "__main__":
     import doctest
