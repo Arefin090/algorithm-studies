@@ -15,14 +15,12 @@ from collections.abc import Iterator
 
 import pytest
 
-
 class Node:
     def __init__(self, label: int, parent: Node | None) -> None:
         self.label = label
         self.parent = parent
         self.left: Node | None = None
         self.right: Node | None = None
-
 
 class BinarySearchTree:
     def __init__(self) -> None:
@@ -274,7 +272,6 @@ class BinarySearchTree:
             yield node
             yield from self._preorder_traversal(node.left)
             yield from self._preorder_traversal(node.right)
-
 
 class BinarySearchTreeTest(unittest.TestCase):
     @staticmethod
@@ -542,7 +539,6 @@ class BinarySearchTreeTest(unittest.TestCase):
         preorder_traversal_nodes = [i.label for i in t.preorder_traversal()]
         assert preorder_traversal_nodes == [8, 3, 1, 6, 4, 5, 7, 10, 14, 13]
 
-
 def binary_search_tree_example() -> None:
     r"""
     Example
@@ -635,7 +631,6 @@ def binary_search_tree_example() -> None:
 
     print("Max. label:", t.get_max_label())
     print("Min. label:", t.get_min_label())
-
 
 if __name__ == "__main__":
     binary_search_tree_example()
