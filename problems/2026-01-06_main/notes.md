@@ -14,6 +14,8 @@
 
 ## Personal Notes
 
+- Alternative: iterative vs recursive approach
+
 - Comparison with similar algorithms
 
 - Alternative: iterative vs recursive approach
