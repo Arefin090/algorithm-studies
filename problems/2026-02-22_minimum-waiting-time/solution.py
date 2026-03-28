@@ -12,7 +12,6 @@ sum of all remaining query times, and returns the total waiting time. A doctest
 ensures that the function produces the correct output.
 """
 
-
 def minimum_waiting_time(queries: list[int]) -> int:
     """
     This function takes a list of query times and returns the minimum waiting time
@@ -40,7 +39,6 @@ def minimum_waiting_time(queries: list[int]) -> int:
     if n in (0, 1):
         return 0
     return sum(query * (n - i - 1) for i, query in enumerate(sorted(queries)))
-
 
 if __name__ == "__main__":
     import doctest
