@@ -12,7 +12,6 @@ neighbors.
 
 from dataclasses import dataclass
 
-
 @dataclass
 class Node:
     value: int = 0
@@ -31,7 +30,6 @@ class Node:
         True
         """
         return id(self)
-
 
 def clone_graph(node: Node | None) -> Node | None:
     """
@@ -70,7 +68,6 @@ def clone_graph(node: Node | None) -> Node | None:
             clone.neighbors.append(cloned_neighbor)
 
     return originals_to_clones[node]
-
 
 if __name__ == "__main__":
     import doctest
