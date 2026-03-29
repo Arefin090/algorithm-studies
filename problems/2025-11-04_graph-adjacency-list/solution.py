@@ -27,7 +27,6 @@ import pytest
 
 T = TypeVar("T")
 
-
 class GraphAdjacencyList[T]:
     def __init__(
         self, vertices: list[T], edges: list[list[T]], directed: bool = True
@@ -188,7 +187,6 @@ class GraphAdjacencyList[T]:
 
     def __repr__(self) -> str:
         return pformat(self.adj_list)
-
 
 class TestGraphAdjacencyList(unittest.TestCase):
     def __assert_graph_edge_exists_check(
@@ -591,7 +589,6 @@ class TestGraphAdjacencyList(unittest.TestCase):
             undirected_graph.contains_edge(103, 102)
         with pytest.raises(ValueError):
             directed_graph.contains_edge(103, 102)
-
 
 if __name__ == "__main__":
     unittest.main()
