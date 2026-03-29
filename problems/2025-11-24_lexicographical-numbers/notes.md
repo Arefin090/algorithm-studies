@@ -14,6 +14,8 @@
 
 ## Personal Notes
 
+- Memory usage: O(1) space optimization possible
+
 - Implementation variant in different languages
 
 - Real-world application in search engines
