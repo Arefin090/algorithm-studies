@@ -3,12 +3,10 @@ from __future__ import annotations
 from collections.abc import Iterable, Iterator
 from dataclasses import dataclass
 
-
 @dataclass
 class Node:
     data: int
     next_node: Node | None = None
-
 
 class LinkedList:
     def __init__(self, ints: Iterable[int]) -> None:
@@ -105,7 +103,6 @@ class LinkedList:
             previous_node = current_node
             length -= group_size
         self.head = dummy_head.next_node
-
 
 if __name__ == "__main__":
     import doctest
