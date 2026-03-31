@@ -17,7 +17,6 @@ from __future__ import annotations
 
 import copy
 
-
 def longest_subsequence(array: list[int]) -> list[int]:
     """
     Some examples
@@ -64,7 +63,6 @@ def longest_subsequence(array: list[int]) -> list[int]:
             result = longest_increasing_subsequence[i]
 
     return result
-
 
 if __name__ == "__main__":
     import doctest
