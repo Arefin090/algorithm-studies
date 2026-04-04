@@ -28,7 +28,6 @@ G = {
     "F": ["C", "E"],
 }
 
-
 def breadth_first_search(graph: dict, start: str) -> list[str]:
     """
     Implementation of breadth first search using queue.Queue.
@@ -49,7 +48,6 @@ def breadth_first_search(graph: dict, start: str) -> list[str]:
                 queue.put(w)
     return result
 
-
 def breadth_first_search_with_deque(graph: dict, start: str) -> list[str]:
     """
     Implementation of breadth first search using collection.queue.
@@ -69,13 +67,11 @@ def breadth_first_search_with_deque(graph: dict, start: str) -> list[str]:
                 queue.append(child)
     return result
 
-
 def benchmark_function(name: str) -> None:
     setup = f"from __main__ import G, {name}"
     number = 10000
     res = timeit(f"{name}(G, 'A')", setup=setup, number=number)
     print(f"{name:<35} finished {number} runs in {res:.5f} seconds")
-
 
 if __name__ == "__main__":
     import doctest
