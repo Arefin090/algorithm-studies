@@ -14,6 +14,8 @@
 
 ## Personal Notes
 
+- Memory usage: O(1) space optimization possible
+
 - Comparison with similar algorithms
 
 - Alternative: iterative vs recursive approach
