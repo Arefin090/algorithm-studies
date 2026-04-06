@@ -14,6 +14,8 @@
 
 ## Personal Notes
 
+- Implementation variant in different languages
+
 - Optimization: early termination condition
 
 - Edge case: empty input handling
