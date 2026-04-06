@@ -1,6 +1,5 @@
 # https://en.wikipedia.org/wiki/Fizz_buzz#Programming
 
-
 def fizz_buzz(number: int, iterations: int) -> str:
     """
     | Plays FizzBuzz.
@@ -57,7 +56,6 @@ def fizz_buzz(number: int, iterations: int) -> str:
         number += 1
         out += " "
     return out
-
 
 if __name__ == "__main__":
     import doctest
