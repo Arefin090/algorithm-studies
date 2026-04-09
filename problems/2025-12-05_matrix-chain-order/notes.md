@@ -14,6 +14,8 @@
 
 ## Personal Notes
 
+- Optimization: early termination condition
+
 - Comparison with similar algorithms
 
 - Comparison with similar algorithms
