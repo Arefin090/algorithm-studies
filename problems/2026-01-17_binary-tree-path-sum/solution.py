@@ -3,12 +3,10 @@ Given the root of a binary tree and an integer target,
 find the number of paths where the sum of the values
 along the path equals target.
 
-
 Leetcode reference: https://leetcode.com/problems/path-sum-iii/
 """
 
 from __future__ import annotations
-
 
 class Node:
     """
@@ -20,7 +18,6 @@ class Node:
         self.left: Node | None = None
         self.right: Node | None = None
 
-
 class BinaryTreePathSum:
     r"""
     The below tree looks like this
@@ -31,7 +28,6 @@ class BinaryTreePathSum:
       3   2    11
      / \   \
     3  -2   1
-
 
     >>> tree = Node(10)
     >>> tree.left = Node(5)
@@ -100,7 +96,6 @@ class BinaryTreePathSum:
         self.path_sum(node.right)
 
         return self.paths
-
 
 if __name__ == "__main__":
     import doctest
