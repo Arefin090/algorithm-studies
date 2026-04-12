@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-
 def get_valid_pos(position: tuple[int, int], n: int) -> list[tuple[int, int]]:
     """
     Find all the valid positions a knight can move to from the current position.
@@ -31,7 +30,6 @@ def get_valid_pos(position: tuple[int, int], n: int) -> list[tuple[int, int]]:
 
     return permissible_positions
 
-
 def is_complete(board: list[list[int]]) -> bool:
     """
     Check if the board (matrix) has been completely filled with non-zero values.
@@ -44,7 +42,6 @@ def is_complete(board: list[list[int]]) -> bool:
     """
 
     return not any(elem == 0 for row in board for elem in row)
-
 
 def open_knight_tour_helper(
     board: list[list[int]], pos: tuple[int, int], curr: int
@@ -66,7 +63,6 @@ def open_knight_tour_helper(
             board[y][x] = 0
 
     return False
-
 
 def open_knight_tour(n: int) -> list[list[int]]:
     """
@@ -93,7 +89,6 @@ def open_knight_tour(n: int) -> list[list[int]]:
 
     msg = f"Open Knight Tour cannot be performed on a board of size {n}"
     raise ValueError(msg)
-
 
 if __name__ == "__main__":
     import doctest
