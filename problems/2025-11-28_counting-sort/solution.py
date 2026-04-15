@@ -8,7 +8,6 @@ For manual testing run:
 python counting_sort.py
 """
 
-
 def counting_sort(collection):
     """Pure implementation of counting sort algorithm in Python
     :param collection: some mutable ordered collection with heterogeneous
@@ -55,14 +54,12 @@ def counting_sort(collection):
 
     return ordered
 
-
 def counting_sort_string(string):
     """
     >>> counting_sort_string("thisisthestring")
     'eghhiiinrsssttt'
     """
     return "".join([chr(i) for i in counting_sort([ord(c) for c in string])])
-
 
 if __name__ == "__main__":
     # Test string sort
