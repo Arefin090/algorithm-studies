@@ -14,6 +14,8 @@
 
 ## Personal Notes
 
+- Implementation variant in different languages
+
 - Alternative: iterative vs recursive approach
 
 - Memory usage: O(1) space optimization possible
