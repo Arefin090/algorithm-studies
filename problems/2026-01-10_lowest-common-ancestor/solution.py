@@ -5,7 +5,6 @@ from __future__ import annotations
 
 from queue import Queue
 
-
 def swap(a: int, b: int) -> tuple[int, int]:
     """
     Return a tuple (b, a) when given two integers a and b
@@ -22,7 +21,6 @@ def swap(a: int, b: int) -> tuple[int, int]:
     b ^= a
     a ^= b
     return a, b
-
 
 def create_sparse(max_node: int, parent: list[list[int]]) -> list[list[int]]:
     """
@@ -51,7 +49,6 @@ def create_sparse(max_node: int, parent: list[list[int]]) -> list[list[int]]:
             parent[j][i] = parent[j - 1][parent[j - 1][i]]
         j += 1
     return parent
-
 
 # returns lca of node u,v
 def lowest_common_ancestor(
@@ -89,7 +86,6 @@ def lowest_common_ancestor(
     # returning longest common ancestor of u,v
     return parent[0][u]
 
-
 # runs a breadth first search from root node of the tree
 def breadth_first_search(
     level: list[int],
@@ -112,7 +108,6 @@ def breadth_first_search(
     >>> parent[0]
     [0, 0, 1, 1, 2, 2, 3]
 
-
     >>> level = [-1] * 2
     >>> parent = [[0] * 2 for _ in range(20)]
     >>> graph = {1: []}
@@ -134,7 +129,6 @@ def breadth_first_search(
                 q.put(v)
                 parent[0][v] = u
     return level, parent
-
 
 def main() -> None:
     max_node = 13
@@ -165,7 +159,6 @@ def main() -> None:
     print("LCA of node 6 and 7 is: ", lowest_common_ancestor(6, 7, level, parent))
     print("LCA of node 4 and 12 is: ", lowest_common_ancestor(4, 12, level, parent))
     print("LCA of node 8 and 8 is: ", lowest_common_ancestor(8, 8, level, parent))
-
 
 if __name__ == "__main__":
     main()
