@@ -28,7 +28,6 @@ analyze graph centrality.
 
 import numpy as np
 
-
 def validate_adjacency_list(graph: list[list[int | None]]) -> None:
     """Validates the adjacency list format for the graph.
 
@@ -66,7 +65,6 @@ def validate_adjacency_list(graph: list[list[int | None]]) -> None:
                     f"adjacency list."
                 )
                 raise ValueError(invalid_neighbor_message)
-
 
 def lanczos_iteration(
     graph: list[list[int | None]], num_eigenvectors: int
@@ -129,7 +127,6 @@ def lanczos_iteration(
             tridiagonal_matrix[iter_index + 1, iter_index] = prev_beta
     return tridiagonal_matrix, orthonormal_basis
 
-
 def multiply_matrix_vector(
     graph: list[list[int | None]], vector: np.ndarray
 ) -> np.ndarray:
@@ -161,7 +158,6 @@ def multiply_matrix_vector(
             result[node_index] += vector[neighbor_index]
     return result
 
-
 def find_lanczos_eigenvectors(
     graph: list[list[int | None]], num_eigenvectors: int
 ) -> tuple[np.ndarray, np.ndarray]:
@@ -192,7 +188,6 @@ def find_lanczos_eigenvectors(
     eigenvalues, eigenvectors = np.linalg.eigh(tridiagonal_matrix)
     return eigenvalues[::-1], np.dot(orthonormal_basis, eigenvectors[:, ::-1])
 
-
 def main() -> None:
     """
     Main driver function for testing the implementation with doctests.
@@ -200,7 +195,6 @@ def main() -> None:
     import doctest
 
     doctest.testmod()
-
 
 if __name__ == "__main__":
     main()
