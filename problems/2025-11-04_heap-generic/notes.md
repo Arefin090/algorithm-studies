@@ -14,6 +14,8 @@
 
 ## Personal Notes
 
+- Performance: best/average/worst case analysis
+
 - Comparison with similar algorithms
 
 - Implementation variant in different languages
