@@ -16,4 +16,4 @@ O(n) time complexity - Recurses through :meth:`depth_first_search`
 
 ---
 
-*Automatically fetched on 2026-04-21 06:46:04*
+*Automatically fetched on 2026-04-21 16:25:39*
