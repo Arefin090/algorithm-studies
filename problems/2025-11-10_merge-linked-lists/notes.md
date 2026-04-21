@@ -16,6 +16,8 @@
 
 - Implementation variant in different languages
 
+- Implementation variant in different languages
+
 - Memory usage: O(1) space optimization possible
 
 - Comparison with similar algorithms
