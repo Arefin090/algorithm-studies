@@ -14,6 +14,8 @@
 
 ## Personal Notes
 
+- Performance: best/average/worst case analysis
+
 - Implementation variant in different languages
 
 - Optimization: early termination condition
