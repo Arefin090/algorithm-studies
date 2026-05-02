@@ -36,7 +36,6 @@ OPERATORS = {
     "-": lambda p, q: p - q,
 }
 
-
 def parse_token(token: str | float) -> float | str:
     """
     Converts the given data to the appropriate number if it is indeed a number, else
@@ -59,7 +58,6 @@ def parse_token(token: str | float) -> float | str:
     except ValueError:
         msg = f"{token} is neither a number nor a valid operator"
         raise ValueError(msg)
-
 
 def evaluate(post_fix: list[str], verbose: bool = False) -> float:
     """
@@ -185,7 +183,6 @@ def evaluate(post_fix: list[str], verbose: bool = False) -> float:
     if len(stack) != 1:
         raise ArithmeticError("Input is not a valid postfix expression")
     return float(stack[0])
-
 
 if __name__ == "__main__":
     # Create a loop so that the user can evaluate postfix expressions multiple times
