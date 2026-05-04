@@ -1,9 +1,7 @@
 from collections import deque
 
-
 def _input(message):
     return input(message).strip().split(" ")
-
 
 def initialize_unweighted_directed_graph(
     node_count: int, edge_count: int
@@ -16,7 +14,6 @@ def initialize_unweighted_directed_graph(
         x, y = (int(i) for i in _input(f"Edge {e + 1}: <node1> <node2> "))
         graph[x].append(y)
     return graph
-
 
 def initialize_unweighted_undirected_graph(
     node_count: int, edge_count: int
@@ -31,7 +28,6 @@ def initialize_unweighted_undirected_graph(
         graph[y].append(x)
     return graph
 
-
 def initialize_weighted_undirected_graph(
     node_count: int, edge_count: int
 ) -> dict[int, list[tuple[int, int]]]:
@@ -44,7 +40,6 @@ def initialize_weighted_undirected_graph(
         graph[x].append((y, w))
         graph[y].append((x, w))
     return graph
-
 
 if __name__ == "__main__":
     n, m = (int(i) for i in _input("Number of nodes and edges: "))
@@ -64,7 +59,6 @@ if __name__ == "__main__":
         3: initialize_weighted_undirected_graph,
     }[graph_choice](n, m)
 
-
 """
 --------------------------------------------------------------------------------
     Depth First Search.
@@ -74,7 +68,6 @@ if __name__ == "__main__":
                 S - Traversal Stack
 --------------------------------------------------------------------------------
 """
-
 
 def dfs(g, s):
     """
@@ -99,7 +92,6 @@ def dfs(g, s):
         if not flag:
             _s.pop()
 
-
 """
 --------------------------------------------------------------------------------
     Breadth First Search.
@@ -109,7 +101,6 @@ def dfs(g, s):
                 Q - Traversal Stack
 --------------------------------------------------------------------------------
 """
-
 
 def bfs(g, s):
     """
@@ -133,7 +124,6 @@ def bfs(g, s):
                 q.append(v)
                 print(v)
 
-
 """
 --------------------------------------------------------------------------------
     Dijkstra's shortest path Algorithm
@@ -144,7 +134,6 @@ def bfs(g, s):
                 path - Preceding node in path
 --------------------------------------------------------------------------------
 """
-
 
 def dijk(g, s):
     """
@@ -178,13 +167,11 @@ def dijk(g, s):
         if key != s:
             print(value)
 
-
 """
 --------------------------------------------------------------------------------
     Topological Sort
 --------------------------------------------------------------------------------
 """
-
 
 def topo(g, ind=None, q=None):
     if q is None:
@@ -208,13 +195,11 @@ def topo(g, ind=None, q=None):
             q.append(w)
     topo(g, ind, q)
 
-
 """
 --------------------------------------------------------------------------------
     Reading an Adjacency matrix
 --------------------------------------------------------------------------------
 """
-
 
 def adjm():
     r"""
@@ -242,7 +227,6 @@ def adjm():
         a.append(tuple(map(int, input().strip().split())))
     return a, n
 
-
 """
 --------------------------------------------------------------------------------
     Floyd Warshall's algorithm
@@ -254,7 +238,6 @@ def adjm():
 
 --------------------------------------------------------------------------------
 """
-
 
 def floy(a_and_n):
     (a, n) = a_and_n
@@ -268,7 +251,6 @@ def floy(a_and_n):
                     path[i][k] = k
     print(dist)
 
-
 """
 --------------------------------------------------------------------------------
     Prim's MST Algorithm
@@ -279,7 +261,6 @@ def floy(a_and_n):
                 path - Preceding node in path
 --------------------------------------------------------------------------------
 """
-
 
 def prim(g, s):
     dist, known, path = {s: 0}, set(), {s: 0}
@@ -298,7 +279,6 @@ def prim(g, s):
                 path[v[0]] = u
     return dist
 
-
 """
 --------------------------------------------------------------------------------
     Accepting Edge list
@@ -308,7 +288,6 @@ def prim(g, s):
                 n - Number of Nodes
 --------------------------------------------------------------------------------
 """
-
 
 def edglist():
     r"""
@@ -336,7 +315,6 @@ def edglist():
         edges.append(tuple(map(int, input().split(" "))))
     return edges, n
 
-
 """
 --------------------------------------------------------------------------------
     Kruskal's MST Algorithm
@@ -345,7 +323,6 @@ def edglist():
         Vars :  s - Set of all nodes as unique disjoint sets (initially)
 --------------------------------------------------------------------------------
 """
-
 
 def krusk(e_and_n):
     """
@@ -369,7 +346,6 @@ def krusk(e_and_n):
                 s[j].update(s[i])
                 s.pop(i)
                 break
-
 
 def find_isolated_nodes(graph):
     """
