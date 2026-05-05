@@ -14,7 +14,6 @@ from __future__ import annotations
 
 import bisect
 
-
 def bisect_left(
     sorted_collection: list[int], item: int, lo: int = 0, hi: int = -1
 ) -> int:
@@ -56,7 +55,6 @@ def bisect_left(
 
     return lo
 
-
 def bisect_right(
     sorted_collection: list[int], item: int, lo: int = 0, hi: int = -1
 ) -> int:
@@ -97,7 +95,6 @@ def bisect_right(
 
     return lo
 
-
 def insort_left(
     sorted_collection: list[int], item: int, lo: int = 0, hi: int = -1
 ) -> None:
@@ -136,7 +133,6 @@ def insort_left(
     [0, 5, 7, 15, 10, 15]
     """
     sorted_collection.insert(bisect_left(sorted_collection, item, lo, hi), item)
-
 
 def insort_right(
     sorted_collection: list[int], item: int, lo: int = 0, hi: int = -1
@@ -177,7 +173,6 @@ def insort_right(
     """
     sorted_collection.insert(bisect_right(sorted_collection, item, lo, hi), item)
 
-
 def binary_search(sorted_collection: list[int], item: int) -> int:
     """Pure implementation of a binary search algorithm in Python
 
@@ -214,7 +209,6 @@ def binary_search(sorted_collection: list[int], item: int) -> int:
             left = midpoint + 1
     return -1
 
-
 def binary_search_std_lib(sorted_collection: list[int], item: int) -> int:
     """Pure implementation of a binary search algorithm in Python using stdlib
 
@@ -241,7 +235,6 @@ def binary_search_std_lib(sorted_collection: list[int], item: int) -> int:
     if index != len(sorted_collection) and sorted_collection[index] == item:
         return index
     return -1
-
 
 def binary_search_with_duplicates(sorted_collection: list[int], item: int) -> list[int]:
     """Pure implementation of a binary search algorithm in Python that supports
@@ -317,7 +310,6 @@ def binary_search_with_duplicates(sorted_collection: list[int], item: int) -> li
         return []
     return list(range(left, right))
 
-
 def binary_search_by_recursion(
     sorted_collection: list[int], item: int, left: int = 0, right: int = -1
 ) -> int:
@@ -357,7 +349,6 @@ def binary_search_by_recursion(
     else:
         return binary_search_by_recursion(sorted_collection, item, midpoint + 1, right)
 
-
 def exponential_search(sorted_collection: list[int], item: int) -> int:
     """Pure implementation of an exponential search algorithm in Python
     Resources used:
@@ -396,14 +387,12 @@ def exponential_search(sorted_collection: list[int], item: int) -> int:
         return -1
     return last_result
 
-
 searches = (  # Fastest to slowest...
     binary_search_std_lib,
     binary_search,
     exponential_search,
     binary_search_by_recursion,
 )
-
 
 if __name__ == "__main__":
     import doctest
