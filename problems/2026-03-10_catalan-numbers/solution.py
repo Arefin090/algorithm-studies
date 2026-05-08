@@ -26,7 +26,6 @@ Print all the Catalan numbers from 0 to n, n being the user input.
  *  [2] https://en.wikipedia.org/wiki/Catalan_number
 """
 
-
 def catalan_numbers(upper_limit: int) -> "list[int]":
     """
     Return a list of the Catalan number sequence from 0 through `upper_limit`.
@@ -55,7 +54,6 @@ def catalan_numbers(upper_limit: int) -> "list[int]":
             catalan_list[i] += catalan_list[j] * catalan_list[i - j - 1]
 
     return catalan_list
-
 
 if __name__ == "__main__":
     print("\n********* Catalan Numbers Using Dynamic Programming ************\n")
