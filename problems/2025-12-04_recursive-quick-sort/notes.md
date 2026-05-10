@@ -14,6 +14,8 @@
 
 ## Personal Notes
 
+- Memory usage: O(1) space optimization possible
+
 - Alternative: iterative vs recursive approach
 
 - Real-world application in search engines
