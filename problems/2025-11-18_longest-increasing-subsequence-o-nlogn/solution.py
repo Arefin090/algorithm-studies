@@ -6,7 +6,6 @@
 #############################
 from __future__ import annotations
 
-
 def ceil_index(v, left, right, key):
     while right - left > 1:
         middle = (left + right) // 2
@@ -15,7 +14,6 @@ def ceil_index(v, left, right, key):
         else:
             left = middle
     return right
-
 
 def longest_increasing_subsequence_length(v: list[int]) -> int:
     """
@@ -47,7 +45,6 @@ def longest_increasing_subsequence_length(v: list[int]) -> int:
             tail[ceil_index(tail, -1, length - 1, v[i])] = v[i]
 
     return length
-
 
 if __name__ == "__main__":
     import doctest
