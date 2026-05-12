@@ -15,7 +15,6 @@ from __future__ import annotations
 from collections.abc import Iterator
 from dataclasses import dataclass
 
-
 @dataclass
 class Node:
     key: int
@@ -31,7 +30,6 @@ class Node:
 
     def __len__(self) -> int:
         return sum(1 for _ in self)
-
 
 def floor_ceiling(root: Node | None, key: int) -> tuple[int | None, int | None]:
     """
@@ -80,7 +78,6 @@ def floor_ceiling(root: Node | None, key: int) -> tuple[int | None, int | None]:
             root = root.right
 
     return floor_val, ceiling_val
-
 
 if __name__ == "__main__":
     import doctest
