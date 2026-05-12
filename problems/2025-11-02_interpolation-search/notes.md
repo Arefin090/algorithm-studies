@@ -14,6 +14,8 @@
 
 ## Personal Notes
 
+- Real-world application in search engines
+
 - Performance: best/average/worst case analysis
 
 - Edge case: empty input handling
