@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-
 def dfs(u):
     global graph, reversed_graph, scc, component, visit, stack
     if visit[u]:
@@ -10,7 +9,6 @@ def dfs(u):
         dfs(v)
     stack.append(u)
 
-
 def dfs2(u):
     global graph, reversed_graph, scc, component, visit, stack
     if visit[u]:
@@ -19,7 +17,6 @@ def dfs2(u):
     component.append(u)
     for v in reversed_graph[u]:
         dfs2(v)
-
 
 def kosaraju():
     global graph, reversed_graph, scc, component, visit, stack
@@ -33,7 +30,6 @@ def kosaraju():
         dfs2(i)
         scc.append(component)
     return scc
-
 
 if __name__ == "__main__":
     # n - no of nodes, m - no of edges
