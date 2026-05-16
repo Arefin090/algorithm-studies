@@ -2,7 +2,6 @@ from __future__ import annotations
 
 from random import random
 
-
 class Node:
     """
     Treap's node
@@ -31,7 +30,6 @@ class Node:
         right = str(self.right or "")
         return value + left + right
 
-
 def split(root: Node | None, value: int) -> tuple[Node | None, Node | None]:
     """
     We split current tree into 2 trees with value:
@@ -57,7 +55,6 @@ def split(root: Node | None, value: int) -> tuple[Node | None, Node | None]:
         root.right, right = split(root.right, value)
         return root, right
 
-
 def merge(left: Node | None, right: Node | None) -> Node | None:
     """
     We merge 2 trees into one.
@@ -79,7 +76,6 @@ def merge(left: Node | None, right: Node | None) -> Node | None:
         right.left = merge(left, right.left)
         return right
 
-
 def insert(root: Node | None, value: int) -> Node | None:
     """
     Insert element
@@ -91,7 +87,6 @@ def insert(root: Node | None, value: int) -> Node | None:
     node = Node(value)
     left, right = split(root, value)
     return merge(merge(left, node), right)
-
 
 def erase(root: Node | None, value: int) -> Node | None:
     """
@@ -105,7 +100,6 @@ def erase(root: Node | None, value: int) -> Node | None:
     _, right = split(right, value)
     return merge(left, right)
 
-
 def inorder(root: Node | None) -> None:
     """
     Just recursive print of a tree
@@ -116,7 +110,6 @@ def inorder(root: Node | None) -> None:
         inorder(root.left)
         print(root.value, end=",")
         inorder(root.right)
-
 
 def interact_treap(root: Node | None, args: str) -> Node | None:
     """
@@ -154,7 +147,6 @@ def interact_treap(root: Node | None, args: str) -> Node | None:
 
     return root
 
-
 def main() -> None:
     """After each command, program prints treap"""
     root = None
@@ -170,7 +162,6 @@ def main() -> None:
         args = input()
 
     print("good by!")
-
 
 if __name__ == "__main__":
     import doctest
