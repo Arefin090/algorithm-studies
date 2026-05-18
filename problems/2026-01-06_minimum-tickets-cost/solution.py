@@ -17,13 +17,11 @@ Runtime complexity: O(n)
 The implementation was tested on the
 leetcode: https://leetcode.com/problems/minimum-cost-for-tickets/
 
-
 Minimum Cost For Tickets
 Dynamic Programming: up -> down.
 """
 
 import functools
-
 
 def mincost_tickets(days: list[int], costs: list[int]) -> int:
     """
@@ -121,7 +119,6 @@ def mincost_tickets(days: list[int], costs: list[int]) -> int:
         )
 
     return dynamic_programming(1)
-
 
 if __name__ == "__main__":
     import doctest
