@@ -8,7 +8,6 @@ AVAILABLE STEPS:
     * if n is divisible by 2, divide by 2
     * if n is divisible by 3, divide by 3
 
-
 Example 1: n = 10
 10 -> 9 -> 3 -> 1
 Result: 3 steps
@@ -25,7 +24,6 @@ Result: 2 step
 from __future__ import annotations
 
 __author__ = "Alexander Joslin"
-
 
 def min_steps_to_one(number: int) -> int:
     """
@@ -58,7 +56,6 @@ def min_steps_to_one(number: int) -> int:
         if i * 3 <= number:
             table[i * 3] = min(table[i * 3], table[i] + 1)
     return table[number]
-
 
 if __name__ == "__main__":
     import doctest
