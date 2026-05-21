@@ -16,6 +16,8 @@
 
 - Performance: best/average/worst case analysis
 
+- Performance: best/average/worst case analysis
+
 - Optimization: early termination condition
 
 - Implementation variant in different languages
