@@ -10,7 +10,6 @@ For manual testing run:
 python binary_insertion_sort.py
 """
 
-
 def binary_insertion_sort(collection: list) -> list:
     """
     Sorts a list using the binary insertion sort algorithm.
@@ -54,7 +53,6 @@ def binary_insertion_sort(collection: list) -> list:
             collection[j] = collection[j - 1]
         collection[low] = value_to_insert
     return collection
-
 
 if __name__ == "__main__":
     user_input = input("Enter numbers separated by a comma:\n").strip()
