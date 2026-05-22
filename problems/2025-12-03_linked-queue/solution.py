@@ -5,7 +5,6 @@ from __future__ import annotations
 from collections.abc import Iterator
 from typing import Any
 
-
 class Node:
     def __init__(self, data: Any) -> None:
         self.data: Any = data
@@ -13,7 +12,6 @@ class Node:
 
     def __str__(self) -> str:
         return f"{self.data}"
-
 
 class LinkedQueue:
     """
@@ -148,7 +146,6 @@ class LinkedQueue:
         ''
         """
         self.front = self.rear = None
-
 
 if __name__ == "__main__":
     from doctest import testmod
