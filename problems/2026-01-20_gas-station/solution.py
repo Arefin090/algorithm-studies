@@ -26,12 +26,10 @@ start checking from the next station.
 
 from dataclasses import dataclass
 
-
 @dataclass
 class GasStation:
     gas_quantity: int
     cost: int
-
 
 def get_gas_stations(
     gas_quantities: list[int], costs: list[int]
@@ -57,7 +55,6 @@ def get_gas_stations(
     return tuple(
         GasStation(quantity, cost) for quantity, cost in zip(gas_quantities, costs)
     )
-
 
 def can_complete_journey(gas_stations: tuple[GasStation, ...]) -> int:
     """
@@ -90,7 +87,6 @@ def can_complete_journey(gas_stations: tuple[GasStation, ...]) -> int:
             start = i + 1
             net = 0
     return start
-
 
 if __name__ == "__main__":
     import doctest
