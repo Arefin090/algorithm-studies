@@ -20,7 +20,6 @@ def exchange_sort(numbers: list[int]) -> list[int]:
                 numbers[i], numbers[j] = numbers[j], numbers[i]
     return numbers
 
-
 if __name__ == "__main__":
     user_input = input("Enter numbers separated by a comma:\n").strip()
     unsorted = [int(item) for item in user_input.split(",")]
