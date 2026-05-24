@@ -8,7 +8,6 @@
 
 from data_structures.kd_tree.kd_node import KDNode
 
-
 def build_kdtree(points: list[list[float]], depth: int = 0) -> KDNode | None:
     """
     Builds a KD-Tree from a list of points.
