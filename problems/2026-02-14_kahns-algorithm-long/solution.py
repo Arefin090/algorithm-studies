@@ -24,7 +24,6 @@ def longest_distance(graph):
 
     print(max(long_dist))
 
-
 # Adjacency list of Graph
 graph = {0: [2, 3, 4], 1: [2, 7], 2: [5], 3: [5, 7], 4: [7], 5: [6], 6: [7], 7: []}
 longest_distance(graph)
