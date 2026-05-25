@@ -12,7 +12,6 @@ from __future__ import annotations
 
 test_array = [2, 1, 4, 5, 6, 0, 8, 9, 1, 2, 0, 6, 4, 2, 0, 6, 5, 3, 2, 7]
 
-
 class Node:
     def __init__(self, length: int) -> None:
         self.minn: int = -1
@@ -30,7 +29,6 @@ class Node:
         True
         """
         return f"Node(min_value={self.minn} max_value={self.maxx})"
-
 
 def build_tree(arr: list[int]) -> Node | None:
     """
@@ -66,7 +64,6 @@ def build_tree(arr: list[int]) -> Node | None:
     root.right = build_tree(right_arr)
     return root
 
-
 def rank_till_index(node: Node | None, num: int, index: int) -> int:
     """
     Returns the number of occurrences of num in interval [0, index] in the list
@@ -96,7 +93,6 @@ def rank_till_index(node: Node | None, num: int, index: int) -> int:
         # go to the right subtree and map index to the right subtree
         return rank_till_index(node.right, num, index - node.map_left[index])
 
-
 def rank(node: Node | None, num: int, start: int, end: int) -> int:
     """
     Returns the number of occurrences of num in interval [start, end] in the list
@@ -116,7 +112,6 @@ def rank(node: Node | None, num: int, start: int, end: int) -> int:
     rank_till_end = rank_till_index(node, num, end)
     rank_before_start = rank_till_index(node, num, start - 1)
     return rank_till_end - rank_before_start
-
 
 def quantile(node: Node | None, index: int, start: int, end: int) -> int:
     """
@@ -156,7 +151,6 @@ def quantile(node: Node | None, index: int, start: int, end: int) -> int:
             start - (node.map_left[start - 1] if start else 0),
             end - node.map_left[end],
         )
-
 
 def range_counting(
     node: Node | None, start: int, end: int, start_num: int, end_num: int
@@ -202,7 +196,6 @@ def range_counting(
         end_num,
     )
     return left + right
-
 
 if __name__ == "__main__":
     import doctest
