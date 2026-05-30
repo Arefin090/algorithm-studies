@@ -9,7 +9,6 @@ Example:
     Therefore, algorithm should return any one of them.
 """
 
-
 def longest_common_substring(text1: str, text2: str) -> str:
     """
     Finds the longest common substring between two strings.
@@ -62,7 +61,6 @@ def longest_common_substring(text1: str, text2: str) -> str:
                     max_length = dp[i][j]
 
     return text1[end_pos - max_length : end_pos]
-
 
 if __name__ == "__main__":
     import doctest
