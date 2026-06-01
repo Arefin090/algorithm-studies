@@ -8,7 +8,6 @@ URL: https://en.wikipedia.org/wiki/Random_graph
 
 import random
 
-
 def random_graph(
     vertices_number: int, probability: float, directed: bool = False
 ) -> dict:
@@ -46,7 +45,6 @@ def random_graph(
                     graph[j].append(i)
     return graph
 
-
 def complete_graph(vertices_number: int) -> dict:
     """
     Generate a complete graph with vertices_number vertices.
@@ -59,7 +57,6 @@ def complete_graph(vertices_number: int) -> dict:
     return {
         i: [j for j in range(vertices_number) if i != j] for i in range(vertices_number)
     }
-
 
 if __name__ == "__main__":
     import doctest
