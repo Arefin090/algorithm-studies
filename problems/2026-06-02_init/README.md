@@ -1,8 +1,8 @@
 #   Init  
 
-**Source**: [https://github.com/TheAlgorithms/Python/blob/master/backtracking/__init__.py](https://github.com/TheAlgorithms/Python/blob/master/backtracking/__init__.py)
+**Source**: [https://github.com/TheAlgorithms/Python/blob/master/data_structures/disjoint_set/__init__.py](https://github.com/TheAlgorithms/Python/blob/master/data_structures/disjoint_set/__init__.py)
 **Language**: Python
-**Path**: `backtracking/__init__.py`
+**Path**: `data_structures/disjoint_set/__init__.py`
 
 ## Description
 
@@ -10,8 +10,8 @@ No description available.
 
 ## Tags
 
-`Backtracking`
+`Data Structures`, `Disjoint Set`
 
 ---
 
-*Automatically fetched on 2026-06-02 17:33:53*
+*Automatically fetched on 2026-06-02 19:16:57*
