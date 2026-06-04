@@ -6,7 +6,6 @@ the string can be segmented into a sequence of one or more dictionary words.
 Wikipedia: https://en.wikipedia.org/wiki/Word_break_problem
 """
 
-
 def backtrack(input_string: str, word_dict: set[str], start: int) -> bool:
     """
     Helper function that uses backtracking to determine if a valid
@@ -43,7 +42,6 @@ def backtrack(input_string: str, word_dict: set[str], start: int) -> bool:
             return True
 
     return False
-
 
 def word_break(input_string: str, word_dict: set[str]) -> bool:
     """
