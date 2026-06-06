@@ -14,6 +14,8 @@
 
 ## Personal Notes
 
+- Comparison with similar algorithms
+
 - Memory usage: O(1) space optimization possible
 
 - Implementation variant in different languages
