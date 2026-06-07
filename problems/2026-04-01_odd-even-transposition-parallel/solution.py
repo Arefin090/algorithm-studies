@@ -28,7 +28,6 @@ LRcv, RRcv = the pipes we use to receive from our left and right neighbors
 resultPipe = the pipe used to send results back to main
 """
 
-
 def oe_process(
     position,
     value,
@@ -70,13 +69,11 @@ def oe_process(
     # after all swaps are performed, send the values back to main
     result_pipe[1].send(value)
 
-
 """
 the function which creates the processes that perform the parallel swaps
 
 arr = the list to be sorted
 """
-
 
 def odd_even_transposition(arr):
     """
@@ -177,7 +174,6 @@ def odd_even_transposition(arr):
         process_array_[p].join()
     return arr
 
-
 # creates a reverse sorted list and sorts it
 def main():
     arr = list(range(10, 0, -1))
@@ -186,7 +182,6 @@ def main():
     arr = odd_even_transposition(arr)
     print("Sorted List\n")
     print(*arr)
-
 
 if __name__ == "__main__":
     main()
