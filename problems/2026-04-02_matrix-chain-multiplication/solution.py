@@ -50,7 +50,6 @@ from contextlib import contextmanager
 from functools import cache
 from sys import maxsize
 
-
 def matrix_chain_multiply(arr: list[int]) -> int:
     """
     Find the minimum number of multiplcations required to multiply the chain of matrices
@@ -95,7 +94,6 @@ def matrix_chain_multiply(arr: list[int]) -> int:
 
     return dp[1][n - 1]
 
-
 def matrix_chain_order(dims: list[int]) -> int:
     """
     Source: https://en.wikipedia.org/wiki/Matrix_chain_multiplication
@@ -126,7 +124,6 @@ def matrix_chain_order(dims: list[int]) -> int:
 
     return a(0, len(dims) - 1)
 
-
 @contextmanager
 def elapsed_time(msg: str) -> Iterator:
     # print(f"Starting: {msg}")
@@ -135,7 +132,6 @@ def elapsed_time(msg: str) -> Iterator:
     start = perf_counter_ns()
     yield
     print(f"Finished: {msg} in {(perf_counter_ns() - start) / 10**9} seconds.")
-
 
 if __name__ == "__main__":
     import doctest
