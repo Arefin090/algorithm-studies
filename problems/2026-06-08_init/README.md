@@ -1,8 +1,8 @@
 #   Init  
 
-**Source**: [https://github.com/TheAlgorithms/Python/blob/master/data_structures/suffix_tree/example/__init__.py](https://github.com/TheAlgorithms/Python/blob/master/data_structures/suffix_tree/example/__init__.py)
+**Source**: [https://github.com/TheAlgorithms/Python/blob/master/sorts/__init__.py](https://github.com/TheAlgorithms/Python/blob/master/sorts/__init__.py)
 **Language**: Python
-**Path**: `data_structures/suffix_tree/example/__init__.py`
+**Path**: `sorts/__init__.py`
 
 ## Description
 
@@ -10,8 +10,8 @@ No description available.
 
 ## Tags
 
-`Data Structures`, `Suffix Tree`, `Example`
+`Sorts`
 
 ---
 
-*Automatically fetched on 2026-06-08 07:53:52*
+*Automatically fetched on 2026-06-08 11:44:44*
