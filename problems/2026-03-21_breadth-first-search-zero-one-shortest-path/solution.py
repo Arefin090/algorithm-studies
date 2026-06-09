@@ -10,14 +10,12 @@ from collections import deque
 from collections.abc import Iterator
 from dataclasses import dataclass
 
-
 @dataclass
 class Edge:
     """Weighted directed graph edge."""
 
     destination_vertex: int
     weight: int
-
 
 class AdjacencyList:
     """Graph adjacency list."""
@@ -135,7 +133,6 @@ class AdjacencyList:
             raise ValueError("No path from start_vertex to finish_vertex.")
 
         return distances[finish_vertex]
-
 
 if __name__ == "__main__":
     import doctest
