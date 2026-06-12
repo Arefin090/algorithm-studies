@@ -8,7 +8,6 @@ For manual testing run:
 python pancake_sort.py
 """
 
-
 def pancake_sort(arr):
     """Sort Array with Pancake Sort.
     :param arr: Collection containing comparable items
@@ -31,7 +30,6 @@ def pancake_sort(arr):
         arr = arr[cur - 1 :: -1] + arr[cur : len(arr)]
         cur -= 1
     return arr
-
 
 if __name__ == "__main__":
     user_input = input("Enter numbers separated by a comma:\n").strip()
