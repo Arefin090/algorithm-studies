@@ -5,7 +5,6 @@ making it impractical in practice. It however provides O(max(search_string, leng
 longest word)) lookup time making it an optimal approach when space is not an issue.
 """
 
-
 class TrieNode:
     def __init__(self) -> None:
         self.nodes: dict[str, TrieNode] = {}  # Mapping from char to TrieNode
@@ -74,7 +73,6 @@ class TrieNode:
 
         _delete(self, word, 0)
 
-
 def print_words(node: TrieNode, word: str) -> None:
     """
     Prints all the words in a Trie
@@ -87,7 +85,6 @@ def print_words(node: TrieNode, word: str) -> None:
 
     for key, value in node.nodes.items():
         print_words(value, word + key)
-
 
 def test_trie() -> bool:
     words = "banana bananas bandana band apple all beast".split()
@@ -107,21 +104,17 @@ def test_trie() -> bool:
     assert root.find("bananas")
     return True
 
-
 def print_results(msg: str, passes: bool) -> None:
     print(str(msg), "works!" if passes else "doesn't work :(")
 
-
 def pytests() -> None:
     assert test_trie()
-
 
 def main() -> None:
     """
     >>> pytests()
     """
     print_results("Testing trie functionality", test_trie())
-
 
 if __name__ == "__main__":
     main()
