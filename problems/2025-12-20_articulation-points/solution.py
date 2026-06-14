@@ -39,7 +39,6 @@ def compute_ap(graph):
         if is_art[x] is True:
             print(x)
 
-
 # Adjacency list of graph
 graph = {
     0: [1, 2],
