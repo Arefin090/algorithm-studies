@@ -12,7 +12,6 @@ def binary_search(lst, item, start, end):
     else:
         return mid
 
-
 def insertion_sort(lst):
     length = len(lst)
 
@@ -22,7 +21,6 @@ def insertion_sort(lst):
         lst = [*lst[:pos], value, *lst[pos:index], *lst[index + 1 :]]
 
     return lst
-
 
 def merge(left, right):
     if not left:
@@ -35,7 +33,6 @@ def merge(left, right):
         return [left[0], *merge(left[1:], right)]
 
     return [right[0], *merge(left, right[1:])]
-
 
 def tim_sort(lst):
     """
@@ -71,12 +68,10 @@ def tim_sort(lst):
 
     return sorted_array
 
-
 def main():
     lst = [5, 9, 10, 3, -4, 5, 178, 92, 46, -18, 0, 7]
     sorted_lst = tim_sort(lst)
     print(sorted_lst)
-
 
 if __name__ == "__main__":
     main()
