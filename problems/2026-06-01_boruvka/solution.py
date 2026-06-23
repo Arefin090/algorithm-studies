@@ -29,7 +29,6 @@ from __future__ import annotations
 
 from typing import Any
 
-
 class Graph:
     def __init__(self, num_of_nodes: int) -> None:
         """
@@ -137,7 +136,6 @@ class Graph:
             minimum_weight_edge = [-1] * self.m_num_of_nodes
         print(f"The total weight of the minimal spanning tree is: {mst_weight}")
 
-
 def test_vector() -> None:
     """
     >>> g = Graph(8)
@@ -168,7 +166,6 @@ def test_vector() -> None:
     <BLANKLINE>
     The total weight of the minimal spanning tree is: 46
     """
-
 
 if __name__ == "__main__":
     import doctest
