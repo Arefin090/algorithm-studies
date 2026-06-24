@@ -11,7 +11,6 @@ Source: https://en.wikipedia.org/wiki/Slowsort
 
 from __future__ import annotations
 
-
 def slowsort(sequence: list, start: int | None = None, end: int | None = None) -> None:
     """
     Sorts sequence[start..end] (both inclusive) in-place.
@@ -53,7 +52,6 @@ def slowsort(sequence: list, start: int | None = None, end: int | None = None) -
         sequence[end], sequence[mid] = sequence[mid], sequence[end]
 
     slowsort(sequence, start, end - 1)
-
 
 if __name__ == "__main__":
     from doctest import testmod
