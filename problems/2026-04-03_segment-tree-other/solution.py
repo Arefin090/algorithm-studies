@@ -7,7 +7,6 @@ function takes 2 values and returns a same type value
 from collections.abc import Sequence
 from queue import Queue
 
-
 class SegmentTreeNode:
     def __init__(self, start, end, val, left=None, right=None):
         self.start = start
@@ -19,7 +18,6 @@ class SegmentTreeNode:
 
     def __repr__(self):
         return f"SegmentTreeNode(start={self.start}, end={self.end}, val={self.val})"
-
 
 class SegmentTree:
     """
@@ -214,7 +212,6 @@ class SegmentTree:
 
                 if node.right is not None:
                     queue.put(node.right)
-
 
 if __name__ == "__main__":
     import operator
