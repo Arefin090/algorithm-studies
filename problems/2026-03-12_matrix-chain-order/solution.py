@@ -9,7 +9,6 @@ Space Complexity: O(n^2)
 Reference: https://en.wikipedia.org/wiki/Matrix_chain_multiplication
 """
 
-
 def matrix_chain_order(array: list[int]) -> tuple[list[list[int]], list[list[int]]]:
     """
     >>> matrix_chain_order([10, 30, 5])
@@ -33,7 +32,6 @@ def matrix_chain_order(array: list[int]) -> tuple[list[list[int]], list[list[int
                     sol[a][b] = c
     return matrix, sol
 
-
 def print_optimal_solution(optimal_solution: list[list[int]], i: int, j: int):
     """
     Print order of matrix with Ai as Matrix.
@@ -46,7 +44,6 @@ def print_optimal_solution(optimal_solution: list[list[int]], i: int, j: int):
         print_optimal_solution(optimal_solution, i, optimal_solution[i][j])
         print_optimal_solution(optimal_solution, optimal_solution[i][j] + 1, j)
         print(")", end=" ")
-
 
 def main():
     """
@@ -61,7 +58,6 @@ def main():
 
     print("No. of Operation required: " + str(matrix[1][n - 1]))
     print_optimal_solution(optimal_solution, 1, n - 1)
-
 
 if __name__ == "__main__":
     main()
