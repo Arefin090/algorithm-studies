@@ -1,8 +1,8 @@
 #   Init  
 
-**Source**: [https://github.com/TheAlgorithms/Python/blob/master/searches/__init__.py](https://github.com/TheAlgorithms/Python/blob/master/searches/__init__.py)
+**Source**: [https://github.com/TheAlgorithms/Python/blob/master/divide_and_conquer/__init__.py](https://github.com/TheAlgorithms/Python/blob/master/divide_and_conquer/__init__.py)
 **Language**: Python
-**Path**: `searches/__init__.py`
+**Path**: `divide_and_conquer/__init__.py`
 
 ## Description
 
@@ -10,8 +10,8 @@ No description available.
 
 ## Tags
 
-`Searches`
+`Divide And Conquer`
 
 ---
 
-*Automatically fetched on 2026-06-28 07:29:08*
+*Automatically fetched on 2026-06-28 22:23:03*
