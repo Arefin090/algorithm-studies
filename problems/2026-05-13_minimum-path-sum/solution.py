@@ -43,7 +43,6 @@ def min_path_sum(grid: list) -> int:
 
     return grid[-1][-1]
 
-
 def fill_row(current_row: list, row_above: list) -> list:
     """
     >>> fill_row([2, 2, 2], [1, 2, 3])
@@ -55,7 +54,6 @@ def fill_row(current_row: list, row_above: list) -> list:
         current_row[cell_n] += min(current_row[cell_n - 1], row_above[cell_n])
 
     return current_row
-
 
 if __name__ == "__main__":
     import doctest
