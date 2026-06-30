@@ -32,7 +32,6 @@ leetcode: https://leetcode.com/problems/word-search/
 
 """
 
-
 def get_point_key(len_board: int, len_board_column: int, row: int, column: int) -> int:
     """
     Returns the hash key of matrix indexes.
@@ -42,7 +41,6 @@ def get_point_key(len_board: int, len_board_column: int, row: int, column: int) 
     """
 
     return len_board * len_board_column * row + column
-
 
 def exits_word(
     board: list[list[str]],
@@ -86,7 +84,6 @@ def exits_word(
         visited_points_set.remove(key)
 
     return False
-
 
 def word_exists(board: list[list[str]], word: str) -> bool:
     """
@@ -154,7 +151,6 @@ def word_exists(board: list[list[str]], word: str) -> bool:
                 return True
 
     return False
-
 
 if __name__ == "__main__":
     import doctest
