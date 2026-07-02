@@ -7,13 +7,11 @@ from typing import TypeVar
 
 T = TypeVar("T")
 
-
 class Node[T]:
     def __init__(self, data: T):
         self.data = data  # Assign data
         self.next: Node[T] | None = None  # Initialize next as null
         self.prev: Node[T] | None = None  # Initialize prev as null
-
 
 class Stack[T]:
     """
@@ -88,7 +86,6 @@ class Stack[T]:
         while temp is not None:
             print(temp.data, end="->")
             temp = temp.next
-
 
 # Code execution starts here
 if __name__ == "__main__":
