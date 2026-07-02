@@ -5,7 +5,6 @@ import numpy as np
 
 TPos = tuple[int, int]
 
-
 class PriorityQueue:
     def __init__(self):
         self.elements = []
@@ -55,28 +54,23 @@ class PriorityQueue:
         self.set.remove(item)
         return (priority, item)
 
-
 def consistent_heuristic(p: TPos, goal: TPos):
     # euclidean distance
     a = np.array(p)
     b = np.array(goal)
     return np.linalg.norm(a - b)
 
-
 def heuristic_2(p: TPos, goal: TPos):
     # integer division by time variable
     return consistent_heuristic(p, goal) // t
-
 
 def heuristic_1(p: TPos, goal: TPos):
     # manhattan distance
     return abs(p[0] - goal[0]) + abs(p[1] - goal[1])
 
-
 def key(start: TPos, i: int, goal: TPos, g_function: dict[TPos, float]):
     ans = g_function[start] + W1 * heuristics[i](start, goal)
     return ans
-
 
 def do_something(back_pointer, goal, start):
     grid = np.char.chararray((n, n))
@@ -119,12 +113,10 @@ def do_something(back_pointer, goal, start):
     print(x)
     sys.exit()
 
-
 def valid(p: TPos):
     if p[0] < 0 or p[0] > n - 1:
         return False
     return not (p[1] < 0 or p[1] > n - 1)
-
 
 def expand_state(
     s,
@@ -168,7 +160,6 @@ def expand_state(
                                     neighbours, key(neighbours, var, goal, g_function)
                                 )
 
-
 def make_common_ground():
     some_list = []
     for x in range(1, 5):
@@ -190,7 +181,6 @@ def make_common_ground():
         for y in range(16, 19):
             some_list.append((x, y))
     return some_list
-
 
 heuristics = {0: consistent_heuristic, 1: heuristic_1, 2: heuristic_2}
 
@@ -218,7 +208,6 @@ blocks_blk = [
 ]
 blocks_all = make_common_ground()
 
-
 blocks = blocks_blk
 # hyper parameters
 W1 = 1
@@ -231,7 +220,6 @@ start = (0, 0)
 goal = (n - 1, n - 1)
 
 t = 1
-
 
 def multi_a_star(start: TPos, goal: TPos, n_heuristic: int):
     g_function = {start: 0, goal: float("inf")}
@@ -306,7 +294,6 @@ def multi_a_star(start: TPos, goal: TPos, n_heuristic: int):
     print()
     print("# is an obstacle")
     print("- is the path taken by algorithm")
-
 
 if __name__ == "__main__":
     multi_a_star(start, goal, n_heuristic)
