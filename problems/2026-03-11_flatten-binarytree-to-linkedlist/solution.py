@@ -13,7 +13,6 @@ Date: 04/09/2023
 
 from __future__ import annotations
 
-
 class TreeNode:
     """
     A TreeNode has data variable and pointers to TreeNode objects
@@ -24,7 +23,6 @@ class TreeNode:
         self.data = data
         self.left: TreeNode | None = None
         self.right: TreeNode | None = None
-
 
 def build_tree() -> TreeNode:
     """
@@ -55,7 +53,6 @@ def build_tree() -> TreeNode:
     root.left.right = TreeNode(4)
     root.right.right = TreeNode(6)
     return root
-
 
 def flatten(root: TreeNode | None) -> None:
     """
@@ -105,7 +102,6 @@ def flatten(root: TreeNode | None) -> None:
     # Flatten the updated right subtree
     flatten(right_subtree)
 
-
 def display_linked_list(root: TreeNode | None) -> None:
     """
     Display the flattened linked list.
@@ -130,7 +126,6 @@ def display_linked_list(root: TreeNode | None) -> None:
             break
         print(current.data, end=" ")
         current = current.right
-
 
 if __name__ == "__main__":
     print("Flattened Linked List:")
