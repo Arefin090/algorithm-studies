@@ -5,7 +5,6 @@ from __future__ import annotations
 
 from typing import Any
 
-
 class CircularQueueLinkedList:
     """
     Circular FIFO list with the given capacity (default queue length : 6)
@@ -147,13 +146,11 @@ class CircularQueueLinkedList:
         if self.rear and self.rear.next == self.front:
             raise Exception("Full Queue")
 
-
 class Node:
     def __init__(self) -> None:
         self.data: Any | None = None
         self.next: Node | None = None
         self.prev: Node | None = None
-
 
 if __name__ == "__main__":
     import doctest
