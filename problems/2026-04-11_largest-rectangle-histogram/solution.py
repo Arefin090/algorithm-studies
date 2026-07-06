@@ -32,7 +32,6 @@ def largest_rectangle_area(heights: list[int]) -> int:
 
     return max_area
 
-
 if __name__ == "__main__":
     import doctest
 
