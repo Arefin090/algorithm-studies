@@ -67,7 +67,6 @@ class BinaryHeap:
         """Length of the array"""
         return self.__size
 
-
 if __name__ == "__main__":
     import doctest
 
