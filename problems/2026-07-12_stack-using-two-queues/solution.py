@@ -3,7 +3,6 @@ from __future__ import annotations
 from collections import deque
 from dataclasses import dataclass, field
 
-
 @dataclass
 class StackWithQueues:
     """
@@ -45,7 +44,6 @@ class StackWithQueues:
 
     def peek(self) -> int | None:
         return self.main_queue[0] if self.main_queue else None
-
 
 if __name__ == "__main__":
     import doctest
