@@ -2,7 +2,6 @@
 https://en.wikipedia.org/wiki/Doubly_linked_list
 """
 
-
 class Node:
     def __init__(self, data):
         self.data = data
@@ -11,7 +10,6 @@ class Node:
 
     def __str__(self):
         return f"{self.data}"
-
 
 class DoublyLinkedList:
     def __init__(self):
@@ -187,7 +185,6 @@ class DoublyLinkedList:
         """
         return len(self) == 0
 
-
 def test_doubly_linked_list() -> None:
     """
     >>> test_doubly_linked_list()
@@ -222,7 +219,6 @@ def test_doubly_linked_list() -> None:
     assert linked_list.delete_tail() == 11
     assert len(linked_list) == 9
     assert str(linked_list) == "->".join(str(i) for i in range(1, 10))
-
 
 if __name__ == "__main__":
     from doctest import testmod
