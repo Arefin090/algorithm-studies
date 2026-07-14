@@ -8,7 +8,6 @@ in the alignment. However, it's important to note that the Smith-Waterman algori
 supports other gap penalty methods as well.
 """
 
-
 def score_function(
     source_char: str,
     target_char: str,
@@ -34,7 +33,6 @@ def score_function(
     if "-" in (source_char, target_char):
         return gap
     return match if source_char == target_char else mismatch
-
 
 def smith_waterman(
     query: str,
@@ -125,7 +123,6 @@ def smith_waterman(
 
     return score
 
-
 def traceback(score: list[list[int]], query: str, subject: str) -> str:
     r"""
     Perform traceback to find the optimal local alignment.
@@ -183,7 +180,6 @@ def traceback(score: list[list[int]], query: str, subject: str) -> str:
             j -= 1
 
     return f"{align1}\n{align2}"
-
 
 if __name__ == "__main__":
     query = "HEAGAWGHEE"
