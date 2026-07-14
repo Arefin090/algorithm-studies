@@ -14,6 +14,8 @@
 
 ## Personal Notes
 
+- Alternative: iterative vs recursive approach
+
 - Implementation variant in different languages
 
 - Edge case: empty input handling
