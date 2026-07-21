@@ -36,7 +36,6 @@ import operator as op
 
 from .stack import Stack
 
-
 def dijkstras_two_stack_algorithm(equation: str) -> int:
     """
     DocTests
@@ -76,7 +75,6 @@ def dijkstras_two_stack_algorithm(equation: str) -> int:
 
     # RULE 5
     return operand_stack.peek()
-
 
 if __name__ == "__main__":
     equation = "(5 + ((4 * 2) * (2 + 3)))"
