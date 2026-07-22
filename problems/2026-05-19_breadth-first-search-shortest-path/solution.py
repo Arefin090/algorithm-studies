@@ -14,7 +14,6 @@ graph = {
     "G": ["C"],
 }
 
-
 class Graph:
     def __init__(self, graph: dict[str, list[str]], source_vertex: str) -> None:
         """
@@ -80,7 +79,6 @@ class Graph:
             raise ValueError(msg)
 
         return self.shortest_path(target_vertex_parent) + f"->{target_vertex}"
-
 
 if __name__ == "__main__":
     g = Graph(graph, "G")
