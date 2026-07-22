@@ -1,8 +1,8 @@
 #   Init  
 
-**Source**: [https://github.com/TheAlgorithms/Python/blob/master/data_structures/kd_tree/example/__init__.py](https://github.com/TheAlgorithms/Python/blob/master/data_structures/kd_tree/example/__init__.py)
+**Source**: [https://github.com/TheAlgorithms/Python/blob/master/data_structures/trie/__init__.py](https://github.com/TheAlgorithms/Python/blob/master/data_structures/trie/__init__.py)
 **Language**: Python
-**Path**: `data_structures/kd_tree/example/__init__.py`
+**Path**: `data_structures/trie/__init__.py`
 
 ## Description
 
@@ -10,8 +10,8 @@ No description available.
 
 ## Tags
 
-`Data Structures`, `Kd Tree`, `Example`
+`Data Structures`, `Trie`
 
 ---
 
-*Automatically fetched on 2026-07-22 13:28:56*
+*Automatically fetched on 2026-07-22 22:57:28*
