@@ -28,7 +28,6 @@ e.g. python tabu_search.py -f tabudata2.txt -i 4 -s 3
 import argparse
 import copy
 
-
 def generate_neighbours(path):
     """
     Pure implementation of generating a dictionary of neighbors and the cost with each
@@ -69,7 +68,6 @@ def generate_neighbours(path):
                 )
 
     return dict_of_neighbours
-
 
 def generate_first_solution(path, dict_of_neighbours):
     """
@@ -122,7 +120,6 @@ def generate_first_solution(path, dict_of_neighbours):
         - 10000
     )
     return first_solution, distance_of_first_solution
-
 
 def find_neighborhood(solution, dict_of_neighbours):
     """
@@ -183,7 +180,6 @@ def find_neighborhood(solution, dict_of_neighbours):
 
     neighborhood_of_solution.sort(key=lambda x: x[index_of_last_item_in_the_list])
     return neighborhood_of_solution
-
 
 def tabu_search(
     first_solution, distance_of_first_solution, dict_of_neighbours, iters, size
@@ -249,7 +245,6 @@ def tabu_search(
 
     return best_solution_ever, best_cost
 
-
 def main(args=None):
     dict_of_neighbours = generate_neighbours(args.File)
 
@@ -266,7 +261,6 @@ def main(args=None):
     )
 
     print(f"Best solution: {best_sol}, with total distance: {best_cost}.")
-
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Tabu Search")
