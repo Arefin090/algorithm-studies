@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-
 def depth_first_search(graph: dict, start: str) -> set[str]:
     """Depth First Search on Graph
     :param graph: directed graph in dictionary format
@@ -29,7 +28,6 @@ def depth_first_search(graph: dict, start: str) -> set[str]:
             if adj not in explored:
                 stack.append(adj)
     return explored
-
 
 G = {
     "A": ["B", "C", "D"],
