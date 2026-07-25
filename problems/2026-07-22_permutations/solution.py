@@ -17,7 +17,6 @@ def permute_recursive(nums: list[int]) -> list[list[int]]:
         nums.append(n)
     return result
 
-
 def permute_backtrack(nums: list[int]) -> list[list[int]]:
     """
     Return all permutations of the given list.
@@ -38,7 +37,6 @@ def permute_backtrack(nums: list[int]) -> list[list[int]]:
     output: list[list[int]] = []
     backtrack(0)
     return output
-
 
 if __name__ == "__main__":
     import doctest
