@@ -4,7 +4,6 @@ The problem is to find the shortest distance between all pairs of vertices in a
 weighted directed graph that can have negative edge weights.
 """
 
-
 def _print_dist(dist, v):
     print("\nThe shortest path matrix using Floyd Warshall algorithm\n")
     for i in range(v):
@@ -14,7 +13,6 @@ def _print_dist(dist, v):
             else:
                 print("INF", end="\t")
         print()
-
 
 def floyd_warshall(graph, v):
     """
@@ -54,7 +52,6 @@ def floyd_warshall(graph, v):
 
     _print_dist(dist, v)
     return dist, v
-
 
 if __name__ == "__main__":
     v = int(input("Enter number of vertices: "))
@@ -97,6 +94,6 @@ if __name__ == "__main__":
     # Enter weight:1
 
     # # Expected Output from the vertice, edge and src, dst, weight inputs!!
-    # 0		INF	INF
-    # INF	0	2
-    # INF	1	0
+    # 0        INF    INF
+    # INF    0    2
+    # INF    1    0
