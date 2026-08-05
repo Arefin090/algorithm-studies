@@ -1,0 +1,17 @@
+# Sum Of Subset
+
+**Source**: [https://github.com/TheAlgorithms/Python/blob/master/dynamic_programming/sum_of_subset.py](https://github.com/TheAlgorithms/Python/blob/master/dynamic_programming/sum_of_subset.py)
+**Language**: Python
+**Path**: `dynamic_programming/sum_of_subset.py`
+
+## Description
+
+No description available.
+
+## Tags
+
+`Dynamic Programming`
+
+---
+
+*Automatically fetched on 2026-08-05 08:39:21*
