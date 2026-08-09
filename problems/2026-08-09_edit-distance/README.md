@@ -1,0 +1,19 @@
+# Edit Distance
+
+**Source**: [https://github.com/TheAlgorithms/Python/blob/master/dynamic_programming/edit_distance.py](https://github.com/TheAlgorithms/Python/blob/master/dynamic_programming/edit_distance.py)
+**Language**: Python
+**Path**: `dynamic_programming/edit_distance.py`
+
+## Description
+
+Author  : Turfa Auliarachman
+Date    : October 12, 2016
+This is a pure Python implementation of Dynamic Programming solution to the edit
+
+## Tags
+
+`Dynamic Programming`
+
+---
+
+*Automatically fetched on 2026-08-09 12:37:21*
