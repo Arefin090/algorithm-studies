@@ -24,7 +24,6 @@ delta = [[-1, 0], [0, -1], [1, 0], [0, 1]]  # up, left, down, right
 
 TPosition = tuple[int, int]
 
-
 class Node:
     """
     >>> k = Node(0, 0, 4, 3, 0, None)
@@ -73,7 +72,6 @@ class Node:
 
     def __lt__(self, other: Node) -> bool:
         return self.f_cost < other.f_cost
-
 
 class AStar:
     """
@@ -167,7 +165,6 @@ class AStar:
         path.reverse()
         return path
 
-
 class BidirectionalAStar:
     """
     >>> bd_astar = BidirectionalAStar((0, 0), (len(grid) - 1, len(grid[0]) - 1))
@@ -238,7 +235,6 @@ class BidirectionalAStar:
         bwd_path.reverse()
         path = fwd_path + bwd_path
         return path
-
 
 if __name__ == "__main__":
     # all coordinates are given in format [y,x]
