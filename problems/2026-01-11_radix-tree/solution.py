@@ -4,7 +4,6 @@ trie (prefix tree) in whicheach node that is the only child is merged
 with its parent [https://en.wikipedia.org/wiki/Radix_tree]
 """
 
-
 class RadixNode:
     def __init__(self, prefix: str = "", is_leaf: bool = False) -> None:
         # Mapping from the first character of the prefix of the node
@@ -190,7 +189,6 @@ class RadixNode:
         for value in self.nodes.values():
             value.print_tree(height + 1)
 
-
 def test_trie() -> bool:
     words = "banana bananas bandana band apple all beast".split()
     root = RadixNode()
@@ -207,10 +205,8 @@ def test_trie() -> bool:
 
     return True
 
-
 def pytests() -> None:
     assert test_trie()
-
 
 def main() -> None:
     """
@@ -223,7 +219,6 @@ def main() -> None:
     print("Words:", words)
     print("Tree:")
     root.print_tree()
-
 
 if __name__ == "__main__":
     main()
