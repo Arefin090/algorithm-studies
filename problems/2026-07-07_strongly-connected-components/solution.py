@@ -9,7 +9,6 @@ test_graph_1 = {0: [2, 3], 1: [0], 2: [1], 3: [4], 4: []}
 
 test_graph_2 = {0: [1, 2, 3], 1: [2], 2: [0], 3: [4], 4: [5], 5: [3]}
 
-
 def topology_sort(
     graph: dict[int, list[int]], vert: int, visited: list[bool]
 ) -> list[int]:
@@ -33,7 +32,6 @@ def topology_sort(
 
     return order
 
-
 def find_components(
     reversed_graph: dict[int, list[int]], vert: int, visited: list[bool]
 ) -> list[int]:
@@ -54,7 +52,6 @@ def find_components(
             component += find_components(reversed_graph, neighbour, visited)
 
     return component
-
 
 def strongly_connected_components(graph: dict[int, list[int]]) -> list[list[int]]:
     """
