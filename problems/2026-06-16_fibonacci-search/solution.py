@@ -13,7 +13,6 @@ python3 fibonacci_search.py
 
 from functools import lru_cache
 
-
 @lru_cache
 def fibonacci(k: int) -> int:
     """Finds fibonacci number in index k.
@@ -53,7 +52,6 @@ def fibonacci(k: int) -> int:
         return 1
     else:
         return fibonacci(k - 1) + fibonacci(k - 2)
-
 
 def fibonacci_search(arr: list, val: int) -> int:
     """A pure Python implementation of a fibonacci search algorithm.
@@ -124,7 +122,6 @@ def fibonacci_search(arr: list, val: int) -> int:
             offset += fibonacci(fibb_k - 1)
             fibb_k -= 2
     return -1
-
 
 if __name__ == "__main__":
     import doctest
