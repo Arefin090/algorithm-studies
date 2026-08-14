@@ -2,7 +2,6 @@
 https://www.enjoyalgorithms.com/blog/median-of-two-sorted-arrays
 """
 
-
 def find_median_sorted_arrays(nums1: list[int], nums2: list[int]) -> float:
     """
     Find the median of two arrays.
@@ -53,7 +52,6 @@ def find_median_sorted_arrays(nums1: list[int], nums2: list[int]) -> float:
     middle1 = merged[total // 2 - 1]
     middle2 = merged[total // 2]
     return (float(middle1) + float(middle2)) / 2.0
-
 
 if __name__ == "__main__":
     import doctest
