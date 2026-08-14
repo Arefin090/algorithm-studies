@@ -14,6 +14,8 @@
 
 ## Personal Notes
 
+- Alternative: iterative vs recursive approach
+
 - Real-world application in search engines
 
 - Memory usage: O(1) space optimization possible
