@@ -14,6 +14,8 @@
 
 ## Personal Notes
 
+- Edge case: empty input handling
+
 - Comparison with similar algorithms
 
 - Performance: best/average/worst case analysis
