@@ -2,7 +2,6 @@
 
 from .hash_table import HashTable
 
-
 class QuadraticProbing(HashTable):
     """
     Basic Hash Table example with open addressing using Quadratic Probing
@@ -76,7 +75,6 @@ class QuadraticProbing(HashTable):
                 break
 
         return new_key
-
 
 if __name__ == "__main__":
     import doctest
