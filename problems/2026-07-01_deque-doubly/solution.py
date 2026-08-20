@@ -7,7 +7,6 @@ Operations:
     4. remove from the end -> O(1)
 """
 
-
 class _DoublyLinkedBase:
     """A Private class (to be inherited)"""
 
@@ -57,7 +56,6 @@ class _DoublyLinkedBase:
         node._prev = node._next = node._data = None
         del node
         return temp
-
 
 class LinkedDeque(_DoublyLinkedBase):
     def first(self):
