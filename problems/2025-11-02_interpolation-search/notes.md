@@ -14,6 +14,8 @@
 
 ## Personal Notes
 
+- Alternative: iterative vs recursive approach
+
 - Real-world application in search engines
 
 - Performance: best/average/worst case analysis
