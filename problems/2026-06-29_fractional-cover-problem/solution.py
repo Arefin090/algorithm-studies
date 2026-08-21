@@ -3,7 +3,6 @@
 from dataclasses import dataclass
 from operator import attrgetter
 
-
 @dataclass
 class Item:
     weight: int
@@ -28,7 +27,6 @@ class Item:
         4.0
         """
         return self.value / self.weight
-
 
 def fractional_cover(items: list[Item], capacity: int) -> float:
     """
@@ -91,7 +89,6 @@ def fractional_cover(items: list[Item], capacity: int) -> float:
         remaining_capacity -= weight_taken
 
     return total_value
-
 
 if __name__ == "__main__":
     import doctest
