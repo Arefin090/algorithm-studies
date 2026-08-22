@@ -15,7 +15,6 @@ from random import randint
 
 from matplotlib import pyplot as plt
 
-
 def max_subarray(
     arr: Sequence[float], low: int, high: int
 ) -> tuple[int | None, int | None, float]:
@@ -60,7 +59,6 @@ def max_subarray(
         return right_low, right_high, right_sum
     return cross_left, cross_right, cross_sum
 
-
 def max_cross_sum(
     arr: Sequence[float], low: int, mid: int, high: int
 ) -> tuple[int, int, float]:
@@ -83,14 +81,12 @@ def max_cross_sum(
 
     return max_left, max_right, (left_sum + right_sum)
 
-
 def time_max_subarray(input_size: int) -> float:
     arr = [randint(1, input_size) for _ in range(input_size)]
     start = time.time()
     max_subarray(arr, 0, input_size - 1)
     end = time.time()
     return end - start
-
 
 def plot_runtimes() -> None:
     input_sizes = [10, 100, 1000, 10000, 50000, 100000, 200000, 300000, 400000, 500000]
@@ -102,7 +98,6 @@ def plot_runtimes() -> None:
     plt.xlabel("Number of Inputs")
     plt.ylabel("Time taken in seconds")
     plt.show()
-
 
 if __name__ == "__main__":
     """
