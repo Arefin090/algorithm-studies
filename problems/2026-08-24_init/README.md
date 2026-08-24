@@ -1,0 +1,17 @@
+#   Init  
+
+**Source**: [https://github.com/TheAlgorithms/Python/blob/master/data_structures/arrays/__init__.py](https://github.com/TheAlgorithms/Python/blob/master/data_structures/arrays/__init__.py)
+**Language**: Python
+**Path**: `data_structures/arrays/__init__.py`
+
+## Description
+
+No description available.
+
+## Tags
+
+`Data Structures`, `Arrays`
+
+---
+
+*Automatically fetched on 2026-08-24 02:52:41*
