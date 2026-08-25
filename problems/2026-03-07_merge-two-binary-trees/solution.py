@@ -8,7 +8,6 @@ will be used as the node of new tree.
 
 from __future__ import annotations
 
-
 class Node:
     """
     A binary node has value variable and pointers to its left and right node.
@@ -18,7 +17,6 @@ class Node:
         self.value = value
         self.left: Node | None = None
         self.right: Node | None = None
-
 
 def merge_two_binary_trees(tree1: Node | None, tree2: Node | None) -> Node | None:
     """
@@ -52,7 +50,6 @@ def merge_two_binary_trees(tree1: Node | None, tree2: Node | None) -> Node | Non
     tree1.right = merge_two_binary_trees(tree1.right, tree2.right)
     return tree1
 
-
 def print_preorder(root: Node | None) -> None:
     """
     Print pre-order traversal of the tree.
@@ -71,7 +68,6 @@ def print_preorder(root: Node | None) -> None:
         print(root.value)
         print_preorder(root.left)
         print_preorder(root.right)
-
 
 if __name__ == "__main__":
     tree1 = Node(1)
