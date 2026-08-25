@@ -14,7 +14,6 @@ C 1 0 0
 
 graph = [[0, 1, 1], [0, 0, 1], [1, 0, 0]]
 
-
 class Node:
     def __init__(self, name):
         self.name = name
@@ -29,7 +28,6 @@ class Node:
 
     def __repr__(self):
         return f"<node={self.name} inbound={self.inbound} outbound={self.outbound}>"
-
 
 def page_rank(nodes, limit=3, d=0.85):
     ranks = {}
@@ -48,7 +46,6 @@ def page_rank(nodes, limit=3, d=0.85):
             )
         print(ranks)
 
-
 def main():
     names = list(input("Enter Names of the Nodes: ").split())
 
@@ -65,7 +62,6 @@ def main():
         print(node)
 
     page_rank(nodes)
-
 
 if __name__ == "__main__":
     main()
