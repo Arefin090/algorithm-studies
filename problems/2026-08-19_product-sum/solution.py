@@ -19,7 +19,6 @@ Output: 12
 
 """
 
-
 def product_sum(arr: list[int | list], depth: int) -> int:
     """
     Recursively calculates the product sum of an array.
@@ -63,7 +62,6 @@ def product_sum(arr: list[int | list], depth: int) -> int:
         total_sum += product_sum(ele, depth + 1) if isinstance(ele, list) else ele
     return total_sum * depth
 
-
 def product_sum_array(array: list[int | list]) -> int:
     """
     Calculates the product sum of an array.
@@ -90,7 +88,6 @@ def product_sum_array(array: list[int | list]) -> int:
 
     """
     return product_sum(array, 1)
-
 
 if __name__ == "__main__":
     import doctest
