@@ -13,7 +13,6 @@ https://en.wikipedia.org/wiki/Bidirectional_search
 
 from collections import deque
 
-
 def expand_search(
     graph: dict[int, list[int]],
     queue: deque[int],
@@ -37,14 +36,12 @@ def expand_search(
 
     return None
 
-
 def construct_path(current: int | None, parents: dict[int, int | None]) -> list[int]:
     path: list[int] = []
     while current is not None:
         path.append(current)
         current = parents[current]
     return path
-
 
 def bidirectional_search(
     graph: dict[int, list[int]], start: int, goal: int
@@ -147,7 +144,6 @@ def bidirectional_search(
     # Return the complete path
     return forward_path + backward_path
 
-
 def main() -> None:
     """
     Run example of bidirectional search algorithm.
@@ -195,7 +191,6 @@ def main() -> None:
     start, goal = 0, 3
     path = bidirectional_search(graph=disconnected_graph, start=start, goal=goal)
     print(f"Path from {start} to {goal}: {path}")
-
 
 if __name__ == "__main__":
     main()
