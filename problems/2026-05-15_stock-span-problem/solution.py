@@ -7,7 +7,6 @@ number of consecutive days just before the given day, for which the price of the
 on the current day is less than or equal to its price on the given day.
 """
 
-
 def calculate_span(price: list[int]) -> list[int]:
     """
     Calculate the span values for a given list of stock prices.
@@ -56,12 +55,10 @@ def calculate_span(price: list[int]) -> list[int]:
 
     return s
 
-
 # A utility function to print elements of array
 def print_array(arr, n):
     for i in range(n):
         print(arr[i], end=" ")
-
 
 # Driver program to test above function
 price = [10, 4, 5, 90, 120, 80]
