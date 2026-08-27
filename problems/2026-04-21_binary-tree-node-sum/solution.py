@@ -12,7 +12,6 @@ from __future__ import annotations
 
 from collections.abc import Iterator
 
-
 class Node:
     """
     A Node has a value variable and pointers to Nodes to its left and right.
@@ -22,7 +21,6 @@ class Node:
         self.value = value
         self.left: Node | None = None
         self.right: Node | None = None
-
 
 class BinaryTreeNodeSum:
     r"""
@@ -67,7 +65,6 @@ class BinaryTreeNodeSum:
 
     def __iter__(self) -> Iterator[int]:
         yield self.depth_first_search(self.tree)
-
 
 if __name__ == "__main__":
     import doctest
