@@ -55,7 +55,6 @@ def subset_combinations(elements: list[int], n: int) -> list:
     except TypeError:
         return dp[n]
 
-
 if __name__ == "__main__":
     from doctest import testmod
 
