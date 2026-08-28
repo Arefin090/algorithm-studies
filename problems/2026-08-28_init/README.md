@@ -1,8 +1,8 @@
 #   Init  
 
-**Source**: [https://github.com/TheAlgorithms/Python/blob/master/data_structures/arrays/__init__.py](https://github.com/TheAlgorithms/Python/blob/master/data_structures/arrays/__init__.py)
+**Source**: [https://github.com/TheAlgorithms/Python/blob/master/divide_and_conquer/__init__.py](https://github.com/TheAlgorithms/Python/blob/master/divide_and_conquer/__init__.py)
 **Language**: Python
-**Path**: `data_structures/arrays/__init__.py`
+**Path**: `divide_and_conquer/__init__.py`
 
 ## Description
 
@@ -10,8 +10,8 @@ No description available.
 
 ## Tags
 
-`Data Structures`, `Arrays`
+`Divide And Conquer`
 
 ---
 
-*Automatically fetched on 2026-08-28 00:43:38*
+*Automatically fetched on 2026-08-28 05:55:36*
