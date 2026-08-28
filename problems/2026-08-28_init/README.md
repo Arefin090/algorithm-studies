@@ -1,8 +1,8 @@
 #   Init  
 
-**Source**: [https://github.com/TheAlgorithms/Python/blob/master/divide_and_conquer/__init__.py](https://github.com/TheAlgorithms/Python/blob/master/divide_and_conquer/__init__.py)
+**Source**: [https://github.com/TheAlgorithms/Python/blob/master/data_structures/heap/__init__.py](https://github.com/TheAlgorithms/Python/blob/master/data_structures/heap/__init__.py)
 **Language**: Python
-**Path**: `divide_and_conquer/__init__.py`
+**Path**: `data_structures/heap/__init__.py`
 
 ## Description
 
@@ -10,8 +10,8 @@ No description available.
 
 ## Tags
 
-`Divide And Conquer`
+`Data Structures`, `Heap`
 
 ---
 
-*Automatically fetched on 2026-08-28 05:55:36*
+*Automatically fetched on 2026-08-28 13:26:11*
