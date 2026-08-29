@@ -10,7 +10,6 @@ operators = {
     "/": lambda x, y: x / y,
 }
 
-
 def is_operand(c):
     """
     Return True if the given char c is an operand, e.g. it is a number
@@ -21,7 +20,6 @@ def is_operand(c):
     False
     """
     return c.isdigit()
-
 
 def evaluate(expression):
     """
@@ -54,7 +52,6 @@ def evaluate(expression):
 
     return stack.pop()
 
-
 def evaluate_recursive(expression: list[str]):
     """
     Alternative recursive implementation
@@ -81,7 +78,6 @@ def evaluate_recursive(expression: list[str]):
     a = evaluate_recursive(expression)
     b = evaluate_recursive(expression)
     return operation(a, b)
-
 
 # Driver code
 if __name__ == "__main__":
