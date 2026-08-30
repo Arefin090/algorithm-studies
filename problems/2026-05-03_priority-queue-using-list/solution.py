@@ -3,14 +3,11 @@ Pure Python implementations of a Fixed Priority Queue and an Element Priority Qu
 using Python lists.
 """
 
-
 class OverFlowError(Exception):
     pass
 
-
 class UnderFlowError(Exception):
     pass
-
 
 class FixedPriorityQueue:
     """
@@ -99,7 +96,6 @@ class FixedPriorityQueue:
     def __str__(self) -> str:
         return "\n".join(f"Priority {i}: {q}" for i, q in enumerate(self.queues))
 
-
 class ElementPriorityQueue:
     """
     Element Priority Queue is the same as Fixed Priority Queue except that the value of
@@ -176,7 +172,6 @@ class ElementPriorityQueue:
         """
         return str(self.queue)
 
-
 def fixed_priority_queue():
     fpq = FixedPriorityQueue()
     fpq.enqueue(0, 10)
@@ -201,7 +196,6 @@ def fixed_priority_queue():
     print(fpq.dequeue())
     print(fpq.dequeue())
 
-
 def element_priority_queue():
     epq = ElementPriorityQueue()
     epq.enqueue(10)
@@ -225,7 +219,6 @@ def element_priority_queue():
     print(epq.dequeue())
     print(epq.dequeue())
     print(epq.dequeue())
-
 
 if __name__ == "__main__":
     fixed_priority_queue()
