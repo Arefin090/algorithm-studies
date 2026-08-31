@@ -14,6 +14,8 @@
 
 ## Personal Notes
 
+- Optimization: early termination condition
+
 - Performance: best/average/worst case analysis
 
 - Comparison with similar algorithms
