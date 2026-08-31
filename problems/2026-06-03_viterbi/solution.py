@@ -1,6 +1,5 @@
 from typing import Any
 
-
 def viterbi(
     observations_space: list,
     states_space: list,
@@ -175,7 +174,6 @@ def viterbi(
 
     return result
 
-
 def _validation(
     observations_space: Any,
     states_space: Any,
@@ -213,7 +211,6 @@ def _validation(
         initial_probabilities, transition_probabilities, emission_probabilities
     )
 
-
 def _validate_not_empty(
     observations_space: Any,
     states_space: Any,
@@ -244,7 +241,6 @@ def _validate_not_empty(
     ):
         raise ValueError("There's an empty parameter")
 
-
 def _validate_lists(observations_space: Any, states_space: Any) -> None:
     """
     >>> _validate_lists(["a"], ["b"])
@@ -259,7 +255,6 @@ def _validate_lists(observations_space: Any, states_space: Any) -> None:
     """
     _validate_list(observations_space, "observations_space")
     _validate_list(states_space, "states_space")
-
 
 def _validate_list(_object: Any, var_name: str) -> None:
     """
@@ -281,7 +276,6 @@ def _validate_list(_object: Any, var_name: str) -> None:
             if not isinstance(x, str):
                 msg = f"{var_name} must be a list of strings"
                 raise ValueError(msg)
-
 
 def _validate_dicts(
     initial_probabilities: Any,
@@ -311,7 +305,6 @@ def _validate_dicts(
     _validate_nested_dict(transition_probabilities, "transition_probabilities")
     _validate_nested_dict(emission_probabilities, "emission_probabilities")
 
-
 def _validate_nested_dict(_object: Any, var_name: str) -> None:
     """
     >>> _validate_nested_dict({"a":{"b": 0.5}}, "mock_name")
@@ -335,7 +328,6 @@ def _validate_nested_dict(_object: Any, var_name: str) -> None:
     _validate_dict(_object, var_name, dict)
     for x in _object.values():
         _validate_dict(x, var_name, float, True)
-
 
 def _validate_dict(
     _object: Any, var_name: str, value_type: type, nested: bool = False
@@ -369,7 +361,6 @@ def _validate_dict(
         nested_text = "nested dictionary " if nested else ""
         msg = f"{var_name} {nested_text}all values must be {value_type.__name__}"
         raise ValueError(msg)
-
 
 if __name__ == "__main__":
     from doctest import testmod
