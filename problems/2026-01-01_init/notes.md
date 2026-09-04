@@ -16,6 +16,8 @@
 
 - Real-world application in search engines
 
+- Real-world application in search engines
+
 - Edge case: empty input handling
 
 - Alternative: iterative vs recursive approach
