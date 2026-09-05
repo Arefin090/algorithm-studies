@@ -26,7 +26,6 @@ def selection_sort(collection: list[int]) -> list[int]:
             collection[i], collection[min_index] = collection[min_index], collection[i]
     return collection
 
-
 if __name__ == "__main__":
     user_input = input("Enter numbers separated by a comma:\n").strip()
     unsorted = [int(item) for item in user_input.split(",")]
