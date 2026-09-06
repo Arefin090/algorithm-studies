@@ -40,7 +40,6 @@ def quick_sort_3partition(sorting: list, left: int, right: int) -> None:
     quick_sort_3partition(sorting, left, a - 1)
     quick_sort_3partition(sorting, b + 1, right)
 
-
 def quick_sort_lomuto_partition(sorting: list, left: int, right: int) -> None:
     """
     A pure Python implementation of quick sort algorithm(in-place)
@@ -71,7 +70,6 @@ def quick_sort_lomuto_partition(sorting: list, left: int, right: int) -> None:
         quick_sort_lomuto_partition(sorting, left, pivot_index - 1)
         quick_sort_lomuto_partition(sorting, pivot_index + 1, right)
 
-
 def lomuto_partition(sorting: list, left: int, right: int) -> int:
     """
     Example:
@@ -86,7 +84,6 @@ def lomuto_partition(sorting: list, left: int, right: int) -> int:
             store_index += 1
     sorting[right], sorting[store_index] = sorting[store_index], sorting[right]
     return store_index
-
 
 def three_way_radix_quicksort(sorting: list) -> list:
     """
@@ -111,7 +108,6 @@ def three_way_radix_quicksort(sorting: list) -> list:
         + [i for i in sorting if i == sorting[0]]
         + three_way_radix_quicksort([i for i in sorting if i > sorting[0]])
     )
-
 
 if __name__ == "__main__":
     import doctest
