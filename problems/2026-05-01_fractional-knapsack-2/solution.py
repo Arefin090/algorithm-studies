@@ -4,7 +4,6 @@
 
 from __future__ import annotations
 
-
 def fractional_knapsack(
     value: list[int], weight: list[int], capacity: int
 ) -> tuple[float, list[float]]:
@@ -45,7 +44,6 @@ def fractional_knapsack(
             break
 
     return max_value, fractions
-
 
 if __name__ == "__main__":
     import doctest
