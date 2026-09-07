@@ -14,7 +14,6 @@ from typing import Self, TypeVar
 
 DataType = TypeVar("DataType")
 
-
 @dataclass
 class Node[DataType]:
     data: DataType
@@ -23,7 +22,6 @@ class Node[DataType]:
 
     def __str__(self) -> str:
         return f"{self.data}"
-
 
 class LinkedListIterator:
     def __init__(self, head):
@@ -39,7 +37,6 @@ class LinkedListIterator:
             value = self.current.data
             self.current = self.current.next
             return value
-
 
 @dataclass
 class LinkedList:
@@ -162,7 +159,6 @@ class LinkedList:
     def is_empty(self):
         return self.head is None
 
-
 def create_linked_list() -> None:
     """
     >>> new_linked_list = LinkedList()
@@ -255,7 +251,6 @@ def create_linked_list() -> None:
     >>> str(linked_list)
     '30 10 40 20 50'
     """
-
 
 if __name__ == "__main__":
     import doctest
