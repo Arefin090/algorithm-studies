@@ -16,6 +16,8 @@
 
 - Memory usage: O(1) space optimization possible
 
+- Memory usage: O(1) space optimization possible
+
 - Implementation variant in different languages
 
 - Edge case: empty input handling
