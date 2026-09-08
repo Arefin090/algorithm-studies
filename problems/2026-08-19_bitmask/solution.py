@@ -11,7 +11,6 @@ Find the total no of ways in which the tasks can be distributed.
 
 from collections import defaultdict
 
-
 class AssignmentUsingBitmask:
     def __init__(self, task_performed, total):
         self.total_tasks = total  # total no of tasks (N)
@@ -69,7 +68,6 @@ class AssignmentUsingBitmask:
 
         # call the function to fill the DP table, final answer is stored in dp[0][1]
         return self.count_ways_until(0, 1)
-
 
 if __name__ == "__main__":
     total_tasks = 5  # total no of tasks (the value of N)
