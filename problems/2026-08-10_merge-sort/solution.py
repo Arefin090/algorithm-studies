@@ -9,7 +9,6 @@ For manual testing run:
 python merge_sort.py
 """
 
-
 def merge_sort(collection: list) -> list:
     """
     Sorts a list using the merge sort algorithm.
@@ -48,7 +47,6 @@ def merge_sort(collection: list) -> list:
         return collection
     mid_index = len(collection) // 2
     return merge(merge_sort(collection[:mid_index]), merge_sort(collection[mid_index:]))
-
 
 if __name__ == "__main__":
     import doctest
