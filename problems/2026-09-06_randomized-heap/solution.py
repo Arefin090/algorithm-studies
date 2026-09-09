@@ -8,7 +8,6 @@ from typing import Any, TypeVar
 
 T = TypeVar("T", bound=bool)
 
-
 class RandomizedHeapNode[T: bool]:
     """
     One node of the randomized heap. Contains the value and references to
@@ -71,7 +70,6 @@ class RandomizedHeapNode[T: bool]:
         root1.left = RandomizedHeapNode.merge(root1.left, root2)
 
         return root1
-
 
 class RandomizedHeap[T: bool]:
     """
@@ -214,7 +212,6 @@ class RandomizedHeap[T: bool]:
         False
         """
         return self._root is not None
-
 
 if __name__ == "__main__":
     import doctest
