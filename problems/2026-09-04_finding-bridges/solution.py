@@ -9,7 +9,6 @@ For more details, refer this article:
 https://www.geeksforgeeks.org/bridge-in-a-graph/
 """
 
-
 def __get_demo_graph(index):
     return [
         {
@@ -56,7 +55,6 @@ def __get_demo_graph(index):
         },
     ][index]
 
-
 def compute_bridges(graph: dict[int, list[int]]) -> list[tuple[int, int]]:
     """
     Return the list of undirected graph bridges [(a1, b1), ..., (ak, bk)]; ai <= bi
@@ -98,7 +96,6 @@ def compute_bridges(graph: dict[int, list[int]]) -> list[tuple[int, int]]:
         if not visited[i]:
             dfs(i, -1, bridges, id_)
     return bridges
-
 
 if __name__ == "__main__":
     import doctest
