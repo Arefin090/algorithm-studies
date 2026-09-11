@@ -10,7 +10,6 @@ For manual testing run:
 python sentinel_linear_search.py
 """
 
-
 def sentinel_linear_search(sequence, target):
     """Pure implementation of sentinel linear search algorithm in Python
 
@@ -43,7 +42,6 @@ def sentinel_linear_search(sequence, target):
         return None
 
     return index
-
 
 if __name__ == "__main__":
     user_input = input("Enter numbers separated by comma:\n").strip()
