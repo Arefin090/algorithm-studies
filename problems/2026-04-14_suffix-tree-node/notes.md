@@ -14,6 +14,8 @@
 
 ## Personal Notes
 
+- Performance: best/average/worst case analysis
+
 - Edge case: empty input handling
 
 - Memory usage: O(1) space optimization possible
