@@ -36,7 +36,6 @@ TEST_GRIDS = [
 
 delta = ([-1, 0], [0, -1], [1, 0], [0, 1])  # up, left, down, right
 
-
 class Node:
     """
     >>> k = Node(0, 0, 4, 5, 0, None)
@@ -85,7 +84,6 @@ class Node:
 
     def __eq__(self, other) -> bool:
         return self.pos == other.pos
-
 
 class GreedyBestFirst:
     """
@@ -176,7 +174,6 @@ class GreedyBestFirst:
             current_node = current_node.parent
         path.reverse()
         return path
-
 
 if __name__ == "__main__":
     for idx, grid in enumerate(TEST_GRIDS):
