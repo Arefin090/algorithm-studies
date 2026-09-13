@@ -2,12 +2,10 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
-
 @dataclass
 class ListNode:
     val: int = 0
     next_node: ListNode | None = None
-
 
 def is_palindrome(head: ListNode | None) -> bool:
     """
@@ -64,7 +62,6 @@ def is_palindrome(head: ListNode | None) -> bool:
         head = head.next_node
     return True
 
-
 def is_palindrome_stack(head: ListNode | None) -> bool:
     """
     Check if a linked list is a palindrome using a stack.
@@ -119,7 +116,6 @@ def is_palindrome_stack(head: ListNode | None) -> bool:
             cur = cur.next_node
 
     return True
-
 
 def is_palindrome_dict(head: ListNode | None) -> bool:
     """
@@ -177,7 +173,6 @@ def is_palindrome_dict(head: ListNode | None) -> bool:
         if middle > 1:
             return False
     return True
-
 
 if __name__ == "__main__":
     import doctest
