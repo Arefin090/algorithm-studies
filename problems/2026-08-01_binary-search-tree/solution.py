@@ -95,7 +95,6 @@ from collections.abc import Iterable, Iterator
 from dataclasses import dataclass
 from typing import Any, Self
 
-
 @dataclass
 class Node:
     value: int
@@ -124,7 +123,6 @@ class Node:
     @property
     def is_right(self) -> bool:
         return bool(self.parent and self is self.parent.right)
-
 
 @dataclass
 class BinarySearchTree:
@@ -329,7 +327,6 @@ class BinarySearchTree:
         self.inorder(arr, node)  # append all values to list using inorder traversal
         return arr[k - 1]
 
-
 def inorder(curr_node: Node | None) -> list[Node]:
     """
     inorder (left, self, right)
@@ -339,7 +336,6 @@ def inorder(curr_node: Node | None) -> list[Node]:
         node_list = [*inorder(curr_node.left), curr_node, *inorder(curr_node.right)]
     return node_list
 
-
 def postorder(curr_node: Node | None) -> list[Node]:
     """
     postOrder (left, right, self)
@@ -348,7 +344,6 @@ def postorder(curr_node: Node | None) -> list[Node]:
     if curr_node is not None:
         node_list = postorder(curr_node.left) + postorder(curr_node.right) + [curr_node]
     return node_list
-
 
 if __name__ == "__main__":
     import doctest
