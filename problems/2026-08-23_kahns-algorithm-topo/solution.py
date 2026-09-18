@@ -54,7 +54,6 @@ def topological_sort(graph: dict[int, list[int]]) -> list[int] | None:
         return None  # no topological ordering exists due to cycle
     return topo_order  # valid topological ordering
 
-
 if __name__ == "__main__":
     import doctest
 
