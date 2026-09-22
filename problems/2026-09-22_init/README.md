@@ -1,8 +1,8 @@
 #   Init  
 
-**Source**: [https://github.com/TheAlgorithms/Python/blob/master/greedy_methods/__init__.py](https://github.com/TheAlgorithms/Python/blob/master/greedy_methods/__init__.py)
+**Source**: [https://github.com/TheAlgorithms/Python/blob/master/data_structures/arrays/__init__.py](https://github.com/TheAlgorithms/Python/blob/master/data_structures/arrays/__init__.py)
 **Language**: Python
-**Path**: `greedy_methods/__init__.py`
+**Path**: `data_structures/arrays/__init__.py`
 
 ## Description
 
@@ -10,8 +10,8 @@ No description available.
 
 ## Tags
 
-`Greedy Methods`
+`Data Structures`, `Arrays`
 
 ---
 
-*Automatically fetched on 2026-09-22 06:54:51*
+*Automatically fetched on 2026-09-22 08:54:17*
