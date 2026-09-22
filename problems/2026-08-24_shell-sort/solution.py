@@ -2,7 +2,6 @@
 https://en.wikipedia.org/wiki/Shellsort#Pseudocode
 """
 
-
 def shell_sort(collection: list[int]) -> list[int]:
     """Pure implementation of shell sort algorithm in Python
     :param collection:  Some mutable ordered collection with heterogeneous
@@ -29,7 +28,6 @@ def shell_sort(collection: list[int]) -> list[int]:
             if j != i:
                 collection[j] = insert_value
     return collection
-
 
 if __name__ == "__main__":
     from doctest import testmod
