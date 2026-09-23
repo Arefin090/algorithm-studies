@@ -7,7 +7,6 @@ please make them in a separate file.
 import random
 import time
 
-
 def cross(items_a, items_b):
     """
     Cross product of elements in A and elements in B.
@@ -27,7 +26,6 @@ def cross(items_a, items_b):
     """
     return [a + b for a in items_a for b in items_b]
 
-
 digits = "123456789"
 rows = "ABCDEFGHI"
 cols = digits
@@ -39,7 +37,6 @@ unitlist = (
 )
 units = {s: [u for u in unitlist if s in u] for s in squares}
 peers = {s: {x for u in units[s] for x in u} - {s} for s in squares}
-
 
 def test():
     """A set of unit tests."""
@@ -60,7 +57,6 @@ def test():
     # fmt: on
     print("All tests pass.")
 
-
 def parse_grid(grid):
     """
     Convert grid to a dict of possible values, {square: digits}, or
@@ -73,7 +69,6 @@ def parse_grid(grid):
             return False  ## (Fail if we can't assign d to square s.)
     return values
 
-
 def grid_values(grid):
     """
     Convert grid into a dict of {square: char} with '0' or '.' for empties.
@@ -81,7 +76,6 @@ def grid_values(grid):
     chars = [c for c in grid if c in digits or c in "0."]
     assert len(chars) == 81
     return dict(zip(squares, chars))
-
 
 def assign(values, s, d):
     """
@@ -93,7 +87,6 @@ def assign(values, s, d):
         return values
     else:
         return False
-
 
 def eliminate(values, s, d):
     """
@@ -120,7 +113,6 @@ def eliminate(values, s, d):
             return False
     return values
 
-
 def display(values):
     """
     Display these values as a 2-D grid.
@@ -137,13 +129,11 @@ def display(values):
             print(line)
     print()
 
-
 def solve(grid):
     """
     Solve the grid.
     """
     return search(parse_grid(grid))
-
 
 def some(seq):
     """Return some element of seq that is true."""
@@ -151,7 +141,6 @@ def some(seq):
         if e:
             return e
     return False
-
 
 def search(values):
     """
@@ -164,7 +153,6 @@ def search(values):
     ## Chose the unfilled square s with the fewest possibilities
     _n, s = min((len(values[s]), s) for s in squares if len(values[s]) > 1)
     return some(search(assign(values.copy(), s, d)) for d in values[s])
-
 
 def solve_all(grids, name="", showif=0.0):
     """
@@ -192,7 +180,6 @@ def solve_all(grids, name="", showif=0.0):
             % (sum(results), n, name, sum(times) / n, n / sum(times), max(times))
         )
 
-
 def solved(values):
     """
     A puzzle is solved if each unit is a permutation of the digits 1 to 9.
@@ -203,12 +190,10 @@ def solved(values):
 
     return values is not False and all(unitsolved(unit) for unit in unitlist)
 
-
 def from_file(filename, sep="\n"):
     "Parse a file into a list of strings, separated by sep."
     with open(filename) as file:
         return file.read().strip().split(sep)
-
 
 def random_puzzle(assignments=17):
     """
@@ -225,7 +210,6 @@ def random_puzzle(assignments=17):
             return "".join(values[s] if len(values[s]) == 1 else "." for s in squares)
     return random_puzzle(assignments)  ## Give up and make a new puzzle
 
-
 def shuffled(seq):
     """
     Return a randomly shuffled copy of the input sequence.
@@ -233,7 +217,6 @@ def shuffled(seq):
     seq = list(seq)
     random.shuffle(seq)
     return seq
-
 
 grid1 = (
     "003020600900305001001806400008102900700000008006708200002609500800203009005010300"
