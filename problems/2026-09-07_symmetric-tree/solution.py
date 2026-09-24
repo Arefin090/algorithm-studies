@@ -9,7 +9,6 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
-
 @dataclass
 class Node:
     """
@@ -33,7 +32,6 @@ class Node:
     data: int
     left: Node | None = None
     right: Node | None = None
-
 
 def make_symmetric_tree() -> Node:
     r"""
@@ -67,7 +65,6 @@ def make_symmetric_tree() -> Node:
     root.right.right = Node(3)
     return root
 
-
 def make_asymmetric_tree() -> Node:
     r"""
     Create an asymmetric tree for testing.
@@ -100,7 +97,6 @@ def make_asymmetric_tree() -> Node:
     root.right.right = Node(4)
     return root
 
-
 def is_symmetric_tree(tree: Node) -> bool:
     """
     Check if a binary tree is symmetric (i.e., a mirror of itself).
@@ -120,7 +116,6 @@ def is_symmetric_tree(tree: Node) -> bool:
     if tree:
         return is_mirror(tree.left, tree.right)
     return True  # An empty tree is considered symmetric.
-
 
 def is_mirror(left: Node | None, right: Node | None) -> bool:
     """
@@ -151,7 +146,6 @@ def is_mirror(left: Node | None, right: Node | None) -> bool:
         # The values match, so check the subtrees recursively.
         return is_mirror(left.left, right.right) and is_mirror(left.right, right.left)
     return False
-
 
 if __name__ == "__main__":
     from doctest import testmod
