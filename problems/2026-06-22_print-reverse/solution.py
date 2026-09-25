@@ -3,12 +3,10 @@ from __future__ import annotations
 from collections.abc import Iterable, Iterator
 from dataclasses import dataclass
 
-
 @dataclass
 class Node:
     data: int
     next_node: Node | None = None
-
 
 class LinkedList:
     """A class to represent a Linked List.
@@ -84,7 +82,6 @@ class LinkedList:
         for item in items:
             self.append(item)
 
-
 def make_linked_list(elements_list: Iterable[int]) -> LinkedList:
     """Creates a Linked List from the elements of the given sequence
     (list/tuple) and returns the head of the Linked List.
@@ -106,7 +103,6 @@ def make_linked_list(elements_list: Iterable[int]) -> LinkedList:
     linked_list.extend(elements_list)
     return linked_list
 
-
 def in_reverse(linked_list: LinkedList) -> str:
     """Prints the elements of the given Linked List in reverse order
     >>> in_reverse(LinkedList())
@@ -115,7 +111,6 @@ def in_reverse(linked_list: LinkedList) -> str:
     '73 <- 88 <- 69'
     """
     return " <- ".join(str(line) for line in reversed(tuple(linked_list)))
-
 
 if __name__ == "__main__":
     from doctest import testmod
