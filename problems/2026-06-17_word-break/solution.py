@@ -23,7 +23,6 @@ Space: O(n)
 import functools
 from typing import Any
 
-
 def word_break(string: str, words: list[str]) -> bool:
     """
     Return True if numbers have opposite signs False otherwise.
@@ -103,7 +102,6 @@ def word_break(string: str, words: list[str]) -> bool:
         return False
 
     return is_breakable(0)
-
 
 if __name__ == "__main__":
     import doctest
