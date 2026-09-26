@@ -3,7 +3,6 @@ This is a pure Python implementation of Dynamic Programming solution to the fibo
 sequence problem.
 """
 
-
 class Fibonacci:
     def __init__(self) -> None:
         self.sequence = [0, 1]
@@ -22,7 +21,6 @@ class Fibonacci:
             for _ in range(difference):
                 self.sequence.append(self.sequence[-1] + self.sequence[-2])
         return self.sequence[:index]
-
 
 def main() -> None:
     print(
@@ -45,7 +43,6 @@ def main() -> None:
             continue
 
         print(fibonacci.get(index))
-
 
 if __name__ == "__main__":
     main()
