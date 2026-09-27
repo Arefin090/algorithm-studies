@@ -1,12 +1,12 @@
 # Doubly Linked List
 
-**Source**: [https://github.com/TheAlgorithms/Python/blob/master/data_structures/linked_list/doubly_linked_list.py](https://github.com/TheAlgorithms/Python/blob/master/data_structures/linked_list/doubly_linked_list.py)
-**Language**: Python
-**Path**: `data_structures/linked_list/doubly_linked_list.py`
+**Source**: [https://github.com/TheAlgorithms/C/blob/master/data_structures/linked_list/doubly_linked_list.c](https://github.com/TheAlgorithms/C/blob/master/data_structures/linked_list/doubly_linked_list.c)
+**Language**: C
+**Path**: `data_structures/linked_list/doubly_linked_list.c`
 
 ## Description
 
-https://en.wikipedia.org/wiki/Doubly_linked_list
+No description available.
 
 ## Tags
 
@@ -14,4 +14,4 @@ https://en.wikipedia.org/wiki/Doubly_linked_list
 
 ---
 
-*Automatically fetched on 2026-09-27 02:58:52*
+*Automatically fetched on 2026-09-27 15:04:23*
