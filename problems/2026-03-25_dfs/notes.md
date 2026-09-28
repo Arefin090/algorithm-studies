@@ -14,6 +14,8 @@
 
 ## Personal Notes
 
+- Optimization: early termination condition
+
 - Implementation variant in different languages
 
 - Real-world application in search engines
