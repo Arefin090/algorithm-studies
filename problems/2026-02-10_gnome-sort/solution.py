@@ -12,7 +12,6 @@ For manual testing run:
 python3 gnome_sort.py
 """
 
-
 def gnome_sort(lst: list) -> list:
     """
     Pure implementation of the gnome sort algorithm in Python
@@ -48,7 +47,6 @@ def gnome_sort(lst: list) -> list:
                 i = 1
 
     return lst
-
 
 if __name__ == "__main__":
     user_input = input("Enter numbers separated by a comma:\n").strip()
