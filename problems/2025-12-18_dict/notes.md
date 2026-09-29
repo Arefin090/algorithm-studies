@@ -14,6 +14,8 @@
 
 ## Personal Notes
 
+- Performance: best/average/worst case analysis
+
 - Real-world application in search engines
 
 - Memory usage: O(1) space optimization possible
