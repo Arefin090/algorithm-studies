@@ -8,7 +8,6 @@
 
 from data_structures.suffix_tree.suffix_tree import SuffixTree
 
-
 def main() -> None:
     """
     Demonstrate the usage of the SuffixTree class.
@@ -31,7 +30,6 @@ def main() -> None:
     for pattern in patterns:
         found = suffix_tree.search(pattern)
         print(f"Pattern '{pattern}' found: {found}")
-
 
 if __name__ == "__main__":
     main()
