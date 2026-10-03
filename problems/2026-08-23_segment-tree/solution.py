@@ -1,6 +1,5 @@
 import math
 
-
 class SegmentTree:
     def __init__(self, a):
         self.A = a
@@ -101,7 +100,6 @@ class SegmentTree:
         for i in range(1, self.N + 1):
             show_list += [self.query(i, i)]
         print(show_list)
-
 
 if __name__ == "__main__":
     A = [1, 2, -4, 7, 3, -5, 6, 11, -20, 9, 14, 15, 5, 2, -8]
