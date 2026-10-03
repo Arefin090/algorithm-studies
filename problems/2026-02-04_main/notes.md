@@ -14,6 +14,8 @@
 
 ## Personal Notes
 
+- Implementation variant in different languages
+
 - Comparison with similar algorithms
 
 - Real-world application in search engines
