@@ -8,7 +8,6 @@
 
 from data_structures.suffix_tree.suffix_tree_node import SuffixTreeNode
 
-
 class SuffixTree:
     def __init__(self, text: str) -> None:
         """
