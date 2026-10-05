@@ -8,7 +8,6 @@
 
 from data_structures.kd_tree.kd_node import KDNode
 
-
 def nearest_neighbour_search(
     root: KDNode | None, query_point: list[float]
 ) -> tuple[list[float] | None, float, int]:
