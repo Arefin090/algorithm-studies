@@ -14,6 +14,8 @@
 
 ## Personal Notes
 
+- Comparison with similar algorithms
+
 - Real-world application in search engines
 
 - Edge case: empty input handling
