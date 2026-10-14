@@ -2,7 +2,6 @@
 
 from collections.abc import Iterable
 
-
 class QueueByList[T]:
     def __init__(self, iterable: Iterable[T] | None = None) -> None:
         """
@@ -130,7 +129,6 @@ class QueueByList[T]:
         """
 
         return self.entries[0]
-
 
 if __name__ == "__main__":
     from doctest import testmod
