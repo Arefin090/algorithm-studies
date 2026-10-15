@@ -25,7 +25,6 @@ cities = {
     7: [6, 2],
 }
 
-
 def main(
     cities: dict[int, list[int]],
     ants_num: int,
@@ -98,7 +97,6 @@ def main(
         )
     return best_path, best_distance
 
-
 def distance(city1: list[int], city2: list[int]) -> float:
     """
     Calculate the distance between two coordinate points
@@ -110,7 +108,6 @@ def distance(city1: list[int], city2: list[int]) -> float:
     5.0
     """
     return (((city1[0] - city2[0]) ** 2) + ((city1[1] - city2[1]) ** 2)) ** 0.5
-
 
 def pheromone_update(
     pheromone: list[list[float]],
@@ -164,7 +161,6 @@ def pheromone_update(
 
     return pheromone, best_path, best_distance
 
-
 def city_select(
     pheromone: list[list[float]],
     current_city: dict[int, list[int]],
@@ -207,7 +203,6 @@ def city_select(
     chosen_city = {chosen_city_i: unvisited_cities[chosen_city_i]}
     del unvisited_cities[next(iter(chosen_city.keys()))]
     return chosen_city, unvisited_cities
-
 
 if __name__ == "__main__":
     best_path, best_distance = main(
