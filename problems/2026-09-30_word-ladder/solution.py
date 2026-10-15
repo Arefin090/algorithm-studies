@@ -11,7 +11,6 @@ Wikipedia: https://en.wikipedia.org/wiki/Word_ladder
 
 import string
 
-
 def backtrack(
     current_word: str, path: list[str], end_word: str, word_set: set[str]
 ) -> list[str]:
@@ -63,7 +62,6 @@ def backtrack(
                 word_set.add(transformed_word)  # backtrack
 
     return []  # No valid transformation found
-
 
 def word_ladder(begin_word: str, end_word: str, word_set: set[str]) -> list[str]:
     """
