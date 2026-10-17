@@ -3,7 +3,6 @@ Code contributed by Honey Sharma
 Source: https://en.wikipedia.org/wiki/Cycle_sort
 """
 
-
 def cycle_sort(array: list) -> list:
     """
     >>> cycle_sort([4, 3, 2, 1])
@@ -46,7 +45,6 @@ def cycle_sort(array: list) -> list:
             array[pos], item = item, array[pos]
 
     return array
-
 
 if __name__ == "__main__":
     assert cycle_sort([4, 5, 3, 2, 1]) == [1, 2, 3, 4, 5]
