@@ -16,6 +16,8 @@
 
 - Implementation variant in different languages
 
+- Implementation variant in different languages
+
 - Performance: best/average/worst case analysis
 
 - Real-world application in search engines
