@@ -8,7 +8,6 @@ from __future__ import annotations
 
 RADIX = 10
 
-
 def radix_sort(list_of_ints: list[int]) -> list[int]:
     """
     Examples:
@@ -40,7 +39,6 @@ def radix_sort(list_of_ints: list[int]) -> list[int]:
         # move to next
         placement *= RADIX
     return list_of_ints
-
 
 if __name__ == "__main__":
     import doctest
