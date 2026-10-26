@@ -2,7 +2,6 @@
 
 from __future__ import annotations
 
-
 def maximum_non_adjacent_sum(nums: list[int]) -> int:
     """
     Find the maximum non-adjacent sum of the integers in the nums input list
@@ -26,7 +25,6 @@ def maximum_non_adjacent_sum(nums: list[int]) -> int:
             max(max_including, max_excluding),
         )
     return max(max_excluding, max_including)
-
 
 if __name__ == "__main__":
     import doctest
