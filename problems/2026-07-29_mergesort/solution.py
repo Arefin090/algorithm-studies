@@ -1,6 +1,5 @@
 from __future__ import annotations
 
-
 def merge(left_half: list, right_half: list) -> list:
     """Helper function for mergesort.
 
@@ -56,7 +55,6 @@ def merge(left_half: list, right_half: list) -> list:
 
     return sorted_array
 
-
 def merge_sort(array: list) -> list:
     """Returns a list of sorted array elements using merge sort.
 
@@ -104,7 +102,6 @@ def merge_sort(array: list) -> list:
     right_half = array[middle:]
 
     return merge(merge_sort(left_half), merge_sort(right_half))
-
 
 if __name__ == "__main__":
     import doctest
