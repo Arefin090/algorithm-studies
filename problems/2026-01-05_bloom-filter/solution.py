@@ -63,7 +63,6 @@ from hashlib import md5, sha256
 
 HASH_FUNCTIONS = (sha256, md5)
 
-
 class Bloom:
     def __init__(self, size: int = 8) -> None:
         self.bitarray = 0b0
