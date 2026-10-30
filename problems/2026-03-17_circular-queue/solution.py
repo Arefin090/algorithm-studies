@@ -1,6 +1,5 @@
 # Implementation of Circular Queue (using Python lists)
 
-
 class CircularQueue:
     """Circular FIFO queue with a fixed capacity"""
 
