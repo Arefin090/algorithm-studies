@@ -27,7 +27,6 @@ import pytest
 
 T = TypeVar("T")
 
-
 class GraphAdjacencyMatrix[T]:
     def __init__(
         self, vertices: list[T], edges: list[list[T]], directed: bool = True
@@ -199,7 +198,6 @@ class GraphAdjacencyMatrix[T]:
         first = "Adj Matrix:\n" + pformat(self.adj_matrix)
         second = "\nVertex to index mapping:\n" + pformat(self.vertex_to_index)
         return first + second
-
 
 class TestGraphMatrix(unittest.TestCase):
     def __assert_graph_edge_exists_check(
@@ -603,7 +601,6 @@ class TestGraphMatrix(unittest.TestCase):
             undirected_graph.contains_edge(103, 102)
         with pytest.raises(ValueError):
             directed_graph.contains_edge(103, 102)
-
 
 if __name__ == "__main__":
     unittest.main()
