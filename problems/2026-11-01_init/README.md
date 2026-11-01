@@ -1,8 +1,8 @@
 #   Init  
 
-**Source**: [https://github.com/TheAlgorithms/Python/blob/master/data_structures/hashing/number_theory/__init__.py](https://github.com/TheAlgorithms/Python/blob/master/data_structures/hashing/number_theory/__init__.py)
+**Source**: [https://github.com/TheAlgorithms/Python/blob/master/data_structures/hashing/__init__.py](https://github.com/TheAlgorithms/Python/blob/master/data_structures/hashing/__init__.py)
 **Language**: Python
-**Path**: `data_structures/hashing/number_theory/__init__.py`
+**Path**: `data_structures/hashing/__init__.py`
 
 ## Description
 
@@ -10,8 +10,8 @@ No description available.
 
 ## Tags
 
-`Data Structures`, `Hashing`, `Number Theory`
+`Data Structures`, `Hashing`
 
 ---
 
-*Automatically fetched on 2026-11-01 12:51:45*
+*Automatically fetched on 2026-11-01 21:41:10*
