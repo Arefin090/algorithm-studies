@@ -3,7 +3,6 @@ Recursive Program to create a Linked List from a sequence and
 print a string representation of it.
 """
 
-
 class Node:
     def __init__(self, data=None):
         self.data = data
@@ -18,7 +17,6 @@ class Node:
             temp = temp.next
         string_rep += "<END>"
         return string_rep
-
 
 def make_linked_list(elements_list: list | tuple) -> Node:
     """
