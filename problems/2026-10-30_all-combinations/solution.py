@@ -9,7 +9,6 @@ from __future__ import annotations
 
 from itertools import combinations
 
-
 def combination_lists(n: int, k: int) -> list[list[int]]:
     """
     Generates all possible combinations of k numbers out of 1 ... n using itertools.
@@ -18,7 +17,6 @@ def combination_lists(n: int, k: int) -> list[list[int]]:
     [[1, 2], [1, 3], [1, 4], [2, 3], [2, 4], [3, 4]]
     """
     return [list(x) for x in combinations(range(1, n + 1), k)]
-
 
 def generate_all_combinations(n: int, k: int) -> list[list[int]]:
     """
@@ -60,7 +58,6 @@ def generate_all_combinations(n: int, k: int) -> list[list[int]]:
     create_all_state(1, n, k, [], result)
     return result
 
-
 def create_all_state(
     increment: int,
     total_number: int,
@@ -98,7 +95,6 @@ def create_all_state(
         current_list.append(i)
         create_all_state(i + 1, total_number, level - 1, current_list, total_list)
         current_list.pop()
-
 
 if __name__ == "__main__":
     from doctest import testmod
