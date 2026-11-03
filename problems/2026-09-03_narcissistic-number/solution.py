@@ -23,7 +23,6 @@ Examples of narcissistic numbers:
 Reference: https://en.wikipedia.org/wiki/Narcissistic_number
 """
 
-
 def find_narcissistic_numbers(limit: int) -> list[int]:
     """
     Find all narcissistic numbers up to the given limit using dynamic programming.
@@ -86,7 +85,6 @@ def find_narcissistic_numbers(limit: int) -> list[int]:
             narcissistic_nums.append(number)
 
     return narcissistic_nums
-
 
 if __name__ == "__main__":
     import doctest
