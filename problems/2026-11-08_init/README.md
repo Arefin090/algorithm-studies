@@ -1,8 +1,8 @@
 #   Init  
 
-**Source**: [https://github.com/TheAlgorithms/Python/blob/master/graphs/tests/__init__.py](https://github.com/TheAlgorithms/Python/blob/master/graphs/tests/__init__.py)
+**Source**: [https://github.com/TheAlgorithms/Python/blob/master/data_structures/suffix_tree/__init__.py](https://github.com/TheAlgorithms/Python/blob/master/data_structures/suffix_tree/__init__.py)
 **Language**: Python
-**Path**: `graphs/tests/__init__.py`
+**Path**: `data_structures/suffix_tree/__init__.py`
 
 ## Description
 
@@ -10,8 +10,8 @@ No description available.
 
 ## Tags
 
-`Graphs`, `Tests`
+`Data Structures`, `Suffix Tree`
 
 ---
 
-*Automatically fetched on 2026-11-08 10:55:05*
+*Automatically fetched on 2026-11-08 17:28:58*
