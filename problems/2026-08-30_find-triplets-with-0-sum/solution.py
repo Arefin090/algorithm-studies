@@ -1,6 +1,5 @@
 from itertools import combinations
 
-
 def find_triplets_with_0_sum(nums: list[int]) -> list[list[int]]:
     """
     Given a list of integers, return elements a, b, c such that a + b + c = 0.
@@ -22,7 +21,6 @@ def find_triplets_with_0_sum(nums: list[int]) -> list[list[int]]:
         list(x)
         for x in sorted({abc for abc in combinations(sorted(nums), 3) if not sum(abc)})
     ]
-
 
 def find_triplets_with_0_sum_hashing(arr: list[int]) -> list[list[int]]:
     """
@@ -79,7 +77,6 @@ def find_triplets_with_0_sum_hashing(arr: list[int]) -> list[list[int]]:
 
     # Return all the triplet combinations.
     return output_arr
-
 
 if __name__ == "__main__":
     from doctest import testmod
