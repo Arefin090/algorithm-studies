@@ -1,9 +1,7 @@
 from typing import Any, Protocol
 
-
 class Comparable(Protocol):
     def __lt__(self, other: Any, /) -> bool: ...
-
 
 def exchange_sort[T: Comparable](numbers: list[T]) -> list[T]:
     """
@@ -34,7 +32,6 @@ def exchange_sort[T: Comparable](numbers: list[T]) -> list[T]:
             if numbers[j] < numbers[i]:
                 numbers[i], numbers[j] = numbers[j], numbers[i]
     return numbers
-
 
 if __name__ == "__main__":
     user_input = input("Enter numbers separated by a comma:\n").strip()
