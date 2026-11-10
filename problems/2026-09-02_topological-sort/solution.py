@@ -14,7 +14,6 @@ edges: dict[str, list[str]] = {
 }
 vertices: list[str] = ["a", "b", "c", "d", "e"]
 
-
 def topological_sort(start: str, visited: list[str], sort: list[str]) -> list[str]:
     """Perform topological sort on a directed acyclic graph."""
     current = start
@@ -34,7 +33,6 @@ def topological_sort(start: str, visited: list[str], sort: list[str]) -> list[st
                 sort = topological_sort(vertice, visited, sort)
     # return sort
     return sort
-
 
 if __name__ == "__main__":
     sort = topological_sort("a", [], [])
