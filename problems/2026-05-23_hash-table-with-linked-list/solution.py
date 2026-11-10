@@ -2,7 +2,6 @@ from collections import deque
 
 from .hash_table import HashTable
 
-
 class HashTableWithLinkedList(HashTable):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
