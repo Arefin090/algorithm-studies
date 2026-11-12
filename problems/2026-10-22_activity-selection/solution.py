@@ -9,7 +9,6 @@ and does not conflict with previously selected activities.
 Wikipedia: https://en.wikipedia.org/wiki/Activity_selection_problem
 """
 
-
 def activity_selection(activities: list[tuple[int, int]]) -> list[tuple[int, int]]:
     """
     Solve the Activity Selection Problem using a greedy algorithm by selecting
