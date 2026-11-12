@@ -1,11 +1,9 @@
 from __future__ import annotations
 
-
 class Node:
     def __init__(self, data: int) -> None:
         self.data = data
         self.next = None
-
 
 class LinkedList:
     def __init__(self):
@@ -58,7 +56,6 @@ class LinkedList:
         else:
             print("No element found.")
             return None
-
 
 if __name__ == "__main__":
     link = LinkedList()
