@@ -6,7 +6,6 @@
 import argparse
 import os
 
-
 class FileSplitter:
     BLOCK_FILENAME_FORMAT = "block_{0}.dat"
 
@@ -43,7 +42,6 @@ class FileSplitter:
     def cleanup(self) -> None:
         map(os.remove, self.block_filenames)
 
-
 class NWayMerge:
     def select(self, choices):
         min_index = -1
@@ -54,7 +52,6 @@ class NWayMerge:
                 min_index = i
 
         return min_index
-
 
 class FilesArray:
     def __init__(self, files) -> None:
@@ -85,7 +82,6 @@ class FilesArray:
 
         return value
 
-
 class FileMerger:
     def __init__(self, merge_strategy) -> None:
         self.merge_strategy = merge_strategy
@@ -105,7 +101,6 @@ class FileMerger:
 
         return files
 
-
 class ExternalSort:
     def __init__(self, block_size) -> None:
         self.block_size = block_size
@@ -124,7 +119,6 @@ class ExternalSort:
     def get_number_blocks(self, filename, block_size):
         return (os.stat(filename).st_size / block_size) + 1
 
-
 def parse_memory(string):
     match string[-1].lower():
         case "k":
@@ -135,7 +129,6 @@ def parse_memory(string):
             return int(string[:-1]) * 1024 * 1024 * 1024
         case _:
             return int(string)
-
 
 def main() -> None:
     parser = argparse.ArgumentParser()
@@ -149,7 +142,6 @@ def main() -> None:
 
     sorter = ExternalSort(parse_memory(args.mem))
     sorter.sort(args.filename[0])
-
 
 if __name__ == "__main__":
     main()
