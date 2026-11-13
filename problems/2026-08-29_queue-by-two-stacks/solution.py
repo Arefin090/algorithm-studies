@@ -2,7 +2,6 @@
 
 from collections.abc import Iterable
 
-
 class QueueByTwoStacks[T]:
     def __init__(self, iterable: Iterable[T] | None = None) -> None:
         """
@@ -104,7 +103,6 @@ class QueueByTwoStacks[T]:
         if not self._stack2:
             raise IndexError("Queue is empty")
         return self._stack2.pop()
-
 
 if __name__ == "__main__":
     from doctest import testmod
