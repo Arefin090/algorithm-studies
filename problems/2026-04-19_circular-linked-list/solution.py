@@ -4,12 +4,10 @@ from collections.abc import Iterator
 from dataclasses import dataclass
 from typing import Any
 
-
 @dataclass
 class Node:
     data: Any
     next_node: Node | None = None
-
 
 @dataclass
 class CircularLinkedList:
@@ -147,7 +145,6 @@ class CircularLinkedList:
         """
         return len(self) == 0
 
-
 def test_circular_linked_list() -> None:
     """
     Test cases for the CircularLinkedList class.
@@ -202,7 +199,6 @@ def test_circular_linked_list() -> None:
     assert str(circular_linked_list) == "->".join(str(i) for i in range(1, 6))
 
     assert circular_linked_list.is_empty() is False
-
 
 if __name__ == "__main__":
     import doctest
