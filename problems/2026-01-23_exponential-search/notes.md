@@ -14,6 +14,8 @@
 
 ## Personal Notes
 
+- Optimization: early termination condition
+
 - Performance: best/average/worst case analysis
 
 - Memory usage: O(1) space optimization possible
