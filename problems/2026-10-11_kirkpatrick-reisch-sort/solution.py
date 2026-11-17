@@ -17,7 +17,6 @@ https://en.wikipedia.org/wiki/Kirkpatrick%E2%80%93Reisch_sort
 https://sortingsearching.com/2020/06/06/kirkpatrick-reisch.html
 """
 
-
 def kirkpatrick_reisch_sort(arr: list[int]) -> list[int]:
     """
     Implements the Kirkpatrick-Reisch sorting algorithm.
@@ -71,7 +70,6 @@ def kirkpatrick_reisch_sort(arr: list[int]) -> list[int]:
             heapq.heappush(heap, (next_element, block_index, element_index + 1))
 
     return sorted_arr
-
 
 if __name__ == "__main__":
     # Generate a random list of integers
