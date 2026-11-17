@@ -14,6 +14,8 @@
 
 ## Personal Notes
 
+- Real-world application in search engines
+
 - Edge case: empty input handling
 
 - Memory usage: O(1) space optimization possible
