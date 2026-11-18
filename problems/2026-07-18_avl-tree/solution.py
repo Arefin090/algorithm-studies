@@ -12,7 +12,6 @@ import math
 import random
 from typing import Any
 
-
 class MyQueue:
     def __init__(self) -> None:
         self.data: list[Any] = []
@@ -38,7 +37,6 @@ class MyQueue:
         print(self.data)
         print("**************")
         print(self.data[self.head : self.tail])
-
 
 class MyNode:
     def __init__(self, data: Any) -> None:
@@ -71,18 +69,15 @@ class MyNode:
     def set_height(self, height: int) -> None:
         self.height = height
 
-
 def get_height(node: MyNode | None) -> int:
     if node is None:
         return 0
     return node.get_height()
 
-
 def my_max(a: int, b: int) -> int:
     if a > b:
         return a
     return b
-
 
 def right_rotation(node: MyNode) -> MyNode:
     r"""
@@ -106,7 +101,6 @@ def right_rotation(node: MyNode) -> MyNode:
     ret.set_height(h2)
     return ret
 
-
 def left_rotation(node: MyNode) -> MyNode:
     """
     a mirror symmetry rotation of the left_rotation
@@ -121,7 +115,6 @@ def left_rotation(node: MyNode) -> MyNode:
     h2 = my_max(get_height(ret.get_right()), get_height(ret.get_left())) + 1
     ret.set_height(h2)
     return ret
-
 
 def lr_rotation(node: MyNode) -> MyNode:
     r"""
@@ -139,13 +132,11 @@ def lr_rotation(node: MyNode) -> MyNode:
     node.set_left(left_rotation(left_child))
     return right_rotation(node)
 
-
 def rl_rotation(node: MyNode) -> MyNode:
     right_child = node.get_right()
     assert right_child is not None
     node.set_right(right_rotation(right_child))
     return left_rotation(node)
-
 
 def insert_node(node: MyNode | None, data: Any) -> MyNode | None:
     if node is None:
@@ -176,7 +167,6 @@ def insert_node(node: MyNode | None, data: Any) -> MyNode | None:
     node.set_height(h1)
     return node
 
-
 def get_right_most(root: MyNode) -> Any:
     while True:
         right_child = root.get_right()
@@ -185,7 +175,6 @@ def get_right_most(root: MyNode) -> Any:
         root = right_child
     return root.get_data()
 
-
 def get_left_most(root: MyNode) -> Any:
     while True:
         left_child = root.get_left()
@@ -193,7 +182,6 @@ def get_left_most(root: MyNode) -> Any:
             break
         root = left_child
     return root.get_data()
-
 
 def del_node(root: MyNode, data: Any) -> MyNode | None:
     left_child = root.get_left()
@@ -240,7 +228,6 @@ def del_node(root: MyNode, data: Any) -> MyNode | None:
     height = my_max(get_height(root.get_right()), get_height(root.get_left())) + 1
     root.set_height(height)
     return root
-
 
 class AVLtree:
     """
@@ -328,12 +315,10 @@ class AVLtree:
         output += "\n*************************************"
         return output
 
-
 def _test() -> None:
     import doctest
 
     doctest.testmod()
-
 
 if __name__ == "__main__":
     _test()
