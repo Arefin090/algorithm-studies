@@ -13,7 +13,6 @@ Wikipedia link: https://en.wikipedia.org/wiki/Range_minimum_query
 
 from math import log2
 
-
 def build_sparse_table(number_list: list[int]) -> list[list[int]]:
     """
     Precompute range minimum queries with power of two length and store the precomputed
@@ -57,7 +56,6 @@ def build_sparse_table(number_list: list[int]) -> list[list[int]]:
         j += 1
     return sparse_table
 
-
 def query(sparse_table: list[list[int]], left_bound: int, right_bound: int) -> int:
     """
     >>> query(build_sparse_table([8, 1, 0, 3, 4, 9, 3]), 0, 4)
@@ -86,7 +84,6 @@ def query(sparse_table: list[list[int]], left_bound: int, right_bound: int) -> i
     # minimum of 2 overlapping smaller subsets:
     # [left_bound, left_bound + 2 ** j - 1] and [right_bound - 2 ** j + 1, right_bound]
     return min(sparse_table[j][right_bound - (1 << j) + 1], sparse_table[j][left_bound])
-
 
 if __name__ == "__main__":
     from doctest import testmod
