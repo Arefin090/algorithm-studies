@@ -1,8 +1,8 @@
 #   Init  
 
-**Source**: [https://github.com/TheAlgorithms/Python/blob/master/divide_and_conquer/tests/__init__.py](https://github.com/TheAlgorithms/Python/blob/master/divide_and_conquer/tests/__init__.py)
+**Source**: [https://github.com/TheAlgorithms/Python/blob/master/data_structures/__init__.py](https://github.com/TheAlgorithms/Python/blob/master/data_structures/__init__.py)
 **Language**: Python
-**Path**: `divide_and_conquer/tests/__init__.py`
+**Path**: `data_structures/__init__.py`
 
 ## Description
 
@@ -10,8 +10,8 @@ No description available.
 
 ## Tags
 
-`Divide And Conquer`, `Tests`
+`Data Structures`
 
 ---
 
-*Automatically fetched on 2026-11-21 11:54:40*
+*Automatically fetched on 2026-11-21 15:55:32*
