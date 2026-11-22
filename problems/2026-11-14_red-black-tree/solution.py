@@ -2,7 +2,6 @@ from __future__ import annotations
 
 from collections.abc import Iterator
 
-
 class RedBlackTree:
     """
     A Red-Black tree, which is a self-balancing BST (binary search
@@ -508,7 +507,6 @@ class RedBlackTree:
         else:
             return False
 
-
 def color(node: RedBlackTree | None) -> int:
     """Returns the color of a node, allowing for None leaves."""
     if node is None:
@@ -516,12 +514,10 @@ def color(node: RedBlackTree | None) -> int:
     else:
         return node.color
 
-
 """
 Code for testing the various
 functions of the red-black tree.
 """
-
 
 def test_rotations() -> bool:
     """Test that the rotate_left and rotate_right functions work."""
@@ -556,7 +552,6 @@ def test_rotations() -> bool:
     right_rot.right.right.right = RedBlackTree(20, parent=right_rot.right.right)
     return tree == right_rot
 
-
 def test_insertion_speed() -> bool:
     """Test that the tree balances inserts to O(log(n)) by doing a lot
     of them.
@@ -565,7 +560,6 @@ def test_insertion_speed() -> bool:
     for i in range(300000):
         tree = tree.insert(i)
     return True
-
 
 def test_insert() -> bool:
     """Test the insert() method of the tree correctly balances, colors,
@@ -587,7 +581,6 @@ def test_insert() -> bool:
     ans.right.right.right = RedBlackTree(12, 1, ans.right.right)
     return tree == ans
 
-
 def test_insert_and_search() -> bool:
     """Tests searching through the tree for values."""
     tree = RedBlackTree(0)
@@ -602,7 +595,6 @@ def test_insert_and_search() -> bool:
         return False
     # Find all these things in there
     return all(i in tree for i in (11, 12, -8, 0))
-
 
 def test_insert_delete() -> bool:
     """Test the insert() and delete() method of the tree, verifying the
@@ -625,7 +617,6 @@ def test_insert_delete() -> bool:
         return False
     return list(tree.inorder_traverse()) == [-8, 0, 4, 8, 10, 11, 12]
 
-
 def test_floor_ceil() -> bool:
     """Tests the floor and ceiling functions in the tree."""
     tree = RedBlackTree(0)
@@ -641,7 +632,6 @@ def test_floor_ceil() -> bool:
             return False
     return True
 
-
 def test_min_max() -> bool:
     """Tests the min and max functions in the tree."""
     tree = RedBlackTree(0)
@@ -652,7 +642,6 @@ def test_min_max() -> bool:
     tree.insert(20)
     tree.insert(22)
     return not (tree.get_max() != 22 or tree.get_min() != -16)
-
 
 def test_tree_traversal() -> bool:
     """Tests the three different tree traversal functions."""
@@ -669,7 +658,6 @@ def test_tree_traversal() -> bool:
         return False
     return list(tree.postorder_traverse()) == [-16, 8, 20, 24, 22, 16, 0]
 
-
 def test_tree_chaining() -> bool:
     """Tests the three different tree chaining functions."""
     tree = RedBlackTree(0)
@@ -680,10 +668,8 @@ def test_tree_chaining() -> bool:
         return False
     return list(tree.postorder_traverse()) == [-16, 8, 20, 24, 22, 16, 0]
 
-
 def print_results(msg: str, passes: bool) -> None:
     print(str(msg), "works!" if passes else "doesn't work :(")
-
 
 def pytests() -> None:
     assert test_rotations()
@@ -693,7 +679,6 @@ def pytests() -> None:
     assert test_floor_ceil()
     assert test_tree_traversal()
     assert test_tree_chaining()
-
 
 def main() -> None:
     """
@@ -710,7 +695,6 @@ def main() -> None:
     print("This should only be a few seconds.")
     test_insertion_speed()
     print("Done!")
-
 
 if __name__ == "__main__":
     main()
