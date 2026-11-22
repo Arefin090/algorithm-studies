@@ -23,7 +23,6 @@ edge_array = [
 ]
 # fmt: on
 
-
 def get_distinct_edge(edge_array):
     """
     Return Distinct edges from edge array of multiple graphs
@@ -36,7 +35,6 @@ def get_distinct_edge(edge_array):
             distinct_edge.add(item[0])
     return list(distinct_edge)
 
-
 def get_bitcode(edge_array, distinct_edge):
     """
     Return bitcode of distinct_edge
@@ -48,7 +46,6 @@ def get_bitcode(edge_array, distinct_edge):
                 bitcode[i] = "1"
                 break
     return "".join(bitcode)
-
 
 def get_frequency_table(edge_array):
     """
@@ -70,7 +67,6 @@ def get_frequency_table(edge_array):
     ]
     return sorted_frequency_table
 
-
 def get_nodes(frequency_table):
     """
     Returns nodes
@@ -84,7 +80,6 @@ def get_nodes(frequency_table):
         nodes.setdefault(item[2], []).append(item[0])
     return nodes
 
-
 def get_cluster(nodes):
     """
     Returns cluster
@@ -94,7 +89,6 @@ def get_cluster(nodes):
     for key, value in nodes.items():
         cluster.setdefault(key.count("1"), {})[key] = value
     return cluster
-
 
 def get_support(cluster):
     """
@@ -108,7 +102,6 @@ def get_support(cluster):
     [100.0, 80.0, 60.0, 40.0, 20.0]
     """
     return [i * 100 / len(cluster) for i in cluster]
-
 
 def print_all() -> None:
     print("\nNodes\n")
@@ -125,7 +118,6 @@ def print_all() -> None:
     print("\n Edge List of Frequent subgraphs \n")
     for edge_list in freq_subgraph_edge_list:
         print(edge_list)
-
 
 def create_edge(nodes, graph, cluster, c1):
     """
@@ -150,7 +142,6 @@ def create_edge(nodes, graph, cluster, c1):
             else:
                 break
 
-
 def construct_graph(cluster, nodes):
     x = cluster[max(cluster.keys())]
     cluster[max(cluster.keys()) + 1] = "Header"
@@ -168,7 +159,6 @@ def construct_graph(cluster, nodes):
         i = i + 1
     return graph
 
-
 def my_dfs(graph, start, end, path=None):
     """
     find different DFS walk from given node to Header node
@@ -180,7 +170,6 @@ def my_dfs(graph, start, end, path=None):
         if tuple(node) not in path:
             my_dfs(graph, tuple(node), end, path)
 
-
 def find_freq_subgraph_given_support(s, cluster, graph):
     """
     find edges of multiple frequent subgraphs
@@ -188,7 +177,6 @@ def find_freq_subgraph_given_support(s, cluster, graph):
     k = int(s / 100 * (len(cluster) - 1))
     for i in cluster[k]:
         my_dfs(graph, tuple(cluster[k][i]), (["Header"],))
-
 
 def freq_subgraphs_edge_list(paths):
     """
@@ -205,7 +193,6 @@ def freq_subgraphs_edge_list(paths):
         freq_sub_el.append(el)
     return freq_sub_el
 
-
 def preprocess(edge_array):
     """
     Preprocess the edge array
@@ -218,7 +205,6 @@ def preprocess(edge_array):
         for j in range(len(edge_array[i])):
             t = edge_array[i][j].split("-")
             edge_array[i][j] = t
-
 
 if __name__ == "__main__":
     preprocess(edge_array)
