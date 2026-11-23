@@ -13,9 +13,7 @@ from __future__ import annotations
 # It is recommended for users to keep this number greater than or equal to 10.
 precision = 10
 
-
 # This is the linear search that will occur after the search space has become smaller.
-
 
 def lin_search(left: int, right: int, array: list[int], target: int) -> int:
     """Perform linear search in list. Returns -1 if element is not found.
@@ -57,7 +55,6 @@ def lin_search(left: int, right: int, array: list[int], target: int) -> int:
         if array[i] == target:
             return i
     return -1
-
 
 def ite_ternary_search(array: list[int], target: int) -> int:
     """Iterative method of the ternary search algorithm.
@@ -113,7 +110,6 @@ def ite_ternary_search(array: list[int], target: int) -> int:
             right = two_third
     return -1
 
-
 def rec_ternary_search(left: int, right: int, array: list[int], target: int) -> int:
     """Recursive method of the ternary search algorithm.
 
@@ -165,7 +161,6 @@ def rec_ternary_search(left: int, right: int, array: list[int], target: int) -> 
             return rec_ternary_search(one_third + 1, two_third, array, target)
     else:
         return -1
-
 
 if __name__ == "__main__":
     import doctest
