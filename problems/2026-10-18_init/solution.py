@@ -10,12 +10,10 @@ from __future__ import annotations
 
 from typing import Any
 
-
 class Node:
     def __init__(self, item: Any, next: Any) -> None:  # noqa: A002
         self.item = item
         self.next = next
-
 
 class LinkedList:
     def __init__(self) -> None:
