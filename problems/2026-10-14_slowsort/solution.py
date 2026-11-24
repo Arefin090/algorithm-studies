@@ -13,10 +13,8 @@ from __future__ import annotations
 
 from typing import Protocol
 
-
 class Comparable(Protocol):
     def __lt__(self, other: object, /) -> bool: ...
-
 
 def slowsort[T: Comparable](
     sequence: list[T], start: int | None = None, end: int | None = None
@@ -69,7 +67,6 @@ def slowsort[T: Comparable](
         sequence[end], sequence[mid] = sequence[mid], sequence[end]
 
     slowsort(sequence, start, end - 1)
-
 
 if __name__ == "__main__":
     from doctest import testmod
