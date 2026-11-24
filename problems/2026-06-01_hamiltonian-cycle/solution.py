@@ -7,7 +7,6 @@ is the 'Hamiltonian path problem', which is NP-complete.
 Wikipedia: https://en.wikipedia.org/wiki/Hamiltonian_path
 """
 
-
 def valid_connection(
     graph: list[list[int]], next_ver: int, curr_ind: int, path: list[int]
 ) -> bool:
@@ -44,7 +43,6 @@ def valid_connection(
 
     # 2. Validate that next vertex is not already in path
     return not any(vertex == next_ver for vertex in path)
-
 
 def util_hamilton_cycle(graph: list[list[int]], path: list[int], curr_ind: int) -> bool:
     """
@@ -105,7 +103,6 @@ def util_hamilton_cycle(graph: list[list[int]], path: list[int], curr_ind: int) 
             # Backtrack
             path[curr_ind] = -1
     return False
-
 
 def hamilton_cycle(graph: list[list[int]], start_index: int = 0) -> list[int]:
     r"""
