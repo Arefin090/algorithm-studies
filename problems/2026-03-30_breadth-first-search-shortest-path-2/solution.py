@@ -17,7 +17,6 @@ demo_graph = {
     "G": ["C"],
 }
 
-
 def bfs_shortest_path(graph: dict, start, goal) -> list[str]:
     """Find the shortest path between `start` and `goal` nodes.
     Args:
@@ -68,7 +67,6 @@ def bfs_shortest_path(graph: dict, start, goal) -> list[str]:
     # in case there's no path between the 2 nodes
     return []
 
-
 def bfs_shortest_path_distance(graph: dict, start, target) -> int:
     """Find the shortest path distance between `start` and `target` nodes.
     Args:
@@ -106,7 +104,6 @@ def bfs_shortest_path_distance(graph: dict, start, target) -> int:
                 queue.append(adjacent)
                 dist[adjacent] = dist[node] + 1
     return dist[target]
-
 
 if __name__ == "__main__":
     print(bfs_shortest_path(demo_graph, "G", "D"))  # returns ['G', 'C', 'A', 'B', 'D']
