@@ -16,6 +16,8 @@
 
 - Comparison with similar algorithms
 
+- Comparison with similar algorithms
+
 - Performance: best/average/worst case analysis
 
 - Optimization: early termination condition
