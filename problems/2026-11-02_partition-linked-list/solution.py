@@ -3,12 +3,10 @@ from __future__ import annotations
 from dataclasses import dataclass
 from typing import Any
 
-
 @dataclass
 class Node:
     item: Any
     next: Node | Any = None
-
 
 class LinkedList:
     def __init__(self) -> None:
