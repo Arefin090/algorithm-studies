@@ -2,7 +2,6 @@
 import math
 from collections.abc import Callable
 
-
 class SearchProblem:
     """
     An interface to define search problems.
@@ -89,7 +88,6 @@ class SearchProblem:
         """
         return f"x: {self.x} y: {self.y}"
 
-
 def hill_climbing(
     search_prob: SearchProblem,
     find_max: bool = True,
@@ -164,7 +162,6 @@ def hill_climbing(
         plt.show()
 
     return current_state
-
 
 if __name__ == "__main__":
     import doctest
